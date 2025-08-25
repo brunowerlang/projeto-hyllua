@@ -4,8 +4,21 @@ import Link from "next/link";
 import Image from "next/image";
 import SidebarCategories from "../../SidebarCategories";
 
-interface Post { /* ... */ }
-interface Category { /* ... */ }
+interface Post {
+  id: number;
+  slug: string;
+  title: { rendered: string };
+  excerpt: { rendered: string };
+  _embedded?: {
+    "wp:featuredmedia"?: Array<{ source_url: string }>;
+  };
+}
+
+interface Category {
+  id: number;
+  name: string;
+  slug: string;
+}
 
 interface CategoryPageProps {
   params: { slug: string };
@@ -21,16 +34,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   );
   const categories: Category[] = await resCategories.json();
 
-  // Buscar posts da categoria
+  // Buscar ID da categoria pelo slug
   const resCat = await fetch(
-    `https://blog.hylluahusein.com.br/wp-json/wp/v2/categories?slug=${slug}`
+    `https://blog.hylluahusein.com.br/wp-json/wp/v2/categories?slug=${slug}`,
+    { cache: "no-store" } // força buscar sempre
   );
   const catData = await resCat.json();
   if (catData.length === 0) return <p>Categoria não encontrada.</p>;
 
   const categoryId = catData[0].id;
+
+  // Buscar posts da categoria
   const resPosts = await fetch(
-    `https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?categories=${categoryId}&_embed`
+    `https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?categories=${categoryId}&_embed`,
+    { next: { revalidate: 60 } }
   );
   const posts: Post[] = await resPosts.json();
 
@@ -65,7 +82,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                     />
                   </Link>
                 </h2>
-               
+
                 <Link
                   href={`/blog/${post.slug}`}
                   className="text-blue-600 font-medium hover:underline"
