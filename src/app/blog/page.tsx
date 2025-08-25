@@ -1,4 +1,5 @@
 // src/app/blog/page.tsx
+<<<<<<< HEAD
 import Link from "next/link"
 import Image from "next/image"
 
@@ -40,12 +41,36 @@ export default async function BlogPage() {
     console.error("Erro ao buscar categorias:", resCategories.statusText)
   }
   const categories: Category[] = await resCategories.json()
+=======
+import Link from "next/link";
+import Image from "next/image";
+import SidebarCategories from "../blog/SidebarCategories";
+
+interface Post { /* ... mesma interface de antes ... */ }
+interface Category { /* ... mesma interface de antes ... */ }
+
+export default async function BlogPage() {
+  // Fetch posts
+  const resPosts = await fetch(
+    "https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?per_page=10&_embed",
+    { next: { revalidate: 60 } }
+  );
+  const posts: Post[] = await resPosts.json();
+
+  // Fetch categories
+  const resCategories = await fetch(
+    "https://blog.hylluahusein.com.br/wp-json/wp/v2/categories",
+    { next: { revalidate: 3600 } }
+  );
+  const categories: Category[] = await resCategories.json();
+>>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
 
   return (
     <main className="max-w-6xl mx-auto p-6 flex gap-8">
       {/* Grid de posts */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
         {posts.map((post) => {
+<<<<<<< HEAD
           const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
 
           return (
@@ -53,20 +78,52 @@ export default async function BlogPage() {
               {featuredImage && (
                 <div className="relative w-full h-48">
                   <Image src={featuredImage} alt={post.title.rendered} fill style={{ objectFit: "cover" }} />
+=======
+          const featuredImage =
+            post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+
+          return (
+            <article
+              key={post.id}
+              className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition"
+            >
+              {featuredImage && (
+                <div className="relative w-full h-48">
+                  <Image
+                    src={featuredImage}
+                    alt={post.title.rendered}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
+>>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
                 </div>
               )}
               <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2">
                   <Link href={`/blog/${post.slug}`}>
+<<<<<<< HEAD
                     <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                   </Link>
                 </h2>
                 <p className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
                 <Link href={`/blog/${post.slug}`} className="text-blue-600 font-medium hover:underline">
+=======
+                    <span
+                      dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                    />
+                  </Link>
+                </h2>
+              
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="text-blue-600 font-medium hover:underline"
+                >
+>>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
                   Ler mais →
                 </Link>
               </div>
             </article>
+<<<<<<< HEAD
           )
         })}
       </div>
@@ -84,6 +141,14 @@ export default async function BlogPage() {
           ))}
         </ul>
       </aside>
+=======
+          );
+        })}
+      </div>
+
+      {/* Sidebar */}
+      <SidebarCategories categories={categories} />
+>>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
     </main>
   )
 }

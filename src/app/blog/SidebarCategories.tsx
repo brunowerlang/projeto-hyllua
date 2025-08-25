@@ -30,4 +30,3 @@ export default function SidebarCategories({ categories }: SidebarProps) {
     </aside>
   );
 }
-
