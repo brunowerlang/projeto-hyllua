@@ -6,6 +6,7 @@ interface Post {
   slug: string;
   title: { rendered: string };
   content: { rendered: string };
+  _embedded?: any;
 }
 
 export default async function BlogPostPage({
@@ -26,22 +27,22 @@ export default async function BlogPostPage({
   const posts: Post[] = await res.json();
 
   if (posts.length === 0) {
-    notFound(); // Se não encontrar o post, mostra página 404
+    notFound();
   }
 
   const post = posts[0];
-const featuredImage =
-  post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || null;
+  const featuredImage =
+    post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || null;
 
   return (
     <main className="max-w-4xl mx-auto p-6">
       {featuredImage && (
-  <img
-    src={featuredImage}
-    alt={post.title.rendered}
-    className="mb-6 w-full h-auto"
-  />
-)}
+        <img
+          src={featuredImage}
+          alt={post.title.rendered}
+          className="mb-6 w-full h-auto"
+        />
+      )}
 
       <h1
         className="text-4xl font-bold mb-6"
