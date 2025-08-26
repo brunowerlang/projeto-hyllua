@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className=" bg-gray-50 text-gray-900">
+      <body className=" bg-background text-gray-900">
         <Header />
         <main className="container mx-auto p-6">{children}</main>
         <Footer />

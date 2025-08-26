@@ -44,7 +44,7 @@ export default async function BlogPage() {
   const categories: Category[] = await resCategories.json()
 
   return (
-    <div className="min-h-screen " >
+    <div className="min-h-screen bg-background" >
       <header className="bg-gradient-to-b from-card to-background border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="text-center space-y-6">
