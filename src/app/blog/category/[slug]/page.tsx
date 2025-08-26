@@ -1,6 +1,5 @@
 // src/app/blog/category/[slug]/page.tsx
-import Link from "next/link"
-import Image from "next/image"
+
 import SidebarCategories from "../../SidebarCategories"
 import BlogCard from "@/components/blog-card"
 
@@ -20,11 +19,11 @@ interface Category {
   slug: string
 }
 
-interface CategoryPageProps {
-  params: { slug: string } // não precisa ser Promise
+type Params = {
+  slug: string
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({ params }: { params: Params }) {
   const { slug } = params
 
   // Buscar todas as categorias (para a sidebar)
