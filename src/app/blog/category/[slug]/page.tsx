@@ -20,11 +20,11 @@ interface Category {
   slug: string
 }
 
-interface CategoryPageProps {
-  params: { slug: string } // não precisa ser Promise
-}
-
-export default async function CategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({
+  params,
+}: {
+  params: { slug: string }
+}) {
   const { slug } = params
 
   // Buscar todas as categorias (para a sidebar)
