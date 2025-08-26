@@ -7,9 +7,12 @@ interface Post {
   id: number
   slug: string
   title: { rendered: string }
-  excerpt: { rendered: string }
+  excerpt?: { rendered: string }
+  date?: string
   _embedded?: {
-    "wp:featuredmedia"?: Array<{ source_url: string }>
+    author?: { name: string }[]
+    "wp:term"?: { id: number; name: string; taxonomy: string }[][]
+    "wp:featuredmedia"?: { source_url: string }[]
   }
 }
 
@@ -19,14 +22,14 @@ interface Category {
   slug: string
 }
 
-type Params = {
-  slug: string
+interface CategoryPageProps {
+  params: Promise<{ slug: string }>
 }
 
-export default async function CategoryPage({ params }: { params: Params }) {
-  const { slug } = params
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params // Added await back to handle async params
 
-  // Buscar todas as categorias (para a sidebar)
+  // Buscar categorias para a sidebar
   let categories: Category[] = []
   try {
     const resCategories = await fetch(
@@ -53,7 +56,6 @@ export default async function CategoryPage({ params }: { params: Params }) {
   }
 
   if (!catData || catData.length === 0) return <p>Categoria não encontrada.</p>
-
   const categoryId = catData[0].id
 
   // Buscar posts da categoria
@@ -70,27 +72,24 @@ export default async function CategoryPage({ params }: { params: Params }) {
   }
 
   return (
-    <main className="max-w-6xl mx-auto p-6 flex gap-8">
-      {/* Grid de posts */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
-        {posts.length === 0 && <p>Nenhum post encontrado nesta categoria.</p>}
+    <div className="min-h-screen">
+      <main className="max-w-7xl mx-auto px-6 py-16">
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Posts Grid */}
+          <div className="flex-1 overflow-y-auto max-h-screen no-scrollbar">
+            <div className="space-y-8">
+              {posts.length === 0 && <p>Nenhum post encontrado nesta categoria.</p>}
+              {posts.map((post) => {
+                const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+                return <BlogCard key={post.id} post={post} featuredImage={featuredImage} />
+              })}
+            </div>
+          </div>
 
-        {posts.map((post) => {
-          const featuredImage =
-            post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
-
-          return (
-            <BlogCard
-              key={post.id}
-              post={post}
-              featuredImage={featuredImage}
-            />
-          )
-        })}
-      </div>
-
-      {/* Sidebar */}
-      <SidebarCategories categories={categories} />
-    </main>
+          {/* Sidebar */}
+          <SidebarCategories categories={categories} />
+        </div>
+      </main>
+    </div>
   )
 }
