@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import localFont from "next/font/local";
+
+
 
 // Importando os componentes
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
+
+
+
+
+
 
 export const metadata: Metadata = {
   title: "Clínica Hyllua",
@@ -17,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className="font-sans bg-gray-50 text-gray-900">
+      <body className=" bg-gray-50 text-gray-900">
         <Header />
         <main className="container mx-auto p-6">{children}</main>
         <Footer />

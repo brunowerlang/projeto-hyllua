@@ -38,7 +38,7 @@ export default async function BlogPostPage({ params }: any) {
         dangerouslySetInnerHTML={{ __html: post.title.rendered }}
       />
       <article
-        className="prose max-w-none"
+        className="prose max-w-none mb-6"
         dangerouslySetInnerHTML={{ __html: post.content.rendered }}
       />
     </main>

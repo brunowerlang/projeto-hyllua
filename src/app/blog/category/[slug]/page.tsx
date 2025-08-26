@@ -2,6 +2,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import SidebarCategories from "../../SidebarCategories"
+import BlogCard from "@/components/blog-card"
 
 interface Post {
   id: number
@@ -20,18 +21,19 @@ interface Category {
 }
 
 interface CategoryPageProps {
-  params: Promise<{ slug: string }>
+  params: { slug: string } // não precisa ser Promise
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
-  const { slug } = await params
+  const { slug } = params
 
   // Buscar todas as categorias (para a sidebar)
   let categories: Category[] = []
   try {
-    const resCategories = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/categories", {
-      next: { revalidate: 3600 },
-    })
+    const resCategories = await fetch(
+      "https://blog.hylluahusein.com.br/wp-json/wp/v2/categories",
+      { next: { revalidate: 3600 } }
+    )
     if (!resCategories.ok) throw new Error(`Erro: ${resCategories.status}`)
     categories = await resCategories.json()
   } catch (error) {
@@ -41,7 +43,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   // Buscar dados da categoria clicada
   let catData: Category[] = []
   try {
-    const resCat = await fetch(`https://blog.hylluahusein.com.br/wp-json/wp/v2/categories?slug=${slug}`)
+    const resCat = await fetch(
+      `https://blog.hylluahusein.com.br/wp-json/wp/v2/categories?slug=${slug}`
+    )
     if (!resCat.ok) throw new Error(`Erro: ${resCat.status}`)
     catData = await resCat.json()
   } catch (error) {
@@ -56,7 +60,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   // Buscar posts da categoria
   let posts: Post[] = []
   try {
-    const resPosts = await fetch(`https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?categories=${categoryId}&_embed`)
+    const resPosts = await fetch(
+      `https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?categories=${categoryId}&_embed`
+    )
     if (!resPosts.ok) throw new Error(`Erro: ${resPosts.status}`)
     posts = await resPosts.json()
   } catch (error) {
@@ -71,32 +77,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         {posts.length === 0 && <p>Nenhum post encontrado nesta categoria.</p>}
 
         {posts.map((post) => {
-          const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+          const featuredImage =
+            post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
 
           return (
-            <article key={post.id} className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-              {featuredImage && (
-                <div className="relative w-full h-48">
-                  <Image
-                    src={featuredImage || "/placeholder.svg"}
-                    alt={post.title.rendered}
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-              )}
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">
-                  <Link href={`/blog/${post.slug}`}>
-                    <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                  </Link>
-                </h2>
-                <p className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                <Link href={`/blog/${post.slug}`} className="text-blue-600 font-medium hover:underline">
-                  Ler mais →
-                </Link>
-              </div>
-            </article>
+            <BlogCard
+              key={post.id}
+              post={post}
+              featuredImage={featuredImage}
+            />
           )
         })}
       </div>

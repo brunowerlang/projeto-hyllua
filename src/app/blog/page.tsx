@@ -1,6 +1,8 @@
-// src/app/blog/page.tsx
+//src/app/blog/page.tsx
+
 import Link from "next/link"
-import Image from "next/image"
+import BlogCard from "@/components/blog-card"
+import SidebarCategories from "./SidebarCategories"
 
 interface Post {
   id: number
@@ -42,48 +44,45 @@ export default async function BlogPage() {
   const categories: Category[] = await resCategories.json()
 
   return (
-    <main className="max-w-6xl mx-auto p-6 flex gap-8">
-      {/* Grid de posts */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
-        {posts.map((post) => {
-          const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+    <div className="min-h-screen " >
+      <header className="bg-gradient-to-b from-card to-background border-b border-border">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="text-center space-y-6">
+            <h1 className="font-heading text-5xl md:text-6xl font-bold text-foreground tracking-tight">Blog</h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Conteúdos exclusivos sobre saúde, estética e bem-estar para você se manter sempre informado
+            </p>
+            <div className="w-24 h-1 bg-accent mx-auto rounded-full"></div>
+          </div>
+        </div>
+      </header>
 
-          return (
-            <article key={post.id} className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-              {featuredImage && (
-                <div className="relative w-full h-48">
-                  <Image src={featuredImage} alt={post.title.rendered} fill style={{ objectFit: "cover" }} />
-                </div>
-              )}
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">
-                  <Link href={`/blog/${post.slug}`}>
-                    <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                  </Link>
-                </h2>
-                <p className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
-                <Link href={`/blog/${post.slug}`} className="text-blue-600 font-medium hover:underline">
-                  Ler mais →
-                </Link>
-              </div>
-            </article>
-          )
-        })}
-      </div>
+      <main className="max-w-7xl mx-auto px-6 py-16">
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Posts Grid */}
+          <div className="flex-1 overflow-y-auto max-h-screen no-scrollbar">
+            <div className="space-y-8">
+              {posts.map((post) => {
+                const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+                
+                          return (
+                            <BlogCard
+                              key={post.id}
+                              post={post}
+                              featuredImage={featuredImage}
+                            />
+                          )
+                
+              })}
+            </div>
+          </div>
 
-      {/* Sidebar com categorias */}
-      <aside className="w-64 hidden md:block">
-        <h3 className="text-xl font-bold mb-4">Categorias</h3>
-        <ul className="space-y-2">
-          {categories.map((cat) => (
-            <li key={cat.id}>
-              <Link href={`/blog/category/${cat.slug}`} className="text-gray-700 hover:text-blue-600">
-                {cat.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </aside>
-    </main>
+             {/* Sidebar */}
+             <SidebarCategories categories={categories} />
+        </div>
+      </main>
+
+
+    </div>
   )
 }

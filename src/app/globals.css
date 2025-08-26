@@ -24,3 +24,91 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.wp-block-heading {
+    margin-bottom: 1rem;
+}
+
+.wp-block-list li {
+margin-bottom: .5rem;
+}
+
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;    
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Importando as fontes */
+@font-face {
+  font-family: "Editorial";
+  src: url("/fonts/editorial/PPEditorialOld-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editorial";
+  src: url("/fonts/editorial/PPEditorialOld-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editorial";
+  src: url("/fonts/editorial/PPEditorialOld-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editorial";
+  src: url("/fonts/editorial/PPEditorialOld-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Editorial";
+  src: url("/fonts/editorial/PPEditorialOld-UltraBold.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Right";
+  src: url("/fonts/right/PPRightGothic-WideRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Right";
+  src: url("/fonts/right/PPRightGothic-WideMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Right";
+  src: url("/fonts/right/PPRightGothic-WideBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Right";
+  src: url("/fonts/right/PPRightGothic-WideBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Definindo variáveis no :root */
+:root {
+  --font-editorial: "Editorial", sans-serif;
+  --font-right: "Right", sans-serif;
+}
