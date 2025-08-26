@@ -68,7 +68,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <main className="max-w-6xl mx-auto p-6 flex gap-8">
       {/* Grid de posts */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
-<<<<<<< HEAD
         {posts.length === 0 && <p>Nenhum post encontrado nesta categoria.</p>}
 
         {posts.map((post) => {
@@ -80,21 +79,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 <div className="relative w-full h-48">
                   <Image
                     src={featuredImage || "/placeholder.svg"}
-=======
-        {posts.map((post) => {
-          const featuredImage =
-            post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
-
-          return (
-            <article
-              key={post.id}
-              className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition"
-            >
-              {featuredImage && (
-                <div className="relative w-full h-48">
-                  <Image
-                    src={featuredImage}
->>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
                     alt={post.title.rendered}
                     fill
                     style={{ objectFit: "cover" }}
@@ -104,42 +88,21 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               <div className="p-4">
                 <h2 className="text-xl font-semibold mb-2">
                   <Link href={`/blog/${post.slug}`}>
-<<<<<<< HEAD
                     <span dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                   </Link>
                 </h2>
                 <p className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
                 <Link href={`/blog/${post.slug}`} className="text-blue-600 font-medium hover:underline">
-=======
-                    <span
-                      dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                    />
-                  </Link>
-                </h2>
-
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="text-blue-600 font-medium hover:underline"
-                >
->>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
                   Ler mais →
                 </Link>
               </div>
             </article>
-<<<<<<< HEAD
           )
-=======
-          );
->>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
         })}
       </div>
 
       {/* Sidebar */}
       <SidebarCategories categories={categories} />
     </main>
-<<<<<<< HEAD
   )
-=======
-  );
->>>>>>> 8c63f924b0cc5e799b5cfb2efb93effa9353f7ad
 }
