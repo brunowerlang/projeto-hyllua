@@ -36,14 +36,21 @@ export default async function CategoryPage({
     console.error("Falha ao buscar categorias:", error)
   }
 
+  const currentCategory = categories.find((cat) => cat.slug === slug)
+
   // Buscar posts da categoria específica
   let posts: Post[] = []
   try {
-    const resPosts = await fetch(`https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?categories=${slug}`, {
-      next: { revalidate: 3600 },
-    })
-    if (!resPosts.ok) throw new Error(`Erro: ${resPosts.status}`)
-    posts = await resPosts.json()
+    if (currentCategory) {
+      const resPosts = await fetch(
+        `https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?categories=${currentCategory.id}&_embed`,
+        {
+          next: { revalidate: 3600 },
+        },
+      )
+      if (!resPosts.ok) throw new Error(`Erro: ${resPosts.status}`)
+      posts = await resPosts.json()
+    }
   } catch (error) {
     console.error("Falha ao buscar posts da categoria:", error)
   }
@@ -52,11 +59,13 @@ export default async function CategoryPage({
     <div className="flex">
       <SidebarCategories categories={categories} />
       <div className="flex-1 p-4">
-        <h1 className="text-2xl font-bold mb-4">Categoria: {slug}</h1>
+        <h1 className="text-2xl font-bold mb-4">Categoria: {currentCategory?.name || slug}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {posts.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          ))}
+          {posts.length > 0 ? (
+            posts.map((post) => <BlogCard key={post.id} post={post} />)
+          ) : (
+            <p className="text-muted-foreground">Nenhum post encontrado nesta categoria.</p>
+          )}
         </div>
       </div>
     </div>
