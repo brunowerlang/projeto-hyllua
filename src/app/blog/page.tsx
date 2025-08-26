@@ -1,4 +1,6 @@
 //src/app/blog/page.tsx
+
+import Link from "next/link"
 import BlogCard from "@/components/blog-card"
 import SidebarCategories from "./SidebarCategories"
 
@@ -19,46 +21,30 @@ interface Category {
   slug: string
 }
 
-export const dynamic = "force-dynamic"
-
 export default async function BlogPage() {
-  let posts: Post[] = []
-  let categories: Category[] = []
+  // Fetch posts
+  const resPosts = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?per_page=10&_embed", {
+    next: { revalidate: 60 },
+  })
 
-  try {
-    const resPosts = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?per_page=10&_embed", {
-      next: { revalidate: 60 },
-      signal: AbortSignal.timeout(10000), // 10 second timeout
-    })
-
-    if (resPosts.ok) {
-      posts = await resPosts.json()
-    } else {
-      console.error("Erro na API de posts:", resPosts.status, resPosts.statusText)
-    }
-  } catch (error) {
-    console.error("Falha ao carregar posts:", error)
-    // Continue with empty posts array
+  if (!resPosts.ok) {
+    console.error("Erro na API:", resPosts.status, resPosts.statusText)
+    throw new Error("Falha ao carregar posts")
   }
+  const posts: Post[] = await resPosts.json()
 
-  try {
-    const resCategories = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/categories", {
-      next: { revalidate: 3600 },
-      signal: AbortSignal.timeout(10000), // 10 second timeout
-    })
+  // Fetch categories
+  const resCategories = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/categories", {
+    next: { revalidate: 3600 },
+  })
 
-    if (resCategories.ok) {
-      categories = await resCategories.json()
-    } else {
-      console.error("Erro ao buscar categorias:", resCategories.statusText)
-    }
-  } catch (error) {
-    console.error("Falha ao carregar categorias:", error)
-    // Continue with empty categories array
+  if (!resCategories.ok) {
+    console.error("Erro ao buscar categorias:", resCategories.statusText)
   }
+  const categories: Category[] = await resCategories.json()
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen " >
       <header className="bg-gradient-to-b from-card to-background border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="text-center space-y-6">
@@ -76,26 +62,27 @@ export default async function BlogPage() {
           {/* Posts Grid */}
           <div className="flex-1 overflow-y-auto max-h-screen no-scrollbar">
             <div className="space-y-8">
-              {posts.length > 0 ? (
-                posts.map((post) => {
-                  const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
-
-                  return <BlogCard key={post.id} post={post} featuredImage={featuredImage} />
-                })
-              ) : (
-                <div className="text-center py-12">
-                  <p className="text-muted-foreground text-lg">
-                    Não foi possível carregar os posts no momento. Tente novamente mais tarde.
-                  </p>
-                </div>
-              )}
+              {posts.map((post) => {
+                const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+                
+                          return (
+                            <BlogCard
+                              key={post.id}
+                              post={post}
+                              featuredImage={featuredImage}
+                            />
+                          )
+                
+              })}
             </div>
           </div>
 
-          {/* Sidebar */}
-          <SidebarCategories categories={categories} />
+             {/* Sidebar */}
+             <SidebarCategories categories={categories} />
         </div>
       </main>
+
+
     </div>
   )
 }
