@@ -1,26 +1,11 @@
-import SidebarCategories from "../../SidebarCategories"
+import SidebarCategories from "@/app/blog/SidebarCategories"
 import BlogCard from "@/components/blog-card"
-
-interface Post {
-  id: number
-  slug: string
-  title: { rendered: string }
-  excerpt: { rendered: string }
-  _embedded?: {
-    "wp:featuredmedia"?: Array<{ source_url: string }>
-  }
-}
-
-interface Category {
-  id: number
-  name: string
-  slug: string
-}
+import type { Post, Category } from "@/types/blog"
 
 export default async function CategoryPage({
   params,
 }: {
-  params: Promise<{ slug: string }> // Updated to Promise type for Next.js 15
+  params: Promise<{ slug: string }>
 }) {
   const { slug } = await params // Added await to resolve the Promise
 
@@ -38,7 +23,6 @@ export default async function CategoryPage({
 
   const currentCategory = categories.find((cat) => cat.slug === slug)
 
-  // Buscar posts da categoria específica
   let posts: Post[] = []
   try {
     if (currentCategory) {
@@ -62,7 +46,10 @@ export default async function CategoryPage({
         <h1 className="text-2xl font-bold mb-4">Categoria: {currentCategory?.name || slug}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {posts.length > 0 ? (
-            posts.map((post) => <BlogCard key={post.id} post={post} />)
+            posts.map((post) => {
+              const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+              return <BlogCard key={post.id} post={post} featuredImage={featuredImage} />
+            })
           ) : (
             <p className="text-muted-foreground">Nenhum post encontrado nesta categoria.</p>
           )}
