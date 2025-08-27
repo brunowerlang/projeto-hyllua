@@ -49,7 +49,7 @@ export default function BlogCard({ post, featuredImage }: BlogCardProps) {
 
           <div className="p-6 text-center space-y-4">
           <span
-            className="inline-block px-4 py-2 text-xs font-medium tracking-wide uppercase fundo-categoria text-white rounded-full font-right"
+            className="inline-block px-4 py-2 text-xs font-medium tracking-wide uppercase bg-fundo-button text-white rounded-full font-right"
             
           >
             {category}

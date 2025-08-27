@@ -19,7 +19,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
- font-family: "Right", sans-serif;
 }
 
 .wp-block-heading {
@@ -114,19 +113,27 @@ margin-bottom: .5rem;
 }
 
 .bg-fundo-blog {
-  background-color: #FCFBFB;
+  background-color: #dddfde;
 }
 
 .primary-color {
-color: #CFAC9F;
+color: #353a2c;
+}
+
+.bg-fundo-button {
+background-color: #353a2c;
+}
+
+.bg-fundo-button-claro {
+  background-color: #abb48d;
 }
 
 .fundo-categoria {
-background-color: #CFAC9F;
+background-color: #abb48d;
 }
 
 .fundo-depoimentos {
-  background-color: #f6f3ed;
+  background-color: #abb48d;
 }
 
 /* Gutenberg Columns */

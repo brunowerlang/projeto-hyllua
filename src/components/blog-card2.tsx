@@ -49,7 +49,7 @@ export default function BlogCard2({ post, featuredImage }: BlogCard2Props) {
         {/* Conteúdo à direita */}
         <div className="flex flex-col justify-between w-1/2 p-10">
           <div>
-            <span className="inline-block px-4 py-1 mb-4 text-xs font-semibold tracking-wide uppercase rounded-full bg-[#d2b6a2] text-white font-right">
+            <span className="inline-block px-4 py-1 mb-4 text-xs font-semibold tracking-wide uppercase rounded-full bg-[#abb48d] text-white font-right">
               {category}
             </span>
             <h2
@@ -58,14 +58,14 @@ export default function BlogCard2({ post, featuredImage }: BlogCard2Props) {
             />
             {post.excerpt && (
               <div
-                className="text-base text-[#f5e9df] font-normal mb-4 line-clamp-2"
+                className="text-base text-[#abb48d] font-normal mb-4 line-clamp-2"
                 dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
               />
             )}
           </div>
           <div className="flex items-center justify-between border-t border-gray-100 pt-6 mt-6 text-xs text-gray-500 font-right">
             <span>
-              BY <span className="font-semibold text-[#b48b6a] uppercase">{author}</span>
+              BY <span className="font-semibold uppercase">{author}</span>
             </span>
             <span className="tracking-wide">{date}</span>
           </div>

@@ -50,7 +50,7 @@ export default async function BlogPage() {
             <div className="flex items-center gap-2 mb-6">
               <BsLightningFill className="primary-color" />
               <span
-                className="text-sm font-semibold uppercase primary-color relative
+                className="text-xl font-semibold uppercase primary-color relative
                            after:block after:absolute after:top-1/2 after:left-full
                            after:ml-6 after:h-[1px] after:bg-current after:min-w-full
                            after:-translate-y-1/2 ml-2"
@@ -74,7 +74,7 @@ export default async function BlogPage() {
             <div className="flex items-center gap-2 mb-6 mt-20">
               <BsLightningFill className="primary-color" />
               <span
-                className="text-sm font-semibold uppercase primary-color relative
+                className="text-xl font-semibold uppercase primary-color relative
                            after:block after:absolute after:top-1/2 after:left-full
                            after:ml-6 after:h-[1px] after:bg-current after:min-w-full
                            after:-translate-y-1/2 ml-2"
