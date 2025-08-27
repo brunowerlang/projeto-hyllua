@@ -24,15 +24,16 @@ interface Post {
 interface SidebarProps {
   categories: Category[];
   recentPosts: Post[];
-  initialOpen?: "about" | "category" | "social" | "recent";
+  initialOpen?: "about" | "category" | "social";
 }
 
 const sections = [
-  { key: "about", label: "About" },
-  { key: "category", label: "Category" },
-  { key: "social", label: "Siga a Hyllua" },
-  { key: "recent", label: "Posts Recentes" },
+  { key: "about", label: "Sobre a Clínica" },
+  { key: "category", label: "Categorias" },
+  { key: "social", label: "Siga a Clínica Hyllua Husein" },
 ];
+
+type SectionKey = "about" | "category" | "social";
 
 export default function SidebarCategories({
   categories,
@@ -43,16 +44,24 @@ export default function SidebarCategories({
     about: initialOpen === "about",
     category: initialOpen === "category",
     social: initialOpen === "social",
-    recent: initialOpen === "recent",
   });
 
-type SectionKey = "about" | "category" | "social" | "recent";
+  const toggle = (key: SectionKey) => {
+    setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
 
-const toggle = (key: SectionKey) => {
-  setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
-};
+  // Animation classes for accordion content
+  const getAccordionClass = (isOpen: boolean) =>
+    `transition-all duration-300 ease-in-out overflow-hidden ${
+      isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+    }`;
+
+  // Animation classes for the icon
+  const getIconClass = (isOpen: boolean) =>
+    `transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`;
+
   return (
-    <aside className="lg:w-80 lg:sticky lg:top-6 lg:self-start bg-white rounded-xl px-0 overflow-hidden border border-[#d2d2c7]">
+    <aside className="lg:w-80 lg:sticky lg:top-6 lg:self-start bg-white rounded-xl px-0 overflow-hidden border border-[#d2d2c7] mt-13">
       {/* About */}
       <div className="border-b border-[#d2d2c7]">
         <button
@@ -62,33 +71,35 @@ const toggle = (key: SectionKey) => {
           type="button"
         >
           {sections[0].label}
-          <span className="text-lg">{open.about ? "−" : "+"}</span>
+          <span className={getIconClass(open.about)}>
+            {open.about ? "−" : "+"}
+          </span>
         </button>
-        {open.about && (
+        <div className={getAccordionClass(open.about)}>
           <div className="bg-fundo-button-claro px-6 py-6">
             <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
               <Image
-                src="/hyllua.jpg"
-                alt="Dra. Hyllua Husein"
+                src="/simbolo-hyllua.webp"
+                alt="Clínica Hyllua Husein"
                 width={96}
                 height={96}
                 className="object-cover w-24 h-24"
               />
             </div>
-            <h3 className="font-heading text-xl font-bold text-foreground mb-2 text-center text-white">
-              Dra. Hyllua Husein
+            <h3 className="font-heading text-xl font-bold text-center text-black mb-2">
+              Clínica Hyllua Husein
             </h3>
-            <p className="text-muted-foreground text-sm mb-4 text-center text-white">
-              Especialista em Estética e Saúde
+            <p className="text-sm mb-4 text-center text-black font-semibold">
+              Excelência em Estética e Saúde
             </p>
-            <p className="text-muted-foreground text-sm leading-relaxed text-center text-white">
-              Médica especializada em procedimentos estéticos e cuidados com a saúde, compartilhando conhecimento e dicas para seu bem-estar.
+            <p className="text-sm leading-relaxed text-center text-black">
+              Referência em procedimentos estéticos, bem-estar e cuidados integrados. Nossa missão é promover autoestima, saúde e qualidade de vida com atendimento humanizado e tecnologia de ponta.
             </p>
           </div>
-        )}
-      </div>
+          </div> 
+        </div>
 
-      {/* Category */}
+      {/* Categorias */}
       <div className="border-b border-[#d2d2c7]">
         <button
           className="w-full flex justify-between items-center px-6 py-2 bg-fundo-button text-white font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
@@ -97,9 +108,11 @@ const toggle = (key: SectionKey) => {
           type="button"
         >
           {sections[1].label}
-          <span className="text-lg">{open.category ? "−" : "+"}</span>
+          <span className={getIconClass(open.category)}>
+            {open.category ? "−" : "+"}
+          </span>
         </button>
-        {open.category && (
+        <div className={getAccordionClass(open.category)}>
           <div className="bg-fundo-button-claro px-6 py-6 space-y-3">
             {categories.map((cat) => (
               <Link
@@ -107,16 +120,16 @@ const toggle = (key: SectionKey) => {
                 href={`/blog/category/${cat.slug}`}
                 className="block p-2 transition-all duration-300 group cursor-pointer rounded-xl "
               >
-                <span className="text-white text-sm">
+                <span className="text-black text-sm">
                   {cat.name}
                 </span>
               </Link>
             ))}
           </div>
-        )}
+        </div>
       </div>
 
-      {/* Social */}
+      {/* Siga a Clínica Hyllua Husein */}
       <div className="border-b border-[#d2d2c7]">
         <button
           className="w-full flex justify-between items-center px-6 py-2 bg-fundo-button text-white font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
@@ -125,77 +138,31 @@ const toggle = (key: SectionKey) => {
           type="button"
         >
           {sections[2].label}
-          <span className="text-lg">{open.social ? "−" : "+"}</span>
+          <span className={getIconClass(open.social)}>
+            {open.social ? "−" : "+"}
+          </span>
         </button>
-        {open.social && (
+        <div className={getAccordionClass(open.social)}>
           <div className="bg-fundo-button-claro px-6 py-6 flex flex-col items-center">
             <div className="flex gap-4 mb-2 justify-center">
               <a href="https://instagram.com/hylluabeauty" target="_blank" rel="noopener noreferrer">
-                <BsInstagram className="text-xl text-white cursor-pointer" />
+                <BsInstagram className="text-xl text-black cursor-pointer" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsFacebook className="text-xl text-white cursor-pointer" />
+                <BsFacebook className="text-xl text-black cursor-pointer" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsYoutube className="text-xl text-white cursor-pointer" />
+                <BsYoutube className="text-xl text-black cursor-pointer" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsTwitter className="text-xl text-white cursor-pointer" />
+                <BsTwitter className="text-xl text-black cursor-pointer" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsPinterest className="text-xl text-white cursor-pointer" />
+                <BsPinterest className="text-xl text-black cursor-pointer" />
               </a>
             </div>
           </div>
-        )}
-      </div>
-
-      {/* Recent Posts */}
-      <div>
-        <button
-          className="w-full flex justify-between items-center px-6 py-2 bg-fundo-button text-white font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
-          onClick={() => toggle("recent")}
-          aria-expanded={open.recent}
-          type="button"
-        >
-          {sections[3].label}
-          <span className="text-lg">{open.recent ? "−" : "+"}</span>
-        </button>
-        {open.recent && (
-          <div className="bg-fundo-button-claro px-6 py-6">
-            <ul className="space-y-6">
-              {(recentPosts || []).map((post) => (
-                <li key={post.id}>
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="flex gap-4 items-center group  rounded transition cursor-pointer"
-                  >
-                    <div className="w-20 h-16 rounded overflow-hidden flex-shrink-0">
-                      <img
-                        src={post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/placeholder.svg"}
-                        alt={post.title.rendered}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <div className="text-[10px] text-white mb-1 font-light">
-                        {new Date(post.date).toLocaleDateString("pt-BR", {
-                          day: "2-digit",
-                          month: "long",
-                          year: "numeric",
-                        })}
-                      </div>
-                      <div
-                        className="font-right text-xs font-medium group-hover:underline line-clamp-3 overflow-hidden text-white"
-                        dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-                      />
-                    </div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+        </div>
       </div>
     </aside>
   );

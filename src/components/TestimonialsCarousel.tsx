@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialsCarousel() {
   return (
-    <div className="max-w-4xl mx-auto mt-20 p-8 fundo-depoimentos ">
+    <div className="max-w-4xl mx-auto mt-20 p-8 bg-fundo-button ">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -61,3 +61,5 @@ export default function TestimonialsCarousel() {
     </div>
   )
 }
+
+

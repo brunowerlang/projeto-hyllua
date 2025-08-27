@@ -93,7 +93,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
            {/* Trending Post Badge */}
 <div className="flex items-center gap-2 mb-6 mt-20">
-  <BsLightningFill className="primary-color" />
+  
   <span
     className="text-xl font-semibold uppercase primary-color relative
                after:block after:absolute after:top-1/2 after:left-full

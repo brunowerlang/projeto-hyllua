@@ -113,27 +113,31 @@ margin-bottom: .5rem;
 }
 
 .bg-fundo-blog {
-  background-color: #dddfde;
+  background-color: #e7e4e0;
 }
 
 .primary-color {
-color: #353a2c;
+color: #b89c6c;
+}
+
+.secundary-color {
+color: #f7eccd;
 }
 
 .bg-fundo-button {
-background-color: #353a2c;
+background-color: #b89c6c;
 }
 
 .bg-fundo-button-claro {
-  background-color: #abb48d;
+  background-color: #f7eccd;
 }
 
 .fundo-categoria {
-background-color: #abb48d;
+background-color: #f7eccd;
 }
 
 .fundo-depoimentos {
-  background-color: #abb48d;
+  background-color: #f7eccd;
 }
 
 /* Gutenberg Columns */
@@ -173,4 +177,9 @@ background-color: #abb48d;
 
 .post-hyllua p {
   margin: 1.5rem 0;
+}
+
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
 }
