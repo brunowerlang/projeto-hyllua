@@ -1,5 +1,6 @@
 import SidebarCategories from "../../SidebarCategories";
 import BlogCard from "@/components/blog-card";
+import { BsLightningFill } from "react-icons/bs";
 
 interface Post {
   id: number;
@@ -84,11 +85,24 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-fundo-blog">
       <main className="max-w-7xl mx-auto px-6 py-16">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Posts Grid */}
           <div className="flex-1 no-scrollbar">
+
+           {/* Trending Post Badge */}
+<div className="flex items-center gap-2 mb-6 mt-20">
+  <BsLightningFill className="primary-color" />
+  <span
+    className="text-sm font-semibold uppercase primary-color relative
+               after:block after:absolute after:top-1/2 after:left-full
+               after:ml-6 after:h-[1px] after:bg-current after:min-w-full
+               after:-translate-y-1/2 ml-2"
+  >
+    {catData[0]?.name}
+  </span>
+</div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {posts.map((post) => {
                 const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;

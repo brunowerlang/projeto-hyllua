@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import SidebarCategories from "../SidebarCategories"; // ajuste o caminho se necessário
+import SidebarCategories from "../SidebarCategories";
 
 export default async function BlogPostPage({ params }: any) {
   const res = await fetch(
@@ -32,30 +32,50 @@ export default async function BlogPostPage({ params }: any) {
   const recentPosts = resRecent.ok ? await resRecent.json() : [];
 
   return (
-    <main className="max-w-4xl mx-auto p-6">
-      {featuredImage && (
-        <div className="mb-6 w-full h-auto relative" style={{ height: 500 }}>
-          <Image
-            src={featuredImage}
-            alt={post.title.rendered}
-            fill
-            style={{ objectFit: "cover" }}
-            priority
+    <div className="bg-fundo-blog min-h-screen py-10 post-hyllua">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 px-4">
+        {/* Conteúdo principal */}
+        <main className="flex-1 min-w-0">
+          <h1
+            className="text-4xl font-bold mb-4 text-center"
+            dangerouslySetInnerHTML={{ __html: post.title.rendered }}
           />
-        </div>
-      )}
+          <div className="text-center text-gray-500 text-sm mb-8">
+            {post._embedded?.author?.[0]?.name && (
+              <>by {post._embedded.author[0].name} &middot; </>
+            )}
+            {post.date && (
+              <>
+                {new Date(post.date).toLocaleDateString("pt-BR", {
+                  day: "2-digit",
+                  month: "long",
+                  year: "numeric",
+                })}
+              </>
+            )}
+          </div>
+          {featuredImage && (
+            <div className="mb-8 w-full h-[400px] relative rounded overflow-hidden">
+              <Image
+                src={featuredImage}
+                alt={post.title.rendered}
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+          )}
+          <article
+            className="prose prose-img:mx-auto prose-img:rounded-lg  mx-auto mb-6"
+            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+          />
+        </main>
 
-      <h1
-        className="text-4xl font-bold mb-6"
-        dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-      />
-      <article
-        className="prose max-w-none mb-6"
-        dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-      />
-
-      {/* Sidebar */}
-      <SidebarCategories categories={categories} recentPosts={recentPosts} />
-    </main>
+        {/* Sidebar */}
+        <aside className="w-full lg:w-80 flex-shrink-0">
+          <SidebarCategories categories={categories} recentPosts={recentPosts} />
+        </aside>
+      </div>
+    </div>
   );
 }

@@ -83,13 +83,21 @@ export default async function BlogPage() {
               </span>
             </div>
 
-            {/* Grid de posts */}
-            <div className="grid grid-cols-1 gap-8">
-              {posts.slice(0, 4).map((post) => {
-                const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
-                return <BlogCard2 key={post.id} post={post} featuredImage={featuredImage} />;
-              })}
-            </div>
+         {/* Grid de posts - MOBILE */}
+<div className="grid grid-cols-1 gap-8 md:hidden">
+  {posts.slice(0, 4).map((post) => {
+    const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+    return <BlogCard key={post.id} post={post} featuredImage={featuredImage} />;
+  })}
+</div>
+
+{/* Grid de posts - DESKTOP */}
+<div className="hidden md:grid grid-cols-1 gap-8">
+  {posts.slice(0, 4).map((post) => {
+    const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+    return <BlogCard2 key={post.id} post={post} featuredImage={featuredImage} />;
+  })}
+</div>
           </div>
 
           {/* Sidebar */}
