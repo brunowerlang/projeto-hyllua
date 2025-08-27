@@ -42,6 +42,9 @@ export default async function BlogPostPage({ params }: any) {
         className="prose max-w-none mb-6"
         dangerouslySetInnerHTML={{ __html: post.content.rendered }}
       />
+
+            {/* Sidebar */}
+            <SidebarCategories categories={categories} recentPosts={recentPosts} />
     </main>
   );
 }
