@@ -37,7 +37,7 @@ export default async function BlogPostPage({ params }: any) {
         {/* Conteúdo principal */}
         <main className="flex-1 min-w-0">
           <h1
-            className="text-4xl font-bold mb-4 text-center"
+            className="text-4xl font-bold mb-4 text-center font-editorial"
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
           />
           <div className="text-center text-gray-500 text-sm mb-8">
