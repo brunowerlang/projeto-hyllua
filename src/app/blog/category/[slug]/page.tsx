@@ -73,23 +73,23 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   return (
     <div className="min-h-screen">
-      <main className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Posts Grid */}
-          <div className="flex-1 overflow-y-auto max-h-screen no-scrollbar">
-            <div className="space-y-8">
-              {posts.length === 0 && <p>Nenhum post encontrado nesta categoria.</p>}
-              {posts.map((post) => {
-                const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
-                return <BlogCard key={post.id} post={post} featuredImage={featuredImage} />
-              })}
-            </div>
-          </div>
-
-          {/* Sidebar */}
-          <SidebarCategories categories={categories} />
-        </div>
-      </main>
+        <main className="max-w-7xl mx-auto px-6 py-16">
+             <div className="flex flex-col lg:flex-row gap-12">
+               {/* Posts Grid */}
+               <div className="flex-1  no-scrollbar">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                   {posts.map((post) => {
+                     const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url
+     
+                     return <BlogCard key={post.id} post={post} featuredImage={featuredImage} />
+                   })}
+                 </div>
+               </div>
+     
+               {/* Sidebar */}
+               <SidebarCategories categories={categories} />
+             </div>
+           </main>
     </div>
   )
 }

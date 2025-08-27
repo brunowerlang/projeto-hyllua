@@ -21,6 +21,7 @@ export default async function BlogPostPage({ params }: any) {
 
   return (
     <main className="max-w-4xl mx-auto p-6">
+      
       {featuredImage && (
         <div className="mb-6 w-full h-auto relative" style={{ height: 500 }}>
           <Image
