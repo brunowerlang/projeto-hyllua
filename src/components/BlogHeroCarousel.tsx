@@ -72,7 +72,7 @@ export default function BlogHeroCarousel({ posts }: { posts: Post[] }) {
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col items-center justify-end pb-10 px-6 text-center">
                       <h2
-                        className="text-2xl md:text-3xl text-white font-bold mb-2 font-editorial"
+                        className="text-xl md:text-xl text-white font-bold mb-2 font-editorial"
                         dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                       />
                       <div className="text-white text-xs md:text-sm opacity-80">
