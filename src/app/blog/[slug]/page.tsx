@@ -1,6 +1,6 @@
-// src/app/blog/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import SidebarCategories from "../SidebarCategories"; // ajuste o caminho se necessário
 
 export default async function BlogPostPage({ params }: any) {
   const res = await fetch(
@@ -19,9 +19,20 @@ export default async function BlogPostPage({ params }: any) {
   const post = posts[0];
   const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || null;
 
+  // Buscar categorias
+  const resCategories = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/categories", {
+    next: { revalidate: 3600 },
+  });
+  const categories = resCategories.ok ? await resCategories.json() : [];
+
+  // Buscar posts recentes
+  const resRecent = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?per_page=3&_embed", {
+    next: { revalidate: 60 },
+  });
+  const recentPosts = resRecent.ok ? await resRecent.json() : [];
+
   return (
     <main className="max-w-4xl mx-auto p-6">
-      
       {featuredImage && (
         <div className="mb-6 w-full h-auto relative" style={{ height: 500 }}>
           <Image
@@ -43,8 +54,8 @@ export default async function BlogPostPage({ params }: any) {
         dangerouslySetInnerHTML={{ __html: post.content.rendered }}
       />
 
-            {/* Sidebar */}
-            <SidebarCategories categories={categories} recentPosts={recentPosts} />
+      {/* Sidebar */}
+      <SidebarCategories categories={categories} recentPosts={recentPosts} />
     </main>
   );
 }
