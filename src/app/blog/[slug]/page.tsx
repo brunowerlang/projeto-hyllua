@@ -32,8 +32,8 @@ export default async function BlogPostPage({ params }: any) {
   const recentPosts = resRecent.ok ? await resRecent.json() : [];
 
   return (
-    <div className="bg-fundo-blog min-h-screen py-10 post-hyllua">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 px-4">
+    <div className="bg-fundo-blog post-hyllua">
+      <div className="max-w-5xl mx-auto  py-50">
         {/* Conteúdo principal */}
         <main className="flex-1 min-w-0">
           <h1

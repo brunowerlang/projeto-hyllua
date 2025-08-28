@@ -55,20 +55,14 @@ export default function BlogCard({ post, featuredImage }: BlogCardProps) {
             {category}
           </span>
           <h2
-            className="text-lg md:text-xl font-medium text-gray-900 leading-snug line-clamp-3 h-16 font-editorial"
+            className="text-lg md:text-xl font-medium text-gray-900 leading-snug line-clamp-3 h-22 font-editorial"
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
           />
         </div>
 
   
 
-        <div className="border-t border-gray-100 px-6 py-4 flex justify-center text-xs text-gray-500 mt-auto font-right">
-          <span>
-            <span className="font-semibold uppercase " >
-              BY: {author}
-            </span>
-          </span>
-        </div>
+      
       </article>
     </Link>
   )

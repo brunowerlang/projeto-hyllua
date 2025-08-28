@@ -86,7 +86,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   return (
     <div className="min-h-screen bg-fundo-blog">
-      <main className="max-w-7xl mx-auto px-6 py-16">
+      <main className="max-w-5xl mx-auto  py-50">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Posts Grid */}
           <div className="flex-1 no-scrollbar">

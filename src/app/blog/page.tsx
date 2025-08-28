@@ -40,7 +40,7 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-fundo-blog">
 
       {/* Conteúdo principal */}
-      <main className="max-w-7xl mx-auto  py-50 container">
+      <main className="max-w-5xl mx-auto  py-50">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Coluna principal */}
           <div className="flex-1 no-scrollbar">
