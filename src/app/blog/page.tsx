@@ -1,9 +1,7 @@
 import BlogCard from "@/components/blog-card";
 import SidebarCategories from "./SidebarCategories";
-import BlogHeroCarousel from "@/components/BlogHeroCarousel";
 import { BsLightningFill } from "react-icons/bs";
-import TestimonialsCarousel from "@/components/TestimonialsCarousel";
-import BlogCard2 from "@/components/blog-card2";
+
 
 interface Post {
   id: number;

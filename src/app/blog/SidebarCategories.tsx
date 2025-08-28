@@ -40,12 +40,11 @@ export default function SidebarCategories({
   recentPosts,
   initialOpen = "about",
 }: SidebarProps) {
-  const [open, setOpen] = useState<SectionKey>(initialOpen);
+  const [open, setOpen] = useState<SectionKey | null>(initialOpen);
 
   const toggle = (key: SectionKey) => {
     setOpen((prev) => (prev === key ? null : key));
   };
-
   // Accordion animation with smoother transition
   const getAccordionClass = (isOpen: boolean) =>
     `transition-[max-height,opacity,padding] duration-500 ease-in-out overflow-hidden ${
