@@ -111,7 +111,7 @@ export default async function BlogPage() {
         {/* Badge */}
        <div className="flex items-center gap-2 mb-6 px-2">
   <span className="relative block w-full text-[1rem] font-semibold uppercase primary-color after:absolute after:top-1/2 after:left-0 after:h-[1px] after:bg-current after:w-full after:-translate-y-1/2">
-    <span className="relative z-10 pr-4 bg-[#f5f0e8]">TESTE</span>
+    <span className="relative z-10 pr-4 bg-[#f5f0e8]">Últimos Posts</span>
   </span>
 </div>
 
