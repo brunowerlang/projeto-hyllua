@@ -311,3 +311,10 @@ body {
 .swiper-pagination-bullet-active {
   background: #000 !important;
 }
+
+
+@media (min-width: 1366px) {
+ .contain-bg {
+  background-size: contain;
+ }
+}

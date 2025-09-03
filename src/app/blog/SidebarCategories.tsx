@@ -60,7 +60,7 @@ export default function SidebarCategories({
       {/* About */}
       <div className="border-b border-[#d2d2c7]">
         <button
-          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer uppercase"
+          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer uppercase"
           onClick={() => toggle("about")}
           aria-expanded={open === "about"}
           type="button"
@@ -72,22 +72,22 @@ export default function SidebarCategories({
         </button>
         <div className={getAccordionClass(open === "about")}>
           <div className="bg-fundo-button-claro px-6">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden">
+            <div className="w-20 h-20 mx-auto mb-4  overflow-hidden">
               <Image
                 src="/images/blog/simbolo.webp"
                 alt="Clínica Hyllua Husein"
                 width={96}
                 height={96}
-                className="object-cover w-16 h-16"
+                className="object-cover w-20 h-20"
               />
             </div>
             <h3 className="font-heading text-xl font-bold text-center text-gray-900 mb-2">
               Clínica Hyllua Husein
             </h3>
-            <p className="text-sm mb-4 text-center text-gray-900 font-semibold">
+            <p className="text-[0.7rem] mb-4 text-center text-gray-900 font-semibold">
               Excelência em Estética e Saúde
             </p>
-            <p className="text-sm leading-relaxed text-center text-gray-900">
+            <p className="text-[0.7rem] leading-relaxed text-center text-gray-900">
               Referência em procedimentos estéticos, bem-estar e cuidados integrados. Nossa missão é promover autoestima, saúde e qualidade de vida com atendimento humanizado e tecnologia de ponta.
             </p>
           </div>
@@ -97,7 +97,7 @@ export default function SidebarCategories({
       {/* Categorias */}
       <div className="border-b border-[#d2d2c7]">
         <button
-          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
+          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
           onClick={() => toggle("category")}
           aria-expanded={open === "category"}
           type="button"
@@ -127,7 +127,7 @@ export default function SidebarCategories({
       {/* Siga a Clínica Hyllua Husein */}
       <div className="border-b border-[#d2d2c7]">
         <button
-          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
+          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
           onClick={() => toggle("social")}
           aria-expanded={open === "social"}
           type="button"

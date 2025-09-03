@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="flex flex-col items-center md:w-1/4">
           <Image
-            src="images/footer/logo_footer.webp"
+            src="/images/footer/logo_footer.webp"
             alt="Clínica Hyllua Husein"
             width={130}
             height={50}

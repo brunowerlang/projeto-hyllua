@@ -37,7 +37,7 @@ export default function BlogCard({ post, featuredImage }: BlogCardProps) {
       <article className="bg-white rounded-t-xl  overflow-hidden hover:shadow-xl transition  flex flex-col cursor-pointer">
       
         {featuredImage && (
-          <div className="relative w-full h-72 overflow-hidden">
+          <div className="relative w-full h-56 overflow-hidden">
             <Image
               src={featuredImage || "/placeholder.svg"}
               alt={post.title.rendered}
@@ -47,9 +47,9 @@ export default function BlogCard({ post, featuredImage }: BlogCardProps) {
           </div>
         )}
 
-          <div className="p-6 text-center space-y-4">
+          <div className="px-6 pt-4 text-center space-y-4">
           <span
-            className="inline-block px-4 py-2 text-xs font-medium tracking-wide uppercase bg-fundo-button text-white rounded-full font-right"
+            className="inline-block px-4 py-2 text-[10px] font-medium tracking-wide uppercase bg-fundo-button text-white rounded-full font-right"
             
           >
             {category}

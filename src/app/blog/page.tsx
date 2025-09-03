@@ -56,7 +56,7 @@ export default async function BlogPage() {
   return (
     <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top ">
       {/* HERO SECTION */}
-<section className="w-full flex items-center bg-[url('/images/blog/blog-desktop.jpg')]  bg-cover lg:bg-contain bg-bottom relative overflow-hidden">
+<section className="w-full flex items-center bg-[url('/images/blog/blog-desktop.jpg')] bg-cover contain-bg bg-bottom relative overflow-hidden">
         <div className="max-w-4xl mx-auto w-full px-6 flex flex-col md:flex-row items-center h-full relative  ">
           {/* Textos à esquerda */}
           <div
@@ -68,10 +68,10 @@ export default async function BlogPage() {
     md:mb-[-3.5rem]
   "
 >
-            <p className="block text-lg md:text-3xl font-light texto-montreal  lg:ml-[-12rem] ">
+            <p className="block text-lg md:text-[1.4rem] font-light texto-montreal  lg:ml-[-12rem] ">
               Conteúdos para
             </p>
-            <h1 className="titulo-scotch font-black italic leading-none text-3xl md:text-[5.6rem] lg:ml-[-42px]" style={{ fontWeight: 900 }}>
+            <h1 className="titulo-scotch font-black italic leading-none text-3xl md:text-[5.5rem] lg:ml-[-40px]" style={{ fontWeight: 900 }}>
               <span className="block">cuidar</span>
               <span className="block">de você</span>
             </h1>
