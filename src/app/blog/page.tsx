@@ -65,17 +65,17 @@ export default async function BlogPage() {
     relative z-30
     top-[7.5rem] left-[-3.5rem]
     md:static md:top-auto md:left-auto
-    md:mt-[-3rem]
+    md:mb-[-3.5rem]
   "
 >
-            <p className="block text-lg md:text-xl font-light texto-montreal  mr-30 md:mt-[-0.5rem]">
+            <p className="block text-lg md:text-3xl font-light texto-montreal  lg:ml-[-9rem] ">
               Conteúdos para
             </p>
-            <h1 className="titulo-scotch font-black italic leading-none text-[2.6rem] md:text-[4.5rem] md:leading-[4rem]" style={{ fontWeight: 900 }}>
+            <h1 className="titulo-scotch font-black italic leading-none text-3xl md:text-[6rem] " style={{ fontWeight: 900 }}>
               <span className="block">cuidar</span>
               <span className="block">de você</span>
             </h1>
-            <p className="block text-lg md:text-2xl font-medium texto-montreal ml-30 ">
+            <p className="block text-lg md:text-3xl font-medium texto-montreal  lg:mr-[-9rem]">
               por completo.
             </p>
           </div>
@@ -87,7 +87,7 @@ export default async function BlogPage() {
               alt="Equipe Hyllua"
               width={300}
               height={420}
-              className="w-[250px] md:w-[300px] h-auto object-contain drop-shadow-xl relative md:top-15 md:right-4 md:pt-8"
+              className="w-[250px] md:w-[370px] h-auto object-contain drop-shadow-xl relative md:top-26 md:right-4 md:pt-8"
               priority
             />
           </div>

@@ -8,9 +8,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 w-full z-[100] bg-transparent pt-10 pb-2 px-4 md:px-0">
+    <header className="absolute top-13.5 left-0 w-full z-[100] bg-transparent  px-4 md:px-0">
       <div className="max-w-4xl mx-auto rounded-xl">
-        <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-2"
+        <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-4.5"
           style={{ boxShadow: "0 2px 16px 0 rgba(184,156,108,0.04)" }}>
           {/* Logo à esquerda */}
           <Link href="/blog" className="flex items-center">
@@ -28,22 +28,22 @@ export default function Header() {
           <nav className="hidden md:flex flex-1 justify-center">
             <ul className="flex gap-8 items-center">
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.6rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
                   CLÍNICA
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.6rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
                   ENSINO
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.6rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
                   HYLLUA BEAUTY
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.6rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
                   BLOG
                 </Link>
               </li>
@@ -53,7 +53,7 @@ export default function Header() {
           {/* Botão desktop */}
           <Link
             href="/agendar"
-            className="hidden md:inline-block ml-6 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[0.6rem]  hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide"
+            className="hidden md:inline-block ml-6 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[0.8rem] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide"
             style={{ boxShadow: "0 1px 4px 0 rgba(184,156,108,0.08)" }}
           >
             AGENDAR PROCEDIMENTO
