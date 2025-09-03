@@ -85,24 +85,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-fundo-blog">
-      <main className="max-w-5xl mx-auto  py-50">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Posts Grid */}
-          <div className="flex-1 no-scrollbar">
 
-           {/* Trending Post Badge */}
-<div className="flex items-center gap-2 mb-6 mt-20">
-  
-  <span
-    className="text-xl font-semibold uppercase primary-color relative
-               after:block after:absolute after:top-1/2 after:left-full
-               after:ml-6 after:h-[1px] after:bg-current after:min-w-full
-               after:-translate-y-1/2 ml-2"
-  >
-    {catData[0]?.name}
-  </span>
-</div>
+    <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top">
+      <main className="max-w-4xl mx-auto  py-50">
+        <div className="flex flex-col gap-12">
+          {/* Badge com nome da categoria */}
+          <div className="flex items-center gap-2 mb-6 px-2">
+            <span className="relative block w-full text-[1rem] font-semibold uppercase primary-color after:absolute after:top-1/2 after:left-0 after:h-[1px] after:bg-current after:w-full after:-translate-y-1/2">
+              <span className="relative z-10 pr-4 bg-[#f5f0e8]">{catData[0]?.name || 'Categoria'}</span>
+            </span>
+          </div>
+
+ <div className="flex flex-col lg:flex-row gap-12">
+<div className="flex-1 no-scrollbar">
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {posts.map((post) => {
                 const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
@@ -117,6 +113,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   recentPosts={recentPosts}
   initialOpen="category"
 />
+        </div>
         </div>
       </main>
     </div>

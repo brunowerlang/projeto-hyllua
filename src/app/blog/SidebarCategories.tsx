@@ -56,11 +56,11 @@ export default function SidebarCategories({
     `transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`;
 
   return (
-    <aside className="lg:w-80 lg:sticky lg:top-6 lg:self-start bg-fundo-button-claro rounded-xl px-0 overflow-hidden border border-[#d2d2c7] mt-13">
+    <aside className="lg:w-72 lg:sticky lg:top-6 lg:self-start bg-fundo-button-claro rounded-xl px-0 overflow-hidden border border-[#d2d2c7] ">
       {/* About */}
       <div className="border-b border-[#d2d2c7]">
         <button
-          className="w-full flex justify-between items-center px-6 py-2 bg-fundo-button text-white font-normal text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer uppercase"
+          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer uppercase"
           onClick={() => toggle("about")}
           aria-expanded={open === "about"}
           type="button"
@@ -72,22 +72,22 @@ export default function SidebarCategories({
         </button>
         <div className={getAccordionClass(open === "about")}>
           <div className="bg-fundo-button-claro px-6">
-            <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden">
               <Image
                 src="/simbolo-hyllua.webp"
                 alt="Clínica Hyllua Husein"
                 width={96}
                 height={96}
-                className="object-cover w-24 h-24"
+                className="object-cover w-16 h-16"
               />
             </div>
-            <h3 className="font-heading text-xl font-bold text-center text-black mb-2">
+            <h3 className="font-heading text-xl font-bold text-center text-gray-900 mb-2">
               Clínica Hyllua Husein
             </h3>
-            <p className="text-sm mb-4 text-center text-black font-semibold">
+            <p className="text-sm mb-4 text-center text-gray-900 font-semibold">
               Excelência em Estética e Saúde
             </p>
-            <p className="text-sm leading-relaxed text-center text-black">
+            <p className="text-sm leading-relaxed text-center text-gray-900">
               Referência em procedimentos estéticos, bem-estar e cuidados integrados. Nossa missão é promover autoestima, saúde e qualidade de vida com atendimento humanizado e tecnologia de ponta.
             </p>
           </div>
@@ -97,7 +97,7 @@ export default function SidebarCategories({
       {/* Categorias */}
       <div className="border-b border-[#d2d2c7]">
         <button
-          className="w-full flex justify-between items-center px-6 py-2 bg-fundo-button text-white font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
+          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
           onClick={() => toggle("category")}
           aria-expanded={open === "category"}
           type="button"
@@ -108,14 +108,14 @@ export default function SidebarCategories({
           </span>
         </button>
         <div className={getAccordionClass(open === "category")}>
-          <div className="bg-fundo-button-claro px-6 space-y-3">
+          <div className="bg-fundo-button-claro px-6 space-y-3 text-center">
             {categories.map((cat) => (
               <Link
                 key={cat.id}
                 href={`/blog/category/${cat.slug}`}
-                className="block p-2 transition-all duration-300 group cursor-pointer rounded-xl "
+                className="block  transition-all duration-300 group cursor-pointer rounded-xl hover:cursor-pointer hover:underline"
               >
-                <span className="text-black text-sm">
+                <span className="text-gray-900 text-sm">
                   {cat.name}
                 </span>
               </Link>
@@ -127,7 +127,7 @@ export default function SidebarCategories({
       {/* Siga a Clínica Hyllua Husein */}
       <div className="border-b border-[#d2d2c7]">
         <button
-          className="w-full flex justify-between items-center px-6 py-2 bg-fundo-button text-white font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
+          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-sm tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
           onClick={() => toggle("social")}
           aria-expanded={open === "social"}
           type="button"
@@ -139,21 +139,18 @@ export default function SidebarCategories({
         </button>
         <div className={getAccordionClass(open === "social")}>
           <div className="bg-fundo-button-claro px-6 flex flex-col items-center">
-            <div className="flex gap-4 mb-2 justify-center">
+            <div className="flex gap-4  justify-center">
               <a href="https://instagram.com/hylluabeauty" target="_blank" rel="noopener noreferrer">
-                <BsInstagram className="text-xl text-black cursor-pointer" />
+                <BsInstagram className="text-xl primary-color cursor-pointer" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsFacebook className="text-xl text-black cursor-pointer" />
+                <BsFacebook className="text-xl primary-color cursor-pointer" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsYoutube className="text-xl text-black cursor-pointer" />
+                <BsYoutube className="text-xl primary-color cursor-pointer" />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsTwitter className="text-xl text-black cursor-pointer" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <BsPinterest className="text-xl text-black cursor-pointer" />
+                <BsPinterest className="text-xl primary-color cursor-pointer" />
               </a>
             </div>
           </div>

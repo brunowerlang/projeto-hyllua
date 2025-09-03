@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         {/* Conheça mais */}
-        <div className="flex flex-col md:w-1/4 mb-6 md:mb-0">
+        <div className="flex flex-col md:w-1/4 mb-6 md:mb-0 text-center md:text-left">
           <span className="font-semibold titulo-scotch italic mb-3 mt-1 secundary-color tracking-[1px] text-xs">Conheça mais</span>
           <Link href="/clinica" className="hover:underline mb-3 secundary-color text-xs">Clínica</Link>
           <Link href="/ensino" className="hover:underline mb-3 secundary-color text-xs">Ensino</Link>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         {/* Endereço */}
-        <div className="flex flex-col md:w-1/4 mb-6 md:mb-0">
+        <div className="flex flex-col md:w-1/4 mb-6 md:mb-0 text-center md:text-left">
           <span className="font-semibold titulo-scotch italic mb-3 mt-1 secundary-color tracking-[1px] text-xs">Endereço</span>
           <span className="mb-3 secundary-color text-xs">Walk Offices</span>
           <span className="mb-3 secundary-color whitespace-nowrap text-xs">Av. Praia de Belas, 1212 - Salas 1404 e 1405</span>
@@ -36,13 +36,13 @@ export default function Footer() {
         </div>
 
         {/* Siga-nos */}
-        <div className="flex flex-col md:w-1/4 ml-10">
-          <span className="font-semibold titulo-scotch italic mb-3 mt-1 secundary-color tracking-[1px] text-xs">Siga-nos</span>
+        <div className="flex flex-col md:w-1/4 ml-10 text-center md:text-left">
+          <span className="font-semibold titulo-scotch italic mb-3 mt-1 secundary-color tracking-[1px] text-xs ">Siga-nos</span>
           <a
             href="https://instagram.com/clinicahylluahusein"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:underline secundary-color"
+            className="flex items-center gap-2 hover:underline secundary-color justify-center md:justify-start text-xs"
           >
              <BsInstagram className="text-xs secundary-color cursor-pointer" />
             @clinicahylluahusein

@@ -1,7 +1,6 @@
 import BlogCard from "@/components/blog-card";
 import SidebarCategories from "./SidebarCategories";
-import { BsLightningFill } from "react-icons/bs";
-
+import Image from "next/image";
 
 interface Post {
   id: number;
@@ -20,55 +19,125 @@ interface Category {
   slug: string;
 }
 
+/* ---------- Fetch Helpers ---------- */
+async function getPosts(): Promise<Post[]> {
+  try {
+    const res = await fetch(
+      "https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?per_page=10&_embed",
+      { next: { revalidate: 60 } }
+    );
+    return res.ok ? await res.json() : [];
+  } catch (error) {
+    console.error("Erro ao buscar posts:", error);
+    return [];
+  }
+}
+
+async function getCategories(): Promise<Category[]> {
+  try {
+    const res = await fetch(
+      "https://blog.hylluahusein.com.br/wp-json/wp/v2/categories",
+      { next: { revalidate: 3600 } }
+    );
+    return res.ok ? await res.json() : [];
+  } catch (error) {
+    console.error("Erro ao buscar categorias:", error);
+    return [];
+  }
+}
+
+/* ---------- Page Component ---------- */
 export default async function BlogPage() {
-  const resPosts = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/posts?per_page=10&_embed", {
-    next: { revalidate: 60 },
-  });
-  const posts: Post[] = await resPosts.json();
+  const posts = await getPosts();
+  const categories = await getCategories();
 
-  const resCategories = await fetch("https://blog.hylluahusein.com.br/wp-json/wp/v2/categories", {
-    next: { revalidate: 3600 },
-  });
-  const categories: Category[] = resCategories.ok ? await resCategories.json() : [];
-
-  // Defina recentPosts após posts serem carregados
   const recentPosts = posts.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-fundo-blog">
+    <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top ">
+      {/* HERO SECTION */}
+<section className="w-full flex items-center bg-[url('/images/blog/bakground-1-hero-blog.webp')]  bg-cover bg-bottom relative overflow-hidden">
+        <div className="max-w-4xl mx-auto w-full px-6 flex flex-col md:flex-row items-center h-full relative  ">
+          {/* Textos à esquerda */}
+          <div
+  className="
+    text-white max-w-xl flex-1 text-center
+    relative z-30
+    top-[7.5rem] left-[-3.5rem]
+    md:static md:top-auto md:left-auto
+    md:mt-[-3rem]
+  "
+>
+            <p className="block text-lg md:text-xl font-light texto-montreal  mr-30 md:mt-[-0.5rem]">
+              Conteúdos para
+            </p>
+            <h1 className="titulo-scotch font-black italic leading-none text-[2.6rem] md:text-[4.5rem] md:leading-[4rem]" style={{ fontWeight: 900 }}>
+              <span className="block">cuidar</span>
+              <span className="block">de você</span>
+            </h1>
+            <p className="block text-lg md:text-2xl font-medium texto-montreal ml-30 ">
+              por completo.
+            </p>
+          </div>
+
+          {/* Imagem à direita */}
+          <div className="mt-8 md:mt-0 flex-1 flex justify-start relative z-1 top-16 left-10 md:top-0 md:left-0">
+            <Image
+              src="/images/blog/bakground-2-hero-blog.webp"
+              alt="Equipe Hyllua"
+              width={300}
+              height={420}
+              className="w-[250px] md:w-[300px] h-auto object-contain drop-shadow-xl relative md:top-15 md:right-4 md:pt-8"
+              priority
+            />
+          </div>
+        </div>
+
+        <div className="absolute left-0 bottom-0 w-full pointer-events-none z-20">
+          <Image
+            src="/images/blog/bakground-3-hero-blog.webp"
+            alt="Sombra decorativa"
+            width={1920}
+            height={500}
+            className="w-full h-auto select-none"
+            priority
+          />
+        </div>
+      </section>
 
       {/* Conteúdo principal */}
-      <main className="max-w-5xl mx-auto  py-50">
+      <main className="max-w-4xl mx-auto py-16 px-4 md:px-0">
+        {/* Badge */}
+       <div className="flex items-center gap-2 mb-6 px-2">
+  <span className="relative block w-full text-[1rem] font-semibold uppercase primary-color after:absolute after:top-1/2 after:left-0 after:h-[1px] after:bg-current after:w-full after:-translate-y-1/2">
+    <span className="relative z-10 pr-4 bg-[#f5f0e8]">Últimos Posts</span>
+  </span>
+</div>
+
+
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Coluna principal */}
           <div className="flex-1 no-scrollbar">
-            {/* Trending Post Badge */}
-            <div className="flex items-center gap-2 mb-6">
-              
-              <span
-                className="text-xl font-semibold uppercase primary-color relative
-                           after:block after:absolute after:top-1/2 after:left-full
-                           after:ml-6 after:h-[1px] after:bg-current after:min-w-full
-                           after:-translate-y-1/2 ml-2"
-              >
-                Ultimos Posts
-              </span>
-            </div>
-
-       {/* Grid de posts */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-  {posts.slice(0, 20).map((post) => {
-    const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
-    return <BlogCard key={post.id} post={post} featuredImage={featuredImage} />;
-  })}
+            <div className="relative px-2 bg-[url('/images/blog/posts-bg.png')] bg-repeat rounded-2xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+  {[...Array(3)].map((_, i) =>
+    posts.map((post) => {
+      const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
+      return (
+        <article key={`${post.id}-repeat-${i}`}>
+          <BlogCard post={post} featuredImage={featuredImage} />
+        </article>
+      );
+    })
+  )}
 </div>
-
-       
-
+            </div>
           </div>
 
           {/* Sidebar */}
-          <SidebarCategories categories={categories} recentPosts={recentPosts} />
+          <aside className="w-full lg:w-[300px] shrink-0">
+            <SidebarCategories categories={categories} recentPosts={recentPosts} />
+          </aside>
         </div>
       </main>
     </div>

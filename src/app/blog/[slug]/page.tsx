@@ -32,49 +32,36 @@ export default async function BlogPostPage({ params }: any) {
   const recentPosts = resRecent.ok ? await resRecent.json() : [];
 
   return (
-    <div className="bg-fundo-blog post-hyllua">
-      <div className="max-w-5xl mx-auto  py-50">
+    <div className="bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top post-hyllua">
+      <div className="max-w-4xl mx-auto  py-50">
         {/* Conteúdo principal */}
-        <main className="flex-1 min-w-0">
-          <h1
-            className="text-4xl font-bold mb-4 text-center font-editorial"
-            dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-          />
-          <div className="text-center text-gray-500 text-sm mb-8">
-            {post._embedded?.author?.[0]?.name && (
-              <>by {post._embedded.author[0].name} &middot; </>
-            )}
-            {post.date && (
-              <>
-                {new Date(post.date).toLocaleDateString("pt-BR", {
-                  day: "2-digit",
-                  month: "long",
-                  year: "numeric",
-                })}
-              </>
+        <main className="flex-1 min-w-0 bg-background p-6">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-8 mb-8">
+            {/* Título */}
+            <h1
+              className="text-3xl md:text-4xl font-bold mb-4 md:mb-0 text-center md:text-left titulo-scotch italic flex-1"
+              dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+            />
+            {/* Imagem */}
+            {featuredImage && (
+              <div className="w-full h-[220px] relative rounded-lg overflow-hidden md:w-[340px] md:h-[260px] flex-shrink-0 mx-auto md:mx-0">
+                <Image
+                  src={featuredImage}
+                  alt={post.title.rendered}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
+              </div>
             )}
           </div>
-          {featuredImage && (
-            <div className="mb-8 w-full h-[400px] relative rounded overflow-hidden">
-              <Image
-                src={featuredImage}
-                alt={post.title.rendered}
-                fill
-                style={{ objectFit: "cover" }}
-                priority
-              />
-            </div>
-          )}
           <article
-            className="prose prose-img:mx-auto prose-img:rounded-lg  mx-auto mb-6"
+            className="prose prose-img:mx-auto prose-img:rounded-lg  mx-auto texto-montreal"
             dangerouslySetInnerHTML={{ __html: post.content.rendered }}
           />
         </main>
 
-        {/* Sidebar */}
-        <aside className="w-full lg:w-80 flex-shrink-0">
-          <SidebarCategories categories={categories} recentPosts={recentPosts} />
-        </aside>
+      
       </div>
     </div>
   );

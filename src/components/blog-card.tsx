@@ -34,7 +34,7 @@ export default function BlogCard({ post, featuredImage }: BlogCardProps) {
 
   return (
     <Link href={`/blog/${post.slug}`} className="block h-full">
-      <article className="bg-white rounded-t-xl shadow-md overflow-hidden hover:shadow-xl transition  flex flex-col cursor-pointer">
+      <article className="bg-white rounded-t-xl  overflow-hidden hover:shadow-xl transition  flex flex-col cursor-pointer">
       
         {featuredImage && (
           <div className="relative w-full h-72 overflow-hidden">
@@ -55,7 +55,7 @@ export default function BlogCard({ post, featuredImage }: BlogCardProps) {
             {category}
           </span>
           <h2
-            className="text-lg md:text-xl font-medium text-gray-900 leading-snug line-clamp-3 h-22 font-editorial"
+            className="text-[1rem] leading-[1.5rem] font-medium text-gray-900 line-clamp-3 h-22 font-editorial"
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
           />
         </div>
