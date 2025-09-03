@@ -74,7 +74,7 @@ export default function SidebarCategories({
           <div className="bg-fundo-button-claro px-6">
             <div className="w-16 h-16 mx-auto mb-4 rounded-full overflow-hidden">
               <Image
-                src="/simbolo-hyllua.webp"
+                src="/images/blog/simbolo.webp"
                 alt="Clínica Hyllua Husein"
                 width={96}
                 height={96}
