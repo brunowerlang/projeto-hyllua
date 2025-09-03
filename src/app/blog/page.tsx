@@ -56,7 +56,7 @@ export default async function BlogPage() {
   return (
     <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top ">
       {/* HERO SECTION */}
-<section className="w-full flex items-center bg-[url('/images/blog/bakground-1-hero-blog.webp')]  bg-cover bg-bottom relative overflow-hidden">
+<section className="w-full flex items-center bg-[url('/images/blog/blog-desktop.jpg')] h-[74vh] bg-cover lg:bg-contain bg-bottom relative overflow-hidden">
         <div className="max-w-4xl mx-auto w-full px-6 flex flex-col md:flex-row items-center h-full relative  ">
           {/* Textos à esquerda */}
           <div
@@ -68,10 +68,10 @@ export default async function BlogPage() {
     md:mb-[-3.5rem]
   "
 >
-            <p className="block text-lg md:text-3xl font-light texto-montreal  lg:ml-[-9rem] ">
+            <p className="block text-lg md:text-3xl font-light texto-montreal  lg:ml-[-12rem] ">
               Conteúdos para
             </p>
-            <h1 className="titulo-scotch font-black italic leading-none text-3xl md:text-[6rem] " style={{ fontWeight: 900 }}>
+            <h1 className="titulo-scotch font-black italic leading-none text-3xl md:text-[5.6rem] lg:ml-[-42px]" style={{ fontWeight: 900 }}>
               <span className="block">cuidar</span>
               <span className="block">de você</span>
             </h1>
@@ -87,7 +87,7 @@ export default async function BlogPage() {
               alt="Equipe Hyllua"
               width={300}
               height={420}
-              className="w-[250px] md:w-[370px] h-auto object-contain drop-shadow-xl relative md:top-26 md:right-4 md:pt-8"
+              className="w-[250px] md:w-[335px] h-auto object-contain drop-shadow-xl relative md:top-[90px] md:right-4 md:pt-8"
               priority
             />
           </div>
@@ -106,7 +106,7 @@ export default async function BlogPage() {
       </section>
 
       {/* Conteúdo principal */}
-      <main className="max-w-4xl mx-auto py-16 px-4 md:px-0">
+      <main className="max-w-4xl mx-auto py-11 px-4 md:px-0">
         {/* Badge */}
        <div className="flex items-center gap-2 mb-6 px-2">
   <span className="relative block w-full text-[1rem] font-semibold uppercase primary-color after:absolute after:top-1/2 after:left-0 after:h-[1px] after:bg-current after:w-full after:-translate-y-1/2">

@@ -8,16 +8,16 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="absolute top-13.5 left-0 w-full z-[100] bg-transparent  px-4 md:px-0">
+    <header className="absolute top-12.5 left-0 w-full z-[100] bg-transparent  px-4 md:px-0">
       <div className="max-w-4xl mx-auto rounded-xl">
-        <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-4.5"
+        <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-4"
           style={{ boxShadow: "0 2px 16px 0 rgba(184,156,108,0.04)" }}>
           {/* Logo à esquerda */}
           <Link href="/blog" className="flex items-center">
             <Image
               src="/images/header/logo-header.webp"
               alt="Hyllua Husein"
-              width={110}
+              width={120}
               height={34}
               className="h-auto"
               priority
