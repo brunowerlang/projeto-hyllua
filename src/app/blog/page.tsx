@@ -56,7 +56,7 @@ export default async function BlogPage() {
   return (
     <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top ">
       {/* HERO SECTION */}
-<section className="w-full flex items-center bg-[url('/images/blog/blog-desktop.jpg')] h-[74vh] bg-cover lg:bg-contain bg-bottom relative overflow-hidden">
+<section className="w-full flex items-center bg-[url('/images/blog/blog-desktop.jpg')]  bg-cover lg:bg-contain bg-bottom relative overflow-hidden">
         <div className="max-w-4xl mx-auto w-full px-6 flex flex-col md:flex-row items-center h-full relative  ">
           {/* Textos à esquerda */}
           <div
@@ -75,9 +75,10 @@ export default async function BlogPage() {
               <span className="block">cuidar</span>
               <span className="block">de você</span>
             </h1>
-            <p className="block text-lg md:text-3xl font-medium texto-montreal  lg:mr-[-9rem]">
+            <p className="block text-lg md:text-3xl font-medium texto-montreal  lg:mr-[-6rem]">
               por completo.
             </p>
+            
           </div>
 
           {/* Imagem à direita */}
@@ -110,7 +111,7 @@ export default async function BlogPage() {
         {/* Badge */}
        <div className="flex items-center gap-2 mb-6 px-2">
   <span className="relative block w-full text-[1rem] font-semibold uppercase primary-color after:absolute after:top-1/2 after:left-0 after:h-[1px] after:bg-current after:w-full after:-translate-y-1/2">
-    <span className="relative z-10 pr-4 bg-[#f5f0e8]">Últimos Posts</span>
+    <span className="relative z-10 pr-4 bg-[#f5f0e8]">TESTE</span>
   </span>
 </div>
 
