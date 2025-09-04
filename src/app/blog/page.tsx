@@ -100,7 +100,7 @@ export default async function BlogPage() {
             alt="Sombra decorativa"
             width={1920}
             height={500}
-            className="w-full h-auto select-none"
+            className="w-full h-[70vh] select-none"
             priority
           />
         </div>
