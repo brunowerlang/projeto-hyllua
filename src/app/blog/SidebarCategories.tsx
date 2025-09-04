@@ -55,23 +55,24 @@ export default function SidebarCategories({
   const getIconClass = (isOpen: boolean) =>
     `transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`;
 
-  return (
-    <aside className="lg:w-72 lg:sticky lg:top-6 lg:self-start bg-fundo-button-claro rounded-xl px-0 overflow-hidden border border-[#d2d2c7] ">
-      {/* About */}
-      <div className="">
-        <button
-          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer uppercase"
-          onClick={() => toggle("about")}
-          aria-expanded={open === "about"}
-          type="button"
-        >
-          {sections[0].label}
-          <span className={getIconClass(open === "about")}>
-            {open === "about" ? "−" : "+"}
-          </span>
-        </button>
-        <div className={getAccordionClass(open === "about")}>
-          <div className="bg-fundo-button-claro px-6">
+
+return (
+  <aside className="lg:w-72 lg:sticky lg:top-6 lg:self-start bg-fundo-button-claro rounded-xl border-none px-0 overflow-hidden border border-[#d2d2c7] ">
+    {/* About */}
+    <div className="">
+      <button
+        className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer uppercase"
+        onClick={() => toggle("about")}
+        aria-expanded={open === "about"}
+        type="button"
+      >
+        {sections[0].label}
+        <span className={getIconClass(open === "about")}>
+          {open === "about" ? "−" : "+"}
+        </span>
+      </button>
+      <div className={getAccordionClass(open === "about")}>
+         <div className="bg-fundo-button-claro px-8">
             <div className="w-20 h-20 mx-auto mb-4  overflow-hidden">
               <Image
                 src="/images/blog/simbolo.webp"
@@ -81,33 +82,38 @@ export default function SidebarCategories({
                 className="object-cover w-20 h-20"
               />
             </div>
-            <h3 className="font-heading text-[18px] font-bold text-center text-gray-900 mb-2">
+            <h3 className="font-heading text-[18px] font-bold text-center text-gray-800 mb-2">
               Clínica Hyllua Husein
             </h3>
-            <p className="text-[12px] mb-4 text-center text-gray-900 font-semibold">
+            <p className="text-[12px] mb-4 text-center text-gray-800 font-semibold">
               Excelência em Estética e Saúde
             </p>
-            <p className="text-[12px] leading-relaxed text-center text-gray-900">
+            <p className="text-[12px] leading-[22px] text-center text-gray-800">
               Referência em procedimentos estéticos, bem-estar e cuidados integrados. Nossa missão é promover autoestima, saúde e qualidade de vida com atendimento humanizado e tecnologia de ponta.
             </p>
           </div>
-        </div>
       </div>
+    </div>
 
-      {/* Categorias */}
-      <div className="">
-        <button
-          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
-          onClick={() => toggle("category")}
-          aria-expanded={open === "category"}
-          type="button"
-        >
-          {sections[1].label}
-          <span className={getIconClass(open === "category")}>
-            {open === "category" ? "−" : "+"}
-          </span>
-        </button>
-        <div className={getAccordionClass(open === "category")}>
+    {/* Borda dinâmica entre About e Categorias */}
+    {open !== "about" && (
+      <div className="border-t border-[#f7eccd]" />
+    )}
+
+    {/* Categorias */}
+    <div className="">
+      <button
+        className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
+        onClick={() => toggle("category")}
+        aria-expanded={open === "category"}
+        type="button"
+      >
+        {sections[1].label}
+        <span className={getIconClass(open === "category")}>
+          {open === "category" ? "−" : "+"}
+        </span>
+      </button>
+      <div className={getAccordionClass(open === "category")}>
           <div className="bg-fundo-button-claro px-6 space-y-3 text-center">
             {categories.map((cat) => (
               <Link
@@ -115,30 +121,35 @@ export default function SidebarCategories({
                 href={`/blog/category/${cat.slug}`}
                 className="block  transition-all duration-300 group cursor-pointer rounded-xl hover:cursor-pointer hover:underline"
               >
-                <span className="text-gray-900 text-sm">
+                <span className="text-gray-900 text-[12px]">
                   {cat.name}
                 </span>
               </Link>
             ))}
           </div>
-        </div>
       </div>
+    </div>
 
-      {/* Siga a Clínica Hyllua Husein */}
-      <div className="">
-        <button
-          className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
-          onClick={() => toggle("social")}
-          aria-expanded={open === "social"}
-          type="button"
-        >
-          {sections[2].label}
-          <span className={getIconClass(open === "social")}>
-            {open === "social" ? "−" : "+"}
-          </span>
-        </button>
-        <div className={getAccordionClass(open === "social")}>
-          <div className="bg-fundo-button-claro px-6 flex flex-col items-center">
+    {/* Borda dinâmica entre Categorias e Social */}
+    {open !== "category" && (
+      <div className="border-t border-[#f7eccd]" />
+    )}
+
+    {/* Siga a Clínica Hyllua Husein */}
+    <div className="">
+      <button
+        className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
+        onClick={() => toggle("social")}
+        aria-expanded={open === "social"}
+        type="button"
+      >
+        {sections[2].label}
+        <span className={getIconClass(open === "social")}>
+          {open === "social" ? "−" : "+"}
+        </span>
+      </button>
+      <div className={getAccordionClass(open === "social")}>
+       <div className="bg-fundo-button-claro px-6 flex flex-col items-center">
             <div className="flex gap-4  justify-center">
               <a href="https://instagram.com/hylluabeauty" target="_blank" rel="noopener noreferrer">
                 <BsInstagram className="text-xl primary-color cursor-pointer" />
@@ -154,8 +165,8 @@ export default function SidebarCategories({
               </a>
             </div>
           </div>
-        </div>
       </div>
-    </aside>
-  );
+    </div>
+  </aside>
+);
 }

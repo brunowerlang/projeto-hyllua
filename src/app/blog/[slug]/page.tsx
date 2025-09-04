@@ -36,7 +36,7 @@ export default async function BlogPostPage({ params }: any) {
       <div className="max-w-4xl mx-auto  pt-40 pb-10 px-4 md:px-0">
         {/* Conteúdo principal */}
         <main className="flex-1 min-w-0 bg-background p-6 lg:p-20 rounded-2xl">
-          <div className="flex flex-col md:flex-row md:items-center md:gap-8 mb-8">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-8 mb-16 lg:mb-24">
             {/* Título */}
             <h1
               className="text-3xl md:text-4xl font-bold mb-4 md:mb-0 text-center md:text-left titulo-scotch italic flex-1"
