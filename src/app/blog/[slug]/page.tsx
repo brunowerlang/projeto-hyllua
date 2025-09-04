@@ -33,7 +33,7 @@ export default async function BlogPostPage({ params }: any) {
 
   return (
     <div className="bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top post-hyllua">
-      <div className="max-w-4xl mx-auto  py-50">
+      <div className="max-w-4xl mx-auto  py-50 px-4 md:px-0">
         {/* Conteúdo principal */}
         <main className="flex-1 min-w-0 bg-background p-6">
           <div className="flex flex-col md:flex-row md:items-center md:gap-8 mb-8">
@@ -56,7 +56,7 @@ export default async function BlogPostPage({ params }: any) {
             )}
           </div>
           <article
-            className="prose prose-img:mx-auto prose-img:rounded-lg  mx-auto texto-montreal"
+            className="prose prose-img:mx-auto prose-img:rounded-lg  mx-auto texto-montreal "
             dangerouslySetInnerHTML={{ __html: post.content.rendered }}
           />
         </main>

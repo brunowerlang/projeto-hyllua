@@ -318,3 +318,16 @@ body {
   background-size: contain;
  }
 }
+
+
+/* =========================
+   Custom Classes
+   ========================= */
+.cabecalho:hover a {
+  color: #f7eccd;
+}
+
+.cabecalho:hover .botao {
+  background-color: #f7eccd;
+  color: #b89c6c;
+}

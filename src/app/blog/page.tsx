@@ -54,28 +54,28 @@ export default async function BlogPage() {
   const recentPosts = posts.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-[url('/images/blog/background-posts-2.png')] bg-contain bg-top ">
+    <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top ">
       {/* HERO SECTION */}
-<section className="w-full flex items-center bg-[url('/images/blog/blog-desktop.jpg')] bg-cover contain-bg bg-bottom relative overflow-hidden">
+<section className="w-full flex items-center bg-[url('/images/blog/background-hero-blog.webp')] bg-cover contain-bg bg-bottom relative overflow-hidden">
         <div className="max-w-4xl mx-auto w-full px-6 flex flex-col md:flex-row items-center h-full relative  ">
           {/* Textos à esquerda */}
           <div
   className="
     text-white max-w-xl flex-1 text-center
     relative z-30
-    top-[7.5rem] left-[-3.5rem]
+    top-[8rem] left-[-3.5rem]
     md:static md:top-auto md:left-auto
     md:mb-[-3.5rem]
   "
 >
-            <p className="block text-lg md:text-[1.4rem] font-light texto-montreal  lg:ml-[-12rem] ">
+            <p className="block text-xl md:text-[1.4rem] font-light texto-montreal ml-[-6rem] lg:ml-[-12rem] ">
               Conteúdos para
             </p>
-            <h1 className="titulo-scotch font-black italic leading-none text-3xl md:text-[5.5rem] lg:ml-[-40px]" style={{ fontWeight: 900 }}>
+            <h1 className="titulo-scotch font-black italic leading-none text-6xl md:text-[5.5rem] lg:ml-[-40px]" style={{ fontWeight: 900 }}>
               <span className="block">cuidar</span>
               <span className="block">de você</span>
             </h1>
-            <p className="block text-lg md:text-3xl font-medium texto-montreal  lg:mr-[-6rem]">
+            <p className="block text-xl md:text-3xl font-medium texto-montreal  mr-[-5.5rem] lg:mr-[-6rem]">
               por completo.
             </p>
             

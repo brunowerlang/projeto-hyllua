@@ -8,42 +8,49 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="absolute top-12.5 left-0 w-full z-[100] bg-transparent  px-4 md:px-0">
+    <header className="absolute top-8 md:top-13 left-0 w-full z-[100] bg-transparent  px-4 md:px-0">
       <div className="max-w-4xl mx-auto rounded-xl">
-        <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-4"
-          style={{ boxShadow: "0 2px 16px 0 rgba(184,156,108,0.04)" }}>
-          {/* Logo à esquerda */}
-          <Link href="/blog" className="flex items-center">
-            <Image
-              src="/images/header/logo-header.webp"
-              alt="Hyllua Husein"
-              width={120}
-              height={34}
-              className="h-auto"
-              priority
-            />
-          </Link>
+    <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9  py-2 md:py-4 hover:bg-[#b89c6c] transition group cabecalho">
+        {/* Logo à esquerda */}
+      <Link href="/blog" className="flex items-center">
+  <Image
+    src="/images/header/logo-header.webp"
+    alt="Hyllua Husein"
+    width={140}
+    height={34}
+    className="h-auto block group-hover:hidden transition-all"
+    priority
+  />
+  <Image
+    src="/images/header/logo-header-hover.webp"
+    alt="Hyllua Husein Hover"
+    width={140}
+    height={34}
+    className="h-auto hidden group-hover:block transition-all"
+    priority
+  />
+      </Link>
 
           {/* Menu desktop */}
-          <nav className="hidden md:flex flex-1 justify-center">
-            <ul className="flex gap-8 items-center">
+    <nav className="hidden md:flex flex-1 justify-center">
+            <ul className="flex gap-10 items-center">
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.7rem]  hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   CLÍNICA
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.7rem]  hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   ENSINO
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.7rem]  hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   HYLLUA BEAUTY
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.7rem]  hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   BLOG
                 </Link>
               </li>
@@ -52,8 +59,8 @@ export default function Header() {
 
           {/* Botão desktop */}
           <Link
-            href="/agendar"
-            className="hidden md:inline-block ml-6 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[0.8rem] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide"
+            href="#"
+            className="hidden md:inline-block ml-6 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[0.7rem] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide botao"
             style={{ boxShadow: "0 1px 4px 0 rgba(184,156,108,0.08)" }}
           >
             AGENDAR PROCEDIMENTO
@@ -75,9 +82,9 @@ export default function Header() {
       {/* Menu Mobile Overlay */}
       {open && (
         <div className="fixed inset-0 bg-black/40 z-[200] flex justify-end md:hidden">
-          <div className="bg-white w-64 h-full p-6 flex flex-col gap-6 shadow-xl">
+          <div className="fundo-categoria w-64 h-full p-6 flex flex-col gap-6 shadow-xl">
             <button
-              className="self-end mb-4"
+              className="self-end mb-4 primary-color font-bold"
               aria-label="Fechar menu"
               onClick={() => setOpen(false)}
             >
@@ -86,30 +93,30 @@ export default function Header() {
             <nav>
               <ul className="flex flex-col gap-4">
                 <li>
-                  <Link href="/blog" className="primary-color texto-montrea font-medium text-base hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
+                  <Link href="/blog" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
                     CLÍNICA
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="primary-color texto-montrea font-medium text-base hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
+                  <Link href="/blog" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
                     ENSINO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="primary-color texto-montrea font-medium text-base hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
+                  <Link href="/blog" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
                     HYLLUA BEAUTY
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="primary-color texto-montrea font-medium text-base hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
+                  <Link href="/blog" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={() => setOpen(false)}>
                     BLOG
                   </Link>
                 </li>
               </ul>
             </nav>
             <Link
-              href="/agendar"
-              className="mt-8 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-base hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide text-center"
+              href="#"
+              className="mt-8 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[12px] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide text-center"
               style={{ boxShadow: "0 1px 4px 0 rgba(184,156,108,0.08)" }}
               onClick={() => setOpen(false)}
             >
