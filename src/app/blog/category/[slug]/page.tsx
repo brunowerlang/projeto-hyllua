@@ -88,7 +88,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
     <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top">
       <main className="max-w-4xl mx-auto  py-50">
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col ">
           {/* Badge com nome da categoria */}
           <div className="flex items-center gap-2 mb-6 px-2">
             <span className="relative block w-full text-[1rem] font-semibold uppercase primary-color after:absolute after:top-1/2 after:left-0 after:h-[1px] after:bg-current after:w-full after:-translate-y-1/2">

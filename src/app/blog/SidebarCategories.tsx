@@ -58,7 +58,7 @@ export default function SidebarCategories({
   return (
     <aside className="lg:w-72 lg:sticky lg:top-6 lg:self-start bg-fundo-button-claro rounded-xl px-0 overflow-hidden border border-[#d2d2c7] ">
       {/* About */}
-      <div className="border-b border-[#d2d2c7]">
+      <div className="">
         <button
           className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer uppercase"
           onClick={() => toggle("about")}
@@ -81,13 +81,13 @@ export default function SidebarCategories({
                 className="object-cover w-20 h-20"
               />
             </div>
-            <h3 className="font-heading text-xl font-bold text-center text-gray-900 mb-2">
+            <h3 className="font-heading text-[18px] font-bold text-center text-gray-900 mb-2">
               Clínica Hyllua Husein
             </h3>
-            <p className="text-[0.7rem] mb-4 text-center text-gray-900 font-semibold">
+            <p className="text-[12px] mb-4 text-center text-gray-900 font-semibold">
               Excelência em Estética e Saúde
             </p>
-            <p className="text-[0.7rem] leading-relaxed text-center text-gray-900">
+            <p className="text-[12px] leading-relaxed text-center text-gray-900">
               Referência em procedimentos estéticos, bem-estar e cuidados integrados. Nossa missão é promover autoestima, saúde e qualidade de vida com atendimento humanizado e tecnologia de ponta.
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function SidebarCategories({
       </div>
 
       {/* Categorias */}
-      <div className="border-b border-[#d2d2c7]">
+      <div className="">
         <button
           className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
           onClick={() => toggle("category")}
@@ -125,7 +125,7 @@ export default function SidebarCategories({
       </div>
 
       {/* Siga a Clínica Hyllua Husein */}
-      <div className="border-b border-[#d2d2c7]">
+      <div className="">
         <button
           className="w-full flex justify-between items-center px-6 py-2.5 bg-fundo-button secundary-color font-normal uppercase text-[0.75rem] tracking-wide transition hover:bg-[#5a6147] cursor-pointer"
           onClick={() => toggle("social")}

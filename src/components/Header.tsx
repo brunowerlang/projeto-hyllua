@@ -9,8 +9,8 @@ export default function Header() {
 
   return (
     <header className="absolute top-8 md:top-13 left-0 w-full z-[100] bg-transparent  px-4 md:px-0">
-      <div className="max-w-4xl mx-auto rounded-xl">
-    <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9  py-2 md:py-4 hover:bg-[#b89c6c] transition group cabecalho">
+      <div className="max-w-[57rem] mx-auto rounded-xl">
+<div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-2 md:py-4 hover:bg-[#b89c6c] transition-colors duration-500 group cabecalho">
         {/* Logo à esquerda */}
       <Link href="/blog" className="flex items-center">
   <Image
@@ -60,7 +60,7 @@ export default function Header() {
           {/* Botão desktop */}
           <Link
             href="#"
-            className="hidden md:inline-block ml-6 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[0.7rem] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide botao"
+            className="hidden md:inline-block ml-6 px-6 py-2 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[0.7rem] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide botao transform hover:-translate-y-1 duration-300"
             style={{ boxShadow: "0 1px 4px 0 rgba(184,156,108,0.08)" }}
           >
             AGENDAR PROCEDIMENTO

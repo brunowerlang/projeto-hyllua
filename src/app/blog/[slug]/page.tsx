@@ -33,9 +33,9 @@ export default async function BlogPostPage({ params }: any) {
 
   return (
     <div className="bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top post-hyllua">
-      <div className="max-w-4xl mx-auto  py-50 px-4 md:px-0">
+      <div className="max-w-4xl mx-auto  pt-40 pb-10 px-4 md:px-0">
         {/* Conteúdo principal */}
-        <main className="flex-1 min-w-0 bg-background p-6">
+        <main className="flex-1 min-w-0 bg-background p-6 lg:p-20 rounded-2xl">
           <div className="flex flex-col md:flex-row md:items-center md:gap-8 mb-8">
             {/* Título */}
             <h1
