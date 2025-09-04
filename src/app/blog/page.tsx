@@ -58,7 +58,7 @@ export default async function BlogPage() {
       {/* HERO SECTION */}
 <section className="
   w-full flex items-center
-  bg-[url('/images/blog/background-hero-mobile.jpg')]
+  bg-[url('/images/blog/background-hero-mobile-2.jpg')]
   md:bg-[url('/images/blog/background-hero-blog.webp')]
   bg-cover contain-bg bg-bottom relative overflow-hidden
 ">
@@ -104,6 +104,8 @@ export default async function BlogPage() {
             src="/images/blog/bakground-3-hero-blog.webp"
             alt="Sombra decorativa"
             width={1920}
+
+            
             height={500}
             className="w-full h-[45vh] md:h-[70vh] select-none"
             priority
