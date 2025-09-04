@@ -56,7 +56,12 @@ export default async function BlogPage() {
   return (
     <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top ">
       {/* HERO SECTION */}
-<section className="w-full flex items-center bg-[url('/images/blog/background-hero-blog.webp')] bg-cover contain-bg bg-bottom relative overflow-hidden">
+<section className="
+  w-full flex items-center
+  bg-[url('/images/blog/background-hero-mobile.jpg')]
+  md:bg-[url('/images/blog/background-hero-blog.webp')]
+  bg-cover contain-bg bg-bottom relative overflow-hidden
+">
         <div className="max-w-4xl mx-auto w-full px-6 flex flex-col md:flex-row items-center h-full relative  ">
           {/* Textos à esquerda */}
           <div
