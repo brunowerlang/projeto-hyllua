@@ -73,7 +73,7 @@ export default async function BlogPage() {
     md:mb-[-3.5rem]
   "
 >
-            <p className="block text-xl md:text-[1.4rem] font-light texto-montreal ml-[-6rem] lg:ml-[-12rem] ">
+            <p className="block text-xl md:text-[1.4rem] font-light texto-montreal ml-[-4.5rem] lg:ml-[-12rem] ">
               Conteúdos para
             </p>
             <h1 className="titulo-scotch font-black italic leading-none text-6xl md:text-[5.5rem] lg:ml-[-40px]" style={{ fontWeight: 900 }}>
