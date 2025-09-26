@@ -139,7 +139,7 @@ export default async function HomePage() {
                   
                   {/* Box com ícone */}
                   <div className="flex-1  md:w-0">
-                    <div className=" rounded-4xl px-5 py-2 md:py-5 md:px-13 mb-6 relative md:w-[25rem] relative md:left-3 border-2 border-[#b89c6c]">
+                    <div className=" rounded-4xl px-5 py-2 md:py-5 md:px-13 mb-6 relative md:w-[25rem]  md:left-3 border-2 border-[#b89c6c]">
                       <div className="absolute -top-2 -right-3 md:-top-9 md:-right-6 w-9 h-9 md:w-17 md:h-17 bg-[#b89c6c] rounded-full flex items-center justify-center ">
                         <Image src="/images/index/VETOR-SÍMBOLO-SEÇÃO-2-PÁGINA-INICIAL.webp" alt="Logo Hyllua" width={24} height={24} className="md:w-16 md:h-16 w-9 h-9 object-contain" />
                       </div>
@@ -157,7 +157,7 @@ export default async function HomePage() {
         {/* Seção Diferenciais */}
         <section className="  md:pt-16 md:pb-14 text-[#b89c6c] relative md:-mt-[42rem] -mt-[16rem]">
           {/* Imagem de fundo com curva */}
-          <div className="w-screen h-20 md:h-60 relative">
+          <div className="w-screen h-20 md:h-60 lg:h-80 relative">
               <Image
                 src="/images/index/VETOR-SEÇÃO-3-PÁGINA-INICIAL.png"
                 alt="Curva decorativa"
@@ -167,7 +167,7 @@ export default async function HomePage() {
               />
           </div>
           
-          <div className="container  mx-auto md:px-6 px-4 mx-auto text-center relative z-10 bg-[#b89c6c]">
+          <div className="container  mx-auto md:px-6 px-4  text-center relative z-10 bg-[#b89c6c]">
             <p className="text-[16px] md:text-[26px] titulo-scotch secundary-color font-light md:w-[36rem] m-auto leading-tight relative md:-top-12 mb-10 md:mb-0">
               O verdadeiro resultado não está no detalhe< br/> isolado
               <span className="font-semibold titulo-scotch italic"> mas na harmonia do conjunto</span>
@@ -236,7 +236,7 @@ export default async function HomePage() {
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch">transformador.</span>
                 </p>
-                <button className=" ml-7 mb-6 md:mb-0 md:ml-14 px-4 py-2 text-[0.95rem] bg-[#f7eccd] text-[#151f40] font-semibold rounded-full font-medium uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
+                <button className=" ml-7 mb-6 md:mb-0 md:ml-14 px-4 py-2 text-[0.95rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-medium uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
                   CONHEÇA NOSSO ENSINO
                 </button>
               </div>
@@ -253,7 +253,7 @@ export default async function HomePage() {
         <section className="md:py-28 py-10 relative overflow-hidden">
           <div className="absolute inset-0 w-full h-full bg-[url('/images/index/BACKGROUND-SESSÃO-BLOG-PÁGINA-INICIAL.webp')] bg-cover bg-center "></div>
           <div className="container max-w-4xl mx-auto px-6 relative z-10">
-            <h2 className="text-center text-xl md:text-2xl text-[#b89c6c] mb-12  font-light relative md:-top-2 md:-ml-4 w-[13rem] md:w-0 m-auto ">
+            <h2 className="text-center text-xl md:text-2xl text-[#b89c6c] mb-12 font-light relative md:-top-2 md:-ml-4 md:w-[100%] w-[13rem] mx-auto ">
               Leia os últimos posts <span className="md:text-[40px] text-[30px] titulo-scotch font-semibold italic md:-mr-4">do nosso blog</span>
             </h2>
             <div className="relative md:top-7 z-10 before:md:content-[''] before:md:absolute before:md:-left-12 before:md:right-0 before:md:top-36 before:md:mx-auto before:md:w-[950px] before:md:h-[200px] before:md:rounded-2xl before:md:border-2 before:md:border-[#b89c6c] before:md:z-0 before:md:pointer-events-none">
