@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <body className="bg-white text-gray-900 overflow-x-hidden">
+    <html lang="pt-BR" className="overflow-x-hidden">
+      <body className=" ">
        
-        <main className="mx-auto ">
+        <main className="mx-auto overflow-x-hidden">
            <Header />
           {children}</main>
         <Footer />
