@@ -21,11 +21,11 @@ export default function Header() {
   };
 
   return (
-    <header className="absolute top-8 md:top-13 left-0 w-full z-[100] bg-transparent px-4 md:px-0">
+    <header className="absolute top-8 md:top-14 left-0 w-full z-[100] bg-transparent px-4 md:px-0">
       <div className="max-w-[57rem] mx-auto rounded-xl">
         <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-2 md:py-4 hover:bg-[#b89c6c] transition-colors duration-500 group cabecalho">
           {/* Logo à esquerda */}
-          <Link href="/blog" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src="/images/header/logo-header.webp"
               alt="Hyllua Husein"
@@ -46,19 +46,20 @@ export default function Header() {
 
           {/* Menu desktop */}
           <nav className="hidden md:flex flex-1 justify-center">
-            <ul className="flex gap-10 items-center">
+            <ul className="flex gap-8 items-center">
+              
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.7rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
+                <Link href="/clinica" className="primary-color texto-montrea font-medium text-[0.7rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   CLÍNICA
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.7rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
+                <Link href="/ensino" className="primary-color texto-montrea font-medium text-[0.7rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   ENSINO
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.7rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
+                <Link href="/hyllua-beauty" className="primary-color texto-montrea font-medium text-[0.7rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   HYLLUA BEAUTY
                 </Link>
               </li>
@@ -109,17 +110,22 @@ export default function Header() {
             <nav>
               <ul className="flex flex-col gap-4">
                 <li>
-                  <Link href="/blog" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={handleClose}>
+                  <Link href="/" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={handleClose}>
+                    HOME
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/clinica" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={handleClose}>
                     CLÍNICA
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={handleClose}>
+                  <Link href="/ensino" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={handleClose}>
                     ENSINO
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={handleClose}>
+                  <Link href="/hyllua-beauty" className="primary-color texto-montrea font-medium text-[12px] hover:underline transition uppercase tracking-wide" onClick={handleClose}>
                     HYLLUA BEAUTY
                   </Link>
                 </li>

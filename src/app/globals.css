@@ -331,3 +331,14 @@ body {
   background-color: #f7eccd;
   color: #b89c6c;
 }
+
+@media (max-width: 767px) {
+  .bg-pos-mobile {
+    background-position: 10% center !important;
+  }
+}
+@media (min-width: 768px) {
+  .bg-pos-desktop {
+    background-position: left !important;
+  }
+}
