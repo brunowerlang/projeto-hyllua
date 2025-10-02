@@ -1,0 +1,53 @@
+.swiper-slide {
+  transition: transform 0.5s;
+  border-radius: 16px;
+  background: transparent;
+}
+
+
+
+.swiper-slide-visible {
+  opacity: 1 !important;
+}
+
+.swiper-slide {
+    opacity: 0;
+    
+}
+
+
+
+
+
+.swiper-slide-next, .swiper-slide-prev {
+  scale: 0.8;
+}
+
+
+.swiper-slide-next {
+  position: relative;
+  right: -3rem;
+}
+
+.swiper-slide-prev {
+  position: relative;
+  left: -3rem;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #FFF;
+}
+
+
+
+.swiper-button-prev{
+  left: 4rem;
+}
+.swiper-button-next{
+  right: 4rem;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+font-weight: 700;
+font-size: 33px;
+}

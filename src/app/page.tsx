@@ -25,7 +25,7 @@ export default async function HomePage() {
           <div className="absolute inset-0"></div>
           
           {/* Símbolo médico grande à direita */}
-          <div className="absolute top-0 -right-48 md:right-0 md:-top-6 md:w-1/2 h-full ">
+          <div className="absolute top-0 -right-48 md:right-0 md:-top-0 md:w-1/2 h-full ">
             <Image
               src="/images/index/SÍMBOLO-COM-EFEITO-HERO-PÁGINA-INICIAL.webp"
               alt="Símbolo médico"
@@ -115,7 +115,7 @@ export default async function HomePage() {
         {/* Seção Cuidamos de você */}
         <section className="bg-[#f1edec]">
           <div className="container max-w-7xl mx-auto px-6 ">
-            <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 items-start pt-16 md:pt-0">
+            <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8 items-start pt-12 md:pt-0">
               {/* Mobile: Texto primeiro, Desktop: Imagem primeiro */}
               <div className="order-2 md:order-1 md:col-span-2 relative">
                 <Image
@@ -174,13 +174,13 @@ export default async function HomePage() {
             </p>
 
             <div className="grid grid-cols-1 md:flex md:flex-nowrap gap-0 md:gap-8 mb-6 md:mb-16 m-auto relative md:-bottom-1 justify-center items-center">
-              <div className="flex items-center justify-center text-left gap-1 relative -left-23 md:left-0 ">
+              <div className="flex items-center justify-center text-left gap-1 relative -left-27 md:left-0 ">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center">
                   <Image src="/images/index/check.webp" alt="Check" width={15} height={15} />
                 </div>
                 <p className="md:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
               </div>
-              <div className="flex items-center justify-center text-left gap-1 relative -right-20 -top-6 md:right-0 md:top-0">
+              <div className="flex items-center justify-center text-left gap-1 relative -right-19 -top-6 md:right-0 md:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={15} height={15} />
                 </div>
@@ -192,7 +192,7 @@ export default async function HomePage() {
                 </div>
                 <p className="md:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
               </div>
-              <div className="flex items-center justify-center text-left gap-1 relative -right-26 -top-6 md:right-0 md:top-0">
+              <div className="flex items-center justify-center text-left gap-1 relative -right-30 -top-6 md:right-0 md:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={15} height={15} />
                 </div>
@@ -200,7 +200,7 @@ export default async function HomePage() {
               </div>
             </div>
             
-            <button className="px-6 py-2 mb-10 md:mb-8 bg-[#f7eccd] text-[#b89c6c] text-[1.1rem] rounded-2xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300">
+            <button className="px-4 py-2 mb-10 md:mb-8 bg-[#f7eccd] text-[#b89c6c] text-[1.1rem] rounded-3xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300">
               CONHEÇA A CLÍNICA
             </button>
           </div>
@@ -208,7 +208,7 @@ export default async function HomePage() {
 
         {/* Seção Ensino */}
         <section className="py-0  bg-white text-white relative overflow-hidden">
-          <div className="w-full flex flex-col md:flex-row  md:h-[700px]">
+          <div className="w-full flex flex-col md:flex-row  md:h-[750px]">
             {/* Esquerda: textos com imagem de fundo */}
             <div
   className="relative w-full md:w-1/2 flex items-start justify-center px-4 bg-pos-mobile bg-pos-desktop"
@@ -217,7 +217,7 @@ export default async function HomePage() {
     backgroundSize: 'cover'
   }}
 >
-              <div className="z-10 w-full max-w-lg text-white mt-12 md:mt-24 relative left-8 md:left-30 md:top-13">
+              <div className="z-10 w-full max-w-lg text-white mt-12 md:mt-24 relative left-12 md:left-30 md:top-13">
                 <div className="flex  md:items-start gap-4 mb-8 md:ml-6">
                   <Image src="/images/index/objeto.webp" alt="Ícone Ensino" className="md:w-[18px] w-[12px]" width={40} height={40} />
                   <div>
@@ -236,7 +236,7 @@ export default async function HomePage() {
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch">transformador.</span>
                 </p>
-                <button className=" ml-7 mb-6 md:mb-0 md:ml-14 px-4 py-2 text-[0.95rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-medium uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
+                <button className=" ml-7 mb-12 md:mb-0 md:ml-14 px-4 py-2 text-[0.95rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-medium uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
                   CONHEÇA NOSSO ENSINO
                 </button>
               </div>
@@ -244,7 +244,7 @@ export default async function HomePage() {
             </div>
             {/* Direita: apenas imagem de fundo */}
             <div className="relative w-full md:w-1/2 h-full min-h-[500px]">
-              <div className="absolute inset-0" style={{backgroundImage: "url('/images/index/FOTO-HYLLUA-SEÇÃO-4-PÁGINA-INICIAL.webp')", backgroundSize: 'cover', backgroundPosition: 'center'}}></div>
+              <div className="absolute inset-0" style={{backgroundImage: "url('/images/index/FOTO-HYLLUA-SEÇÃO-4-PÁGINA-INICIAL.webp')", backgroundSize: 'cover', backgroundPosition: 'top'}}></div>
             </div>
           </div>
         </section>
