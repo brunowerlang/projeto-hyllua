@@ -51,3 +51,10 @@
 font-weight: 700;
 font-size: 33px;
 }
+
+@media (min-width: 1536px) {
+  .texto-hero {
+  position: relative;
+  top: -6rem;
+}
+}

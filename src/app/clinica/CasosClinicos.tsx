@@ -11,9 +11,10 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 export default function CasosClinicos() {
+  
   return (
     <section
-      className="relative pt-24 pb-16 overflow-hidden bg-[#d2d9c1]"
+      className="relative pt-24 pb-24 overflow-hidden bg-[#d2d9c1]"
       style={{
         backgroundImage: "url(/images/clinica/background-5-clinica.webp)",
         backgroundSize: "cover",
@@ -34,7 +35,7 @@ export default function CasosClinicos() {
             </p>
           </div>
           <div className="w-48 h-[2px] bg-white mx-auto mb-6" />
-          <p className="text-white uppercase tracking-wide font-medium text-center lg:text-2xl  text-[0.8rem] leading-none">
+          <p className="text-white uppercase tracking-wide font-medium text-center lg:text-[1.2rem]  text-[0.8rem] leading-none">
             Veja <span className="font-bold">CASOS CLÍNICOS</span> da nossa equipe
           </p>
           <div className="w-48 h-[2px] bg-white mx-auto mt-6" />
@@ -72,51 +73,51 @@ export default function CasosClinicos() {
           className="mySwiper lg:max-w-6xl pt-20 "
         >
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center " >
-            <img src="/images/clinica/felipe-01.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/felipe-01.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Felipe</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/felipe-02.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/felipe-02.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Felipe</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/felipe-03.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/felipe-03.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Felipe</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/danielle-01.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/danielle-01.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Danielle</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/danielle-02.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/danielle-02.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Danielle</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/danielle-03.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/danielle-03.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Danielle</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/luiza-01.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/luiza-01.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Luiza</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/luiza-02.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/luiza-02.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Luiza</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/luiza-03.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/luiza-03.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Luiza</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/hyllua-01.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/hyllua-01.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Hyllua Husein</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/hyllua-02.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/hyllua-02.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Hyllua Husein</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white p-4 flex  items-center justify-center ">
-            <img src="/images/clinica/hyllua-03.webp" className="lg:w-[400px] lg:h-[240px] object-cover rounded-2xl" />
+            <img src="/images/clinica/hyllua-03.webp" className="lg:w-[400px] lg:h-[240px]  object-cover rounded-2xl" />
             <p className="mt-4 text-white">Dr. Hyllua Husein</p>
           </SwiperSlide>
         </Swiper>

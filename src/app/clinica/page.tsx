@@ -63,7 +63,7 @@ export default function ClinicaPage() {
           </div>
           <div className="container relative z-10 flex flex-col lg:flex-row items-end justify-between mx-auto pt-15 lg:pt-30">
             {/* Texto */}
-            <div className="max-w-lg lg:ml-8 text-center lg:text-left flex-1 pb-12 relative lg:-top-6 lg:left-40">
+            <div className="texto-hero max-w-lg lg:ml-8 text-center lg:text-left flex-1 pb-12 relative lg:-top-6 lg:left-40">
               <h1 className="text-[1.1rem] titulo-scotch lg:text-[1.8rem] font-normal text-[#7cae7e] mb-4 leading-none">
                 Você não é <br /> feita em partes<br />
                 <span className="text-[#7cae7e] font-bold text-[2.3rem] lg:text-[4rem] titulo-scotch italic ">e o seu <br /> cuidado</span><br />
@@ -88,9 +88,9 @@ export default function ClinicaPage() {
 
       {/* Section Procedimentos */}
 <section
-  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center min-h-[600px] lg:min-h-[83vh] -mt-12 lg:-mt-17 z-50 flex items-center"
+  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center  -mt-12 lg:-mt-17 z-50 flex items-center"
 >
-  <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 items-center max-w-4xl">
+  <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 py-[14.7rem] items-center max-w-4xl">
     {/* Lado Direito - Mobile primeiro */}
     <div className="text-center lg:text-right order-1 lg:order-2 -mt-30 lg:-mt-0">
       <p className="uppercase tracking-wide lg:text-xl text-[1.3rem] text-white font-light">
@@ -106,7 +106,7 @@ export default function ClinicaPage() {
     </div>
 
     {/* Lado Esquerdo - Mobile por último */}
-    <div className="bg-[#3e4a2b] text-white rounded-lg overflow-hidden flex flex-col order-2 lg:order-1">
+    <div className="bg-[#3e4a2b] text-white rounded-lg overflow-hidden items-center flex flex-col order-2 lg:order-1">
       {/* Accordion Aside */}
       <AccordionAside procedimentos={procedimentos} />
     </div>
@@ -114,7 +114,7 @@ export default function ClinicaPage() {
 </section>
 
       {/* Section Equipe Multidisciplinar */}
-      <section className="bg-[#dddfde] pt-160  lg:pt-70 pb-20 -mt-24">
+      <section className="bg-[#dddfde] pt-160  lg:pt-70 pb-28 -mt-24">
         <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center text-center lg:text-left " >
           <div className="text-[#3e4a2b] lg:text-[1.7rem] text-[1.4rem] font-normal flex items-center justify-center lg:justify-start h-full leading-none ">
             <span className="block lg:text-left">Nossa equipe<br />se alinha para</span>
@@ -124,8 +124,8 @@ export default function ClinicaPage() {
             de você <br />
            como um <br />todo.</span>
           </div>
-          <div className="text-[#3e4a2b] text-xl font-normal flex items-center justify-center lg:justify-end h-full  ">
-            <span className="block lg:text-right leading-5 px-14 lg:px-0">
+          <div className="text-[#3e4a2b] text-xl  font-normal flex items-center justify-center lg:justify-end h-full  ">
+            <span className="block lg:text-right leading-5 px-14 lg:px-0 lg:pl-24">
               Aqui, você é acolhido por uma <span className="font-bold">equipe qualificada</span> que compartilha a mesma <span className="font-bold">visão de cuidado</span> e atua de forma integrada entre especialidades.
             </span>
           </div>
@@ -139,10 +139,10 @@ export default function ClinicaPage() {
 
 
       {/* Section Dra. Hyllua */}
-      <section className="bg-[#dddfde] py-20">
+      <section className="bg-[#dddfde] ">
         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4">
           {/* Coluna Esquerda: textos e card - Mobile segundo, Desktop primeiro */}
-          <div className="flex flex-col gap-8 order-2 lg:order-1 px-8 lg:px-0">
+          <div className="flex flex-col gap-8 order-2 lg:order-1 px-8 lg:px-0 items-center">
             {/* Texto e dados */}
             <div>
               <h2 className="font-bold text-3xl text-[#3e4a2b] mb-1 relative before:content-[''] before:block before:w-32 before:h-1.5 before:bg-[#3e4a2b] before:mb-3  before:absolute before:-top-5 before:left-0">Dra. Hyllua Husein</h2>
@@ -158,8 +158,9 @@ export default function ClinicaPage() {
                 <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Professora chancelada pela Harvard Medical<br /> School</li>
               </ul>
             </div>
-            {/* Card de procedimentos */}
-            <div className="flex flex-col items-start lg:w-[320px] relative lg:-right-7">
+              
+        {/* Card de procedimentos */}
+              <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:-right-7">
   {/* Card fixo no lugar */}
   <div className="bg-[#3e4a2b] w-full relative">
     {(() => {
@@ -169,7 +170,7 @@ export default function ClinicaPage() {
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-semibold text-[0.85rem] uppercase bg-[#3e4a2b]"
+            className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.75rem] uppercase bg-[#3e4a2b]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -182,7 +183,7 @@ export default function ClinicaPage() {
 
           {/* Conteúdo absoluto que abre e fecha */}
           <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  z-10 ${open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"}`}
+            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-80"}`}
           >
             <div className="px-4 py-4 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.65rem]">
               <span>Bioestimulador de Colágeno Radiesse</span>
@@ -217,7 +218,7 @@ export default function ClinicaPage() {
           
         </div>
 
-    <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 py-30">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 py-30">
   {/* Coluna Esquerda: imagem - Mobile primeiro, Desktop primeiro */}
   <div className="flex justify-center items-start order-1 lg:order-1 px-8 lg:px-0">
     <div className="overflow-hidden flex items-center justify-center">
@@ -272,7 +273,7 @@ export default function ClinicaPage() {
   {/* Card fixo no lugar */}
   <div className="bg-[#3e4a2b] w-full relative">
     {(() => {
-      const [open, setOpen] = useState(true);
+      const [open, setOpen] = useState(false);
       return (
         <div>
           {/* Botão fixo */}
@@ -312,8 +313,171 @@ export default function ClinicaPage() {
   </div>
 </div>
   </div>
-</div>
+        </div>
 
+        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 ">
+  {/* Coluna Esquerda: textos e card - Mobile segundo, Desktop primeiro */}
+  <div className="flex flex-col gap-8 order-2 lg:order-1 px-8 lg:px-0 items-center">
+    {/* Texto e dados */}
+    <div>
+      <h2 className="font-bold text-3xl text-[#3e4a2b] mb-1 relative before:content-[''] before:block before:w-32 before:h-1.5 before:bg-[#3e4a2b] before:mb-3  before:absolute before:-top-5 before:left-0">Dr. Felipe Vendramini</h2>
+      <span className="text-[0.95rem] text-[#3e4a2b] font-semibold mb-10 block">CRO 22723</span>
+      <ul className="text-[#3e4a2b] text-[1.05rem] space-y-2 list-none pl-0 font-normal">
+        <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Cirurgião-Dentista, com mais de 10 anos de<br /> experiência</li>
+        <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formado pela Faculdade Meridional – IMED (2014)</li>
+        <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Pós-graduado em Endodontia (CEOM – 2016), área<br /> da odontologia que trata os canais radiculares e<br /> evita perdas dentárias</li>
+        <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Pós-graduado em Prótese Dentária (Odontocenter<br /> – 2022), responsável pela reabilitação com coroas,<br /> lentes de contato e próteses estéticas</li>
+        <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formações complementares em estética dental,<br /> com foco em devolver harmonia, função e<br /> naturalidade ao sorriso de forma personalizada</li>
+        <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Especialização internacional em Anatomia em<br /> Fresh Frozen Cadaver, pela EBRIS (European<br /> Biomedical Research Institute of Salerno) na Itália,<br /> chancelada pela Harvard Medical School</li>
+      </ul>
+    </div>
+      
+    {/* Card de procedimentos */}
+    <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:-right-7">
+      {/* Card fixo no lugar */}
+      <div className="bg-[#3e4a2b] w-full relative">
+        {(() => {
+          const [open, setOpen] = useState(false);
+          return (
+            <div>
+              {/* Botão fixo */}
+              <button
+                onClick={() => setOpen((prev) => !prev)}
+                className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.75rem] uppercase bg-[#3e4a2b]"
+                type="button"
+              >
+                PROCEDIMENTOS QUE REALIZA
+                <span
+                  className={`transition-transform duration-500 ease-in-out text-xl font-bold ${open ? "rotate-180" : "rotate-0"}`}
+                >
+                  {open ? "−" : "+"}
+                </span>
+              </button>
+
+              {/* Conteúdo absoluto que abre e fecha */}
+              <div
+                className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-80"}`}
+              >
+                <div className="px-4 py-4 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.65rem]">
+                  <span>Lentes de Contato<br />Dental</span>
+                  <span>Facetas</span>
+                  <span>Coroas</span>
+                  <span>Próteses</span>
+                  <span>Endodontia</span>
+                  <span>Clareamento<br />Dental</span>
+                  <span>Restaurações<br />Estéticas</span>
+                  <span>Harmonização<br />do Sorriso</span>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+      </div>
+    </div>
+  </div>
+  
+  {/* Coluna Direita: imagem - Mobile primeiro, Desktop segundo */}
+  <div className="flex justify-center items-start order-1 lg:order-2">
+    <div className=" overflow-hidden   flex items-center justify-center px-8 lg:px-0">
+      <img
+        src="/images/clinica/felipe.webp"
+        alt="Dr. Felipe Vendramini"
+        className="object-cover w-full h-full"
+      />
+    </div>
+  </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 py-30">
+  {/* Coluna Esquerda: imagem - Mobile primeiro, Desktop primeiro */}
+  <div className="flex justify-center items-start order-1 lg:order-1 px-8 lg:px-0">
+    <div className="overflow-hidden flex items-center justify-center">
+      <img
+        src="/images/clinica/danielle.webp"
+        alt="Dra. Danielle Marcon"
+        className="object-cover w-full h-full"
+      />
+    </div>
+  </div>
+
+  {/* Coluna Direita: textos e card - Mobile segundo, Desktop segundo */}
+  <div className="flex flex-col gap-8 relative lg:-bottom-8 lg:-right-8 order-2 lg:order-2 px-8 lg:px-0 items-center">
+    {/* Texto e dados */}
+    <div>
+      <h2 className="font-bold text-3xl text-[#3e4a2b] mb-1 relative before:content-[''] before:block before:w-32 before:h-1.5 before:bg-[#3e4a2b] before:mb-3  before:absolute before:-top-5 before:left-0">
+        Dra. Danielle Marcon
+      </h2>
+      <span className="text-[0.95rem] text-[#3e4a2b] font-semibold mb-10 block">
+        CRO 25514
+      </span>
+      <ul className="text-[#3e4a2b] text-[1.05rem] space-y-2 list-none pl-0 font-normal">
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Cirurgiã-dentista, atuando há mais de 8 anos na<br /> área
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Formação pela PUCRS com graduação saduíche<br /> na SAPIENZA UNIVERSITÀ DI ROMA, em Roma, na<br /> Itália
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Especialista em Implantodontia e Prótese dentária
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Extensão em Cirurgia Oral Menor na PUCRS
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Especialização internacional em Anatomia em<br /> Fresh Frozen Cadaver, pela EBRIS (European<br /> Biomedical Research Institute of Salerno) na Itália,<br /> chancelada pela Harvard Medical School
+        </li>
+      </ul>
+    </div>
+
+    {/* Card de procedimentos */}
+    <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:-right-7">
+      {/* Card fixo no lugar */}
+      <div className="bg-[#3e4a2b] w-full relative">
+        {(() => {
+          const [open, setOpen] = useState(false);
+          return (
+            <div>
+              {/* Botão fixo */}
+              <button
+                onClick={() => setOpen((prev) => !prev)}
+                className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.75rem] uppercase bg-[#3e4a2b]"
+                type="button"
+              >
+                PROCEDIMENTOS QUE REALIZA
+                <span
+                  className={`transition-transform duration-500 ease-in-out text-xl font-bold ${open ? "rotate-180" : "rotate-0"}`}
+                >
+                  {open ? "−" : "+"}
+                </span>
+              </button>
+
+              {/* Conteúdo absoluto que abre e fecha */}
+              <div
+                className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-80"}`}
+              >
+                <div className="px-4 py-4 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.65rem]">
+                  <span>Implantes<br />Dentários</span>
+                  <span>Próteses<br />Dentárias</span>
+                  <span>Cirurgia Oral<br />Menor</span>
+                  <span>Exodontias</span>
+                  <span>Restaurações<br />Estéticas</span>
+                  <span>Limpeza<br />Dental</span>
+                  <span>Enxertos<br />Ósseos</span>
+                  <span>Harmonização<br />do Sorriso</span>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+      </div>
+    </div>
+  </div>
+        </div>
       </section>
 
       
@@ -330,15 +494,15 @@ export default function ClinicaPage() {
   }}
 >
       {/* Values Cards Section */}
-      <div className=" px-6 py-16 lg:pt-40">
+      <div className="  py-16 lg:pt-40">
         <div className="mx-auto max-w-3xl">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
 
 {/* Card 1 - Cuidado de Verdade */}
- <div className="flex items-center justify-center min-h-[480px]">
-              <div className=" border border-[#bfcfae] rounded-[2.8rem] w-[300px] h-[400px] flex flex-col overflow-hidden shadow-sm" style={{ boxSizing: "border-box" }}>
+ <div className="flex items-center justify-center lg:min-h-[480px] px-16 lg:px-0">
+              <div className=" border border-[#bfcfae] rounded-[2.8rem] lg:w-[300px] lg:h-[400px]  flex flex-col overflow-hidden shadow-sm" style={{ boxSizing: "border-box" }}>
                 {/* Top Section */}
-                <div className=" px-7 pt-8 pb-4 text-center rounded-t-[2.8rem] leading-none">
+                <div className=" px-7 pt-8 pb-4 text-center rounded-t-[2.8rem] leading-none ">
                   <p className="text-[#a8b896] text-[1.5rem] font-normal  tracking-wide  titulo-scotch relative -left-8" style={{ letterSpacing: "0.02em" }}>
                     Tratamos
                   </p>
@@ -363,8 +527,8 @@ export default function ClinicaPage() {
             
 
             {/* Card 2 - Cuidado de Verdade */}
-           <div className="flex items-center justify-center min-h-[480px]">
-              <div className=" border border-[#bfcfae] rounded-[2.8rem] w-[300px] h-[400px] flex flex-col overflow-hidden shadow-sm" style={{ boxSizing: "border-box" }}>
+           <div className="flex items-center justify-center lg:min-h-[480px] px-16 lg:px-0">
+              <div className=" border border-[#bfcfae] rounded-[2.8rem] lg:w-[300px] lg:h-[400px] flex flex-col overflow-hidden shadow-sm" style={{ boxSizing: "border-box" }}>
                 {/* Top Section */}
                 <div className=" px-7 pt-8 pb-4 text-center rounded-t-[2.8rem] leading-none">
                   <p className="text-[#a8b896] text-[1.5rem] font-normal  tracking-wide titulo-scotch relative -left-8" style={{ letterSpacing: "0.02em" }}>
@@ -392,26 +556,26 @@ export default function ClinicaPage() {
       </div>
 
       {/* Full Width Banner */}
-      <div className="bg-[#a8b896]  py-22">
+      <div className="bg-[#a8b896]  py-8 lg:py-22">
         <p className="text-center text-lg text-white lg:text-[2.2rem] titulo-scotch ">
           O cuidado que te reconhece <span className=" italic titulo-scotch font-semibold">por completo.</span>
         </p>
       </div>
 
       {/* CTA Section */}
-      <div className=" px-6  lg:py-40">
+      <div className=" px-6 pt-12 pb-12 lg:py-40">
         <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-8 lg:flex-row lg:items-center">
           <div className="text-center lg:text-left">
-            <p className="mb-2 text-[2rem] text-[#4a5442] titulo-scotch ">Agende seu procedimento</p>
-            <p className="font-semibold titulo-scotch  italic text-[#4a5442] lg:text-[2.6rem] leading-none ">
+            <p className="lg:mb-4 mb-12 lg:text-[2rem]  text-[1.4rem] text-[#4a5442] titulo-scotch leading-none px-16 lg:px-0">Agende seu procedimento</p>
+            <p className="font-semibold titulo-scotch  italic text-[#4a5442] lg:text-[2.6rem] text-[1.8rem] leading-none px-16 lg:px-0 lg:pr-26">
               e descubra uma nova
-              <br />
+              
               forma de se cuidar
-              <br />
+              
               por inteiro.
             </p>
           </div>
-          <button className="rounded-lg bg-[#a8b896] px-8 py-4 text-sm font-semibold uppercase tracking-wide text-black border-b-4 border-black transition-colors hover:bg-[#96a684] lg:text-base">
+          <button className="rounded-lg bg-[#a8b896] px-8 py-4 text-sm font-semibold uppercase tracking-wide text-black border-b-4 border-black transition-colors hover:bg-[#96a684] lg:text-base text-nowrap">
             AGENDAR MEU PROCEDIMENTO
           </button>
         </div>
