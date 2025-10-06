@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
@@ -42,6 +40,23 @@ export default function EnsinoSections() {
 
         </div>
       </section>
+
+        {/* Section de contato igual ao print */}
+        <section className="w-full bg-[#eaeaea] py-12 px-4 flex items-center justify-center">
+          <div className="max-w-4xl w-full mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-6">
+            <div className="flex-1 flex items-center justify-center lg:justify-start">
+              <p className="text-[#23409c] text-[1.1rem] lg:text-[1.25rem] font-light text-center lg:text-left">
+                Entre em contato e receba mais<br />
+                <span className="italic font-bold">informações sobre turmas.</span>
+              </p>
+            </div>
+            <div className="flex-1 flex items-center justify-center lg:justify-end">
+              <a href="#contato" className="bg-[#23409c] hover:bg-[#1b2a59] text-white font-bold py-2 px-6 rounded text-[0.95rem] transition-colors duration-200">
+                ENTRAR EM CONTATO
+              </a>
+            </div>
+          </div>
+        </section>
 
      <section className=" bg-[#eaeaea] py-25 px-4 flex flex-col items-center justify-center relative ">
 
@@ -324,7 +339,116 @@ export default function EnsinoSections() {
 
     <div className="  w-full bg-[#37518c] lg:-mt-55 -mt-32"><div className="lg:py-30 py-18"></div></div>
   </section>
+
+
+
+<section className="bg-[#e8e8e9] relative overflow-hidden">
+  <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 items-end lg:items-start  lg:px-12 pt-12  lg:pt-32 gap-8 z-2">
+
+    {/* Texto à esquerda (coluna 1) */}
+    <div className="col-span-1 flex flex-col lg:justify-center lg:items-start items-end text-center lg:text-left z-10 lg:top-30 lg:-left-0 relative">
+      <h2 className="text-[45px] lg:text-[70px] font-normal text-[#1b2a59] leading-none titulo-scotch lg:mb-10 mb-4">
+        Hyllua<br /> <span className="font-bold italic">Husein</span>
+      </h2>
+
+      <p className="text-[#1b2a59] lg:text-[1.4rem] text-[1rem] leading-normal tracking-widest lg:w-[16rem] w-[9rem] text-right">
+        <span className="font-semibold">Mentora</span>, empresária<br /> e biomédica com
+        especialização em estética.
+      </p>
+    </div>
+
+    {/* Imagem à direita (ocupa 2 colunas) */}
+    <div className="col-span-2 px-8 lg:px-0 relative flex justify-center lg:justify-end -top-30 lg:-top-0 z-2">
+      <img
+        src="/images/ensino/hyllua-secao-4.webp"
+        alt="Hyllua Husein"
+        className="w-full h-auto "
+      />
+    </div>
+
+  </div>
+  {/* Logo atrás do texto e imagem */}
+    <div className="absolute inset-0 z-0 pointer-events-none select-none opacity-20 flex justify-center items-center z-0">
+      <img
+        src="/images/ensino/logo-hyllua-husein-b.webp"
+        alt="Logo Hyllua Husein"
+        className="w-full h-full object-contain animate-shake"
+        style={{width: '100vw', height: '100vh'}}
+        draggable="false"
+      />
+    </div>
+</section>
+
+
+   {/* Nova Section Azul Degradê */}
+      <section className="relative -mt-150 w-full flex  justify-center items-center  lg:pt-24 lg: pb-20 z-9">
+        <Image
+          src="/images/ensino/camada-secao-4-ensino.webp"
+          alt="Fundo azul degradê"
+          fill
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          priority
+        />
+  
+        <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col lg:flex-row gap-3 lg:gap-12  px-4  lg:px-12 py-55 before:absolute before:top-100 lg:before:top-90 before:left-5 lg:before:left-13 before:w-[90%] lg:before:w-[83%] before:h-[2px] before:bg-white before:rounded-full before:content-['']">
+          <div className="flex-1 flex flex-col lg:gap-6 gap-2 text-white text-[0.93rem] lg:text-[1.1rem] font-light  -bottom-55 relative">
+       
+            <div className="flex items-start gap-3">
+              <span className="mt-1 lg:w-4 lg:h-4 w-2 h-2 bg-white  inline-block" />
+              <span className="lg:w-[19rem] w-[22rem]">Há 9 anos atuando na estética: +180 alunos em turmas VIP presencial, +5.000 pacientes atendidos</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 lg:w-4 lg:h-4 w-2 h-2 bg-white  inline-block" />
+              <span className="lg:w-[19rem] w-[21rem]">Especializações internacionais em HOF: Formações realizadas na Suíça, Itália e Estados Unidos, com foco em anatomia aplicada, rejuvenescimento avançado e técnicas de refinamento estético</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 lg:w-4 lg:h-4 w-2 h-2 bg-white  inline-block" />
+              <span className="lg:w-[19rem] w-[22rem]">Referência nacional em lábios e rinomodelação com a técnica LAPIDARE</span>
+            </div>
+          </div>
+          <div className="flex-1 flex flex-col lg:gap-4 gap-2 text-white text-[0.9rem] lg:text-[1.1rem] font-light  -bottom-55 relative">
+            <div className="flex items-start gap-3">
+              <span className="mt-1 lg:w-4 lg:h-4 w-2 h-2 bg-white  inline-block" />
+              <span className="lg:w-[19rem] w-[22rem]">Mentora e criadora do método WONDERFULL FACE</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 lg:w-4 lg:h-4 w-2 h-2 bg-white  inline-block" />
+              <span className="lg:w-[19rem] w-[22rem]">CEO da Clinica Hyllua Husein e da marca nacional de dermocosméticos Hyllua Beauty</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 lg:w-4 lg:h-4 w-2 h-2 bg-white  inline-block" />
+              <span className="lg:w-[19rem] w-[22rem]">Professora convidada no European Biomedical Research Institute of Salerno (EBRIS)</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 lg:w-4 lg:h-4 w-2 h-2 bg-white  inline-block" />
+              <span className="lg:w-[19rem] w-[22rem]">Professora chancelada pela Harvard Medical School</span>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+
+
+      {/* Section de contato igual ao print */}
+      <section className="w-full bg-[#eaeaea] lg:py-23 py-18 px-4 flex items-center justify-center">
+        <div className="max-w-4xl w-full mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-6">
+          <div className="flex-1 flex items-center justify-center lg:justify-start">
+            <p className="text-[#23409c] text-[1.3rem] lg:text-[1.65rem] font-light text-center lg:text-left titulo-scotch leading-snug">
+              Entre em contato e receba mais<br />
+              <span className="italic font-bold text-[1.4rem] lg:text-[1.8rem]">informações sobre turmas.</span>
+            </p>
+          </div>
+          <div className="flex-1 flex items-center justify-center lg:justify-end">
+            <a href="#contato" className="border-b-4 border-black bg-[#23409c] hover:bg-[#1b2a59] text-white font-bold py-3 px-9 text-[1rem] lg:text-[1.2rem] transition-colors duration-200">
+              ENTRAR EM CONTATO
+            </a>
+          </div>
+        </div>
+      </section>
 </>
    
   );
 }
+
+   

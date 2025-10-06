@@ -32,6 +32,7 @@ export default function ClinicaPage() {
       ],
     },
     {
+      
       titulo: "PROCEDIMENTOS CORPORAIS",
       conteudo: ["Exemplo 1", "Exemplo 2", "Exemplo 3"],
     },
@@ -50,7 +51,7 @@ export default function ClinicaPage() {
 
       <main>
         {/* Hero Section Clínica */}
-        <section className="relative w-full flex items-center overflow-hidden pt-15 ">
+        <section className="relative w-full flex items-center overflow-hidden pt-15 -mb-13 lg:lg:-mb-14">
           {/* Background image */}
           <div className="absolute inset-0 w-full h-full">
             <Image
@@ -88,7 +89,7 @@ export default function ClinicaPage() {
 
       {/* Section Procedimentos */}
 <section
-  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center  -mt-12 lg:-mt-17 z-50 flex items-center"
+  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center   z-50 flex items-center -mb-100 lg:-mb-180"
 >
   <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 py-[14.7rem] items-center max-w-4xl">
     {/* Lado Direito - Mobile primeiro */}
@@ -106,15 +107,37 @@ export default function ClinicaPage() {
     </div>
 
     {/* Lado Esquerdo - Mobile por último */}
-    <div className="bg-[#3e4a2b] text-white rounded-lg overflow-hidden items-center flex flex-col order-2 lg:order-1">
+    <div className="bg-[#3e4a2b] text-white rounded-lg overflow-hidden items-center flex flex-col order-2 lg:order-1 ">
       {/* Accordion Aside */}
+      
+    </div>
+  </div>
+</section>
+
+
+      {/* Section Procedimentos */}
+<section
+  className="relative bg-[#dddfde]   flex items-center lg:pb-10"
+>
+  <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10  items-center max-w-4xl  mt-40">
+    {/* Lado Direito - Mobile primeiro */}
+    <div className="text-center lg:text-right order-1 lg:order-2 ">
+   
+    </div>
+
+    {/* Lado Esquerdo - Mobile por último */}
+    <div className=" text-white rounded-lg overflow-hidden items-center flex flex-col order-2 lg:order-1">
+      {/* Accordion Aside */}
+
+      
       <AccordionAside procedimentos={procedimentos} />
     </div>
   </div>
 </section>
 
+
       {/* Section Equipe Multidisciplinar */}
-      <section className="bg-[#dddfde] pt-160  lg:pt-70 pb-28 -mt-24">
+      <section className="bg-[#dddfde] pt-40 pb-28 -mt-24">
         <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center text-center lg:text-left " >
           <div className="text-[#3e4a2b] lg:text-[1.7rem] text-[1.4rem] font-normal flex items-center justify-center lg:justify-start h-full leading-none ">
             <span className="block lg:text-left">Nossa equipe<br />se alinha para</span>

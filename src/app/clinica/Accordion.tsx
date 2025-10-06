@@ -22,17 +22,17 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
 
 
   return (
-    <aside className=" lg:w-106 w-[90%]   lg:-ml-0 mx-auto max-w-md rounded-lg overflow-hidden bg-[#3e4a2b] text-white flex flex-col  absolute lg:top-[9rem]  ">
+    <aside className=" lg:w-107 w-[85%]   lg:-ml-0 mx-auto max-w-md rounded-lg overflow-hidden bg-[#3e4a2b] text-white flex flex-col    relative z-99 ">
       {/* Imagem fixa no topo */}
-      <div className="  relative shrink-0">
+      <div className="   shrink-0 ">
         <img
           src="/images/clinica/foto-hyllua-secao-2-clinica.webp"
           alt="Procedimento"
-          className="object-cover w-full h-full"
+          className="object-cover w-full   top-0 z-10"
         />
       </div>
       {/* Accordion */}
-  <div className="flex flex-col justify-start">
+  <div className="flex flex-col justify-start ">
         {procedimentos.map((item, index) => (
           <div key={index} className="border-t border-[#d2d2c7]">
             <button
