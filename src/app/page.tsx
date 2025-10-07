@@ -20,8 +20,9 @@ export default async function HomePage() {
       <main>
 
 
-  
-        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 
+    
+
+        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10  
         ">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
@@ -127,7 +128,7 @@ export default async function HomePage() {
                   alt="Profissional da clínica"
                   width={1066}
                   height={1541}
-                  className="rounded-lg w-full h-auto relative -top-12 -right-3 lg:-top-15 lg:-left-6 lg:-right-0 lg:scale-90 scale-110"
+                  className="rounded-lg w-full h-auto relative -top-8 -right-3 lg:-top-15 lg:-left-6 lg:-right-0 lg:scale-90 scale-110"
                 />
               </div>
               
@@ -135,20 +136,20 @@ export default async function HomePage() {
               <div className="order-1 lg:order-2 lg:col-span-1 relative lg:mt-33 lg:-ml-50 px-0 ">
                 <div className="flex gap-4 lg:block  ">
                   {/* Título */}
-                  <div className="flex-1 lg:w-[26rem] ">
-                    <h2 className="titulo-scotch  font-black italic text-[22px] lg:text-[2.5rem] text-[#b89c6c] mb-0 lg:mb-23 leading-[0.95] text-center relative " >
-                      Cuidamos <span className="text-2xl lg:text-5xl">de você</span> por inteiro, <span className="font-normal not-italic">não em partes.</span>
+                  <div className="flex-1 lg:w-[26rem] relative -left-2 lg:-left-0 -top-0 lg:top-0">
+                    <h2 className="titulo-scotch  font-black italic text-[21px] lg:text-[2.5rem] text-[#b89c6c] mb-0 lg:mb-23 lg:leading-[0.95] leading-[1] text-center relative " >
+                      Cuidamos<br className="block lg:hidden" /> <span className="text-[28px] lg:text-5xl">de você</span><br className="block lg:hidden" /> por inteiro, <span className="font-normal not-italic">não em<br className="block lg:hidden" /> partes.</span>
                     </h2>
                   </div>
                   
                   {/* Box com ícone */}
                   <div className="flex-1  ">
-                    <div className=" rounded-4xl px-5 py-4 lg:py-[28px] lg:px-0 mb-6 relative lg:w-[25rem] lg:-top-3 lg:left-2 border-2 border-[#b89c6c]">
-                      <div className="absolute -top-2 -right-3 lg:-top-7 lg:-right-6 w-9 h-9 lg:w-18 lg:h-18  rounded-full flex items-center justify-center ">
-                        <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-18 lg:h-18 w-9 h-9 object-contain" />
+                    <div className=" rounded-2xl px-4 py-2 lg:py-[28px] lg:px-0 mb-6 relative lg:w-[25rem] lg:-top-3 lg:left-2 -left-3 border-2 border-[#b89c6c]">
+                      <div className="absolute -top-2 -right-3 lg:-top-7 lg:-right-6 w-7 h-7 lg:w-18 lg:h-18  rounded-full flex items-center justify-center ">
+                        <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-18 lg:h-18 w-7 h-7 object-contain" />
                       </div>
-                      <p className="text-[#b89c6c] lg:text-[1.5rem] lg:leading-[1.65] leading-tight  text-[0.85rem] text-center ">
-                        Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando<br className="d-none lg:d-block"/> resultados e tocando o que<br className="d-none lg:d-block"/> é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
+                      <p className="text-[#b89c6c] lg:text-[1.5rem] lg:leading-[1.65] leading-none  text-[0.85rem] text-center ">
+                        Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando resultados e tocando o que é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
                       </p>
                     </div>
                   </div>
@@ -167,51 +168,53 @@ export default async function HomePage() {
                 alt="Curva decorativa"
                 width={1920}
                 height={800}
-                className="w-full object-cover object-top opacity-0 "
+                className="w-full object-cover object-top  "
               />
           </div>
           
-          <div className="container  mx-auto lg:px-6 px-4  text-center relative z-10 ">
-            <p className="text-[16px] lg:text-[25px] titulo-scotch secundary-color font-light lg:w-[36rem] m-auto leading-tight relative lg:-top-18 mb-10 lg:mb-4 lg:-left-2 ">
+          <div className="container  mx-auto lg:px-6 px-4  text-center relative z-10 bg-[#b89c6c]">
+            <p className="text-[14px] lg:text-[25px] titulo-scotch secundary-color font-light lg:w-[36rem] w-[20rem] m-auto leading-tight relative -top-3 lg:-top-18 mb-4
+            
+            lg:mb-4 lg:-left-2 ">
               O verdadeiro resultado não está no detalhe isolado
               <span className="font-semibold titulo-scotch italic lg:text-[27px]"> mas na harmonia do conjunto.</span>
             </p>
 
-            <div className="grid grid-cols-1 lg:flex lg:flex-nowrap gap-0 lg:gap-8 mb-6 lg:mb-16 m-auto relative lg:-top-6 justify-center items-center">
-              <div className="flex items-center justify-center text-left gap-1 relative -left-28 lg:-left-1 lg:-top-1 ">
-                <div className="w-7 h-7  rounded-full flex items-center justify-center">
+            <div className="grid grid-cols-1 lg:flex lg:flex-nowrap gap-0 lg:gap-8 mb-0 lg:mb-16 m-auto relative lg:-top-6 justify-center items-center">
+              <div className="flex items-center justify-center text-left gap-1 relative -left-24 -top-2 lg:-left-1 lg:-top-1 ">
+                <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center">
                   <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
+                <p className="lg:text-[0.9rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
               </div>
-              <div className="flex items-center justify-center text-left gap-1 relative -right-19 -top-6 lg:-left-2 lg:-top-1">
-                <div className="w-7 h-7  rounded-full flex items-center justify-center ">
+              <div className="flex items-center justify-center text-left gap-1 relative -right-17 -top-8 lg:-left-2 lg:-top-1">
+                <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
                 </div>
-                <p className="lg:text-[0.90rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
+                <p className="lg:text-[0.90rem] text-[0.66rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
               </div>
-              <div className="flex items-center justify-center text-left gap-1 relative -left-19 lg:-left-1 lg:-top-1">
-                <div className="w-7 h-7  rounded-full flex items-center justify-center ">
+              <div className="flex items-center justify-center text-left gap-1 relative -left-17 -top-5 lg:-left-1 lg:-top-1">
+                <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
+                <p className="lg:text-[0.9rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
               </div>
-              <div className="flex items-center justify-center text-left gap-1 relative -right-30 -top-6 lg:right-0 lg:-top-1">
-                <div className="w-7 h-7  rounded-full flex items-center justify-center ">
+              <div className="flex items-center justify-center text-left gap-1 relative -right-28 -top-11 lg:right-0 lg:-top-1">
+                <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
                 </div>
-                <p className="lg:text-[0.90rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
+                <p className="lg:text-[0.90rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
               </div>
             </div>
-            
-            <button className="px-4 py-[8px] mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] text-[1.2rem] rounded-3xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300 relative lg:-top-6.5 lg:-left-3">
+            <Link href="/clinica">
+            <button className="lg:px-4 px-2 lg:py-[8px] py-1 mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] lg:text-[1.2rem] text-[0.9rem] rounded-3xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300 relative -top-3 lg:-top-6.5 lg:-left-3 hover:cursor-pointer">
               CONHEÇA A CLÍNICA
-            </button>
+            </button></Link>
           </div>
         </section>
 
         {/* Seção Ensino */}
-        <section className="py-0  bg-white text-white relative overflow-hidden">
+        <section className="py-0  bg-white text-white relative overflow-hidden ">
           <div className="w-full flex flex-col lg:flex-row  lg:h-[750px]">
             {/* Esquerda: textos com imagem de fundo */}
             <div
@@ -221,28 +224,30 @@ export default async function HomePage() {
     backgroundSize: 'cover'
   }}
 >
-              <div className="z-10 w-full max-w-lg mt-12 lg:mt-24 relative left-12 lg:left-28 lg:top-14.5">
-                <div className="flex  lg:items-start gap-4 mb-8 lg:ml-6">
-                  <Image src="/images/index/objeto.webp" alt="Ícone Ensino" className="lg:w-[20px] w-[12px]" width={40} height={40} />
+              <div className="z-10 w-full max-w-lg mt-12 lg:mt-24 relative left-15 -top-8 lg:left-28 lg:top-14.5">
+                <div className="flex relative lg:items-start gap-4 mb-8 mt-7 lg:mt-0 lg:ml-6 ">
+                  <Image src="/images/index/objeto.webp" alt="Ícone Ensino" className="lg:w-[20px] w-[10px] h-[105px] relative -right-2 lg:-right-0" width={40} height={40} />
                   <div>
-                    <h2 className="text-xl lg:text-[1.8rem] font-normal italic leading-normal titulo-scotch mb-7 secundary-color lg:w-[19rem] w-[15rem]">
+                    <h2 className="text-[18px] lg:text-[1.8rem] font-normal italic leading-normal titulo-scotch lg:mb-7 mb-1 secundary-color lg:w-[19rem] w-[13rem] ">
                       Compartilhamos o que vivemos na prática.
                     </h2>
-                    <p className="leading-[1.15] secundary-color font-light lg:text-[1.48rem] relative lg:top-[1px]">
+                    <p className="leading-[1.15] secundary-color font-light lg:text-[1.48rem] text-[0.93rem] relative lg:top-[1px]">
                       Transformamos <span className="font-medium">experiências</span><br />
  <span className="font-medium">em formação</span>, para quem quer<br />
 <span className="font-medium">evoluir com propósito</span>.
                     </p>
                   </div>
                 </div>
-                <p className="text-[1rem] lg:mb-17 mb-6 secundary-color leading-snug lg:w-[19rem] w-[15rem] relative left-7 lg:left-14">
-                  Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática diária 
+                <p className="text-[0.8rem] lg:mb-17 mb-6 secundary-color lg:leading-snug leading-[1.3] lg:w-[19rem] w-[13rem] relative left-6 -top-6 lg:left-14">
+                  Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch italic">transformador.</span>
                 </p>
-                <button className=" ml-7 mb-12 lg:mb-0 lg:ml-14 px-5 py-2 text-[1rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
-                  CONHEÇA NOSSO ENSINO
-                </button>
+                <Link href="/ensino">
+                  <button className="ml-6 mb-0 lg:mb-0 lg:ml-14 lg:px-5 px-4 py-1.5 lg:py-2 lg:text-[1rem] text-[0.75rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer relative -top-8">
+                    CONHEÇA NOSSO ENSINO
+                  </button>
+                </Link>
               </div>
               <div className="absolute inset-0 bg-black/40 lg:bg-black/30"></div>
             </div>
@@ -254,13 +259,13 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Blog */}
-        <section className="lg:py-28 py-10 relative overflow-hidden opacity-70">
+        <section className="lg:py-28 py-10 relative overflow-hidden ">
           <div className="absolute inset-0 w-full h-full bg-[url('/images/index/BACKGROUND-SESSÃO-BLOG-PÁGINA-INICIAL.webp')] bg-cover bg-center "></div>
-          <div className="container max-w-[62rem] mx-auto px-6 relative z-10">
-            <h2 className="text-center text-xl lg:text-[26px] text-[#b89c6c] mb-16 font-light relative  lg:-top-0  lg:w-[100%] w-[13rem] mx-auto lg:-left-1">
+          <div className="container max-w-[62rem] mx-auto px-22 lg:px-6 relative z-10">
+            <h2 className="text-center text-xl lg:text-[26px] text-[#b89c6c] lg:mb-16 mb-4 font-light relative  lg:-top-0  lg:w-[100%] w-[13rem] mx-auto lg:-left-1">
               Leia os últimos posts <span className="lg:text-[44px] text-[30px] titulo-scotch font-semibold italic relative lg:-right-2">do nosso blog</span>
             </h2>
-            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-20 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[1115px] before:lg:h-[215px] before:lg:rounded-2xl before:lg:border-2 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
+            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-20 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[1115px] before:lg:h-[235px] before:lg:rounded-2xl before:lg:border-2 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
               <div className="grid lg:grid-cols-3 gap-0 relative z-10">
                 {posts.length === 0 ? (
                   <div className="text-center text-red-500 col-span-3">Erro ao carregar posts do blog.</div>
@@ -268,8 +273,8 @@ export default async function HomePage() {
                   posts.map((post: any) => {
                     const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
                     return (
-                      <div key={post.id} className=" rounded-2xl flex flex-col items-center " style={{ minWidth: 0 }}>
-                        <div className="w-[300px] h-[290px] rounded-4xl overflow-hidden mb-2 flex items-center justify-center border border-[#e7dcc2]">
+                      <div key={post.id} className=" rounded-2xl flex flex-col items-center my-4 lg:my-0 " style={{ minWidth: 0 }}>
+                        <div className="lg:w-[300px] lg:h-[290px] rounded-4xl overflow-hidden mb-2 flex items-center justify-center border border-[#e7dcc2]">
                           <Image
                             src={featuredImage || "/placeholder.svg"}
                             alt={post.title.rendered}
@@ -278,9 +283,9 @@ export default async function HomePage() {
                             className="object-cover w-full h-full"
                           />
                         </div>
-                        <h3 className=" w-[16rem] lg:w-[14rem] text-center text-[1.1rem] lg:text-[1.4rem]  titulo-scotch text-[#b89c6c] mb-0 line-clamp-1" style={{display: 'webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                        <h3 className=" w-[11rem] lg:w-[14rem] text-center text-[0.95rem] lg:text-[1.15rem]  titulo-scotch text-[#b89c6c] mb-0 line-clamp-2" style={{display: 'webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                         <a href={`/blog/${post.slug}`} className="w-full mt-2 px-0">
-                          <button className="mx-auto px-3 flex items-center justify-center gap-2 bg-[#b89c6c] text-white  py-1.5 rounded-xl text-[1.1rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 ">
+                          <button className="mx-auto px-3 flex items-center justify-center gap-2 bg-[#b89c6c] text-white  py-1.5 rounded-xl lg:text-[1.1rem] text-[0.85rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer">
                             LER POST DO BLOG
                             <span
                               className="ml-[14px] border-2 border-solid border-white rounded-full w-[23px] h-[23px] flex items-center justify-center font-bold "
