@@ -18,29 +18,7 @@ export default async function HomePage() {
   return (
     <>
       <main>
-        {/* Fundo Desktop */}
-        <div className="hidden lg:block w-full relative z-0">
-          <Image
-            src="/images/index/home-desktop.png"
-            alt="Layout Desktop"
-            width={1920} // largura real da imagem
-            height={6100} // altura real da imagem
-            className="w-full h-auto absolute top-0 left-0 z-0"
-            priority
-          />
-        </div>
 
-        {/* Fundo Mobile */}
-        <div className="block lg:hidden w-full relative z-0">
-          <Image
-            src="/images/index/home-mobile.png"
-            alt="Layout Mobile"
-            width={768} // largura real da imagem mobile
-            height={5700} // altura real da imagem mobile
-            className="w-full h-auto absolute top-0 left-0 z-0"
-            priority
-          />
-        </div>
 
         <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 ">
           {/* Overlay para melhor legibilidade */}
@@ -137,7 +115,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Cuidamos de você */}
-        <section className="bg-[#f1edec]">
+        <section className="bg-[#f1edec] ">
           <div className="container max-w-7xl mx-auto px-6 ">
             <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-8 items-start pt-12 lg:pt-0">
               {/* Mobile: Texto primeiro, Desktop: Imagem primeiro */}
@@ -147,27 +125,27 @@ export default async function HomePage() {
                   alt="Profissional da clínica"
                   width={1066}
                   height={1541}
-                  className="rounded-lg w-full h-auto relative -top-12 -right-3 lg:-top-24 lg:-left-4 lg:-right-0 lg:scale-90 scale-110"
+                  className="rounded-lg w-full h-auto relative -top-12 -right-3 lg:-top-15 lg:-left-6 lg:-right-0 lg:scale-90 scale-110"
                 />
               </div>
               
               {/* Mobile: Imagem segundo, Desktop: Texto segundo */}
-              <div className="order-1 lg:order-2 lg:col-span-1 relative lg:mt-25 lg:-ml-50 px-0 ">
+              <div className="order-1 lg:order-2 lg:col-span-1 relative lg:mt-33 lg:-ml-50 px-0 ">
                 <div className="flex gap-4 lg:block  ">
                   {/* Título */}
                   <div className="flex-1 lg:w-[26rem]">
-                    <h2 className="titulo-scotch  font-black italic text-2xl lg:text-[2.5rem] text-[#b89c6c] mb-0 lg:mb-20 leading-[1] text-center relative " >
+                    <h2 className="titulo-scotch  font-black italic text-2xl lg:text-[2.5rem] text-[#b89c6c] mb-0 lg:mb-23 leading-[1] text-center relative " >
                       Cuidamos <span className="text-4xl lg:text-5xl">de você</span> por inteiro, <span className="font-normal not-italic">não em partes.</span>
                     </h2>
                   </div>
                   
                   {/* Box com ícone */}
                   <div className="flex-1  ">
-                    <div className=" rounded-4xl px-5 py-4 lg:py-7 lg:px-0 mb-6 relative lg:w-[24.5rem] lg:-top-3 lg:left-3 border-2 border-[#b89c6c]">
-                      <div className="absolute -top-2 -right-3 lg:-top-9 lg:-right-6 w-9 h-9 lg:w-17 lg:h-17  rounded-full flex items-center justify-center ">
-                        <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-16 lg:h-16 w-9 h-9 object-contain" />
+                    <div className=" rounded-4xl px-5 py-4 lg:py-[28px] lg:px-0 mb-6 relative lg:w-[25rem] lg:-top-3 lg:left-2 border-2 border-[#b89c6c]">
+                      <div className="absolute -top-2 -right-3 lg:-top-7 lg:-right-6 w-9 h-9 lg:w-18 lg:h-18  rounded-full flex items-center justify-center ">
+                        <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-18 lg:h-18 w-9 h-9 object-contain" />
                       </div>
-                      <p className="text-[#b89c6c] lg:text-[1.5rem] lg:leading-[1.6] leading-snug  text-[0.85rem] text-center ">
+                      <p className="text-[#b89c6c] lg:text-[1.5rem] lg:leading-[1.65] leading-normal  text-[0.85rem] text-center ">
                         Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando<br className="d-none lg:d-block"/> resultados e tocando o que<br className="d-none lg:d-block"/> é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
                       </p>
                     </div>
@@ -179,9 +157,9 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Diferenciais */}
-        <section className="  lg:pt-16 lg:pb-14 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem]">
+        <section className="  lg:pt-16 lg:pb-14 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem] ">
           {/* Imagem de fundo com curva */}
-          <div className="w-screen h-20 lg:h-80 relative">
+          <div className="w-screen h-20 lg:h-60 relative">
               <Image
                 src="/images/index/VETOR-SEÇÃO-3-PÁGINA-INICIAL.png"
                 alt="Curva decorativa"
@@ -192,46 +170,46 @@ export default async function HomePage() {
           </div>
           
           <div className="container  mx-auto lg:px-6 px-4  text-center relative z-10 bg-[#b89c6c]">
-            <p className="text-[16px] lg:text-[26px] titulo-scotch secundary-color font-light lg:w-[36rem] m-auto leading-tight relative lg:-top-12 mb-10 lg:mb-0">
+            <p className="text-[16px] lg:text-[27px] titulo-scotch secundary-color font-light lg:w-[36rem] m-auto leading-tight relative lg:-top-10 mb-10 lg:mb-4">
               O verdadeiro resultado não está no detalhe< br/> isolado
               <span className="font-semibold titulo-scotch italic"> mas na harmonia do conjunto</span>
             </p>
 
             <div className="grid grid-cols-1 lg:flex lg:flex-nowrap gap-0 lg:gap-8 mb-6 lg:mb-16 m-auto relative lg:-bottom-1 justify-center items-center">
-              <div className="flex items-center justify-center text-left gap-1 relative -left-27 lg:left-0 ">
+              <div className="flex items-center justify-center text-left gap-1 relative -left-28 lg:-left-0 ">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
+                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-19 -top-6 lg:right-0 lg:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
+                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
               </div>
-              <div className="flex items-center justify-center text-left gap-1 relative -left-19 lg:left-0 ">
+              <div className="flex items-center justify-center text-left gap-1 relative -left-19 lg:-left-1 ">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
+                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-30 -top-6 lg:right-0 lg:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
+                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
               </div>
             </div>
             
-            <button className="px-4 py-2 mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] text-[1.1rem] rounded-3xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300">
+            <button className="px-6 py-3 mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] text-[1.1rem] rounded-3xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300">
               CONHEÇA A CLÍNICA
             </button>
           </div>
         </section>
 
         {/* Seção Ensino */}
-        <section className="py-0  bg-white text-white relative overflow-hidden">
+        <section className="py-0  bg-white text-white relative overflow-hidden opacity-35">
           <div className="w-full flex flex-col lg:flex-row  lg:h-[750px]">
             {/* Esquerda: textos com imagem de fundo */}
             <div
