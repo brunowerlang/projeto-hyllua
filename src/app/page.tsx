@@ -37,14 +37,14 @@ export default async function HomePage() {
           </div>
           
           <div className="container max-w-4xl mx-auto  py-36 relative  z-10">
-            <div className="max-w-2xl relative px-8 top-6 lg:px-0 lg:top-12 lg:right-2">
+            <div className="max-w-2xl relative px-8 top-6 lg:px-0 lg:top-8 lg:right-2">
               {/* Texto principal */}
               <h1 className="titulo-scotch font-medium italic text-[40px] lg:text-[60px] text-[#b89c6c] mb-10 leading-[1]">
                 Clínica<br />
                 Hyllua
                 Husein
               </h1>
-              <p className="text-2xl lg:text-[2rem] text-[#b89c6c] mb-20 lg:mb-12 font-light leading-none relative ">
+              <p className="text-2xl lg:text-[2rem] text-[#b89c6c] mb-20 lg:mb-16 font-light leading-none relative ">
                 Onde saúde e estética<br />
                 <em className="font-semibold italic">se completam.</em>
               </p>
