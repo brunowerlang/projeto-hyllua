@@ -21,7 +21,7 @@ export default function Header() {
   };
 
   return (
-    <header className="absolute top-8 md:top-15 left-0 w-full z-[100] bg-transparent px-4 md:px-0 ">
+    <header className="absolute top-10 md:top-15 left-0 w-full z-[100] bg-transparent px-5 md:px-0 ">
       <div className="max-w-[57rem] mx-auto rounded-xl">
         <div className="flex items-center justify-between border border-[#b89c6c] rounded-xl px-4 md:px-9 py-2 md:py-4 hover:bg-[#b89c6c] transition-colors duration-500 group cabecalho">
           {/* Logo à esquerda */}

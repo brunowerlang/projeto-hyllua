@@ -44,7 +44,7 @@ export default async function HomePage() {
           />
         </div>
 
-        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 opacity-50 
+        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 opacity-40 
         ">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
@@ -234,7 +234,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Ensino */}
-        <section className="py-0  bg-white text-white relative overflow-hidden opacity-35">
+        <section className="py-0  bg-white text-white relative overflow-hidden ">
           <div className="w-full flex flex-col lg:flex-row  lg:h-[750px]">
             {/* Esquerda: textos com imagem de fundo */}
             <div
@@ -258,12 +258,12 @@ export default async function HomePage() {
                     </p>
                   </div>
                 </div>
-                <p className="text-[1rem] lg:mb-16 mb-6 secundary-color leading-normal lg:w-[19rem] w-[15rem] relative left-7 lg:left-14">
+                <p className="text-[1rem] lg:mb-17 mb-6 secundary-color leading-snug lg:w-[19rem] w-[15rem] relative left-7 lg:left-14">
                   Nossos protocolos autorais <span className="font-semibold titulo-scotch">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch">Lapidare</span>, nasceram da prática diária 
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch">transformador.</span>
                 </p>
-                <button className=" ml-7 mb-12 lg:mb-0 lg:ml-14 px-4 py-2 text-[0.95rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-medium uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
+                <button className=" ml-7 mb-12 lg:mb-0 lg:ml-14 px-5 py-2 text-[1rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-medium uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
                   CONHEÇA NOSSO ENSINO
                 </button>
               </div>
@@ -277,14 +277,14 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Blog */}
-        <section className="lg:py-28 py-10 relative overflow-hidden opacity-25">
+        <section className="lg:py-28 py-10 relative overflow-hidden ">
           <div className="absolute inset-0 w-full h-full bg-[url('/images/index/BACKGROUND-SESSÃO-BLOG-PÁGINA-INICIAL.webp')] bg-cover bg-center "></div>
-          <div className="container max-w-5xl mx-auto px-6 relative z-10">
-            <h2 className="text-center text-xl lg:text-2xl text-[#b89c6c] mb-12 font-light relative lg:-top-2 lg:-ml-4 lg:w-[100%] w-[13rem] mx-auto ">
-              Leia os últimos posts <span className="lg:text-[40px] text-[30px] titulo-scotch font-semibold italic lg:-mr-4">do nosso blog</span>
+          <div className="container max-w-[62rem] mx-auto px-6 relative z-10">
+            <h2 className="text-center text-xl lg:text-[26px] text-[#b89c6c] mb-16 font-light relative  lg:-top-0  lg:w-[100%] w-[13rem] mx-auto lg:-left-1">
+              Leia os últimos posts <span className="lg:text-[44px] text-[30px] titulo-scotch font-semibold italic relative lg:-right-2">do nosso blog</span>
             </h2>
-            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-10 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[1050px] before:lg:h-[200px] before:lg:rounded-2xl before:lg:border-2 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
-              <div className="grid lg:grid-cols-3 gap-8 relative z-10">
+            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-20 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[1115px] before:lg:h-[215px] before:lg:rounded-2xl before:lg:border-2 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
+              <div className="grid lg:grid-cols-3 gap-0 relative z-10">
                 {posts.length === 0 ? (
                   <div className="text-center text-red-500 col-span-3">Erro ao carregar posts do blog.</div>
                 ) : (
@@ -292,7 +292,7 @@ export default async function HomePage() {
                     const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
                     return (
                       <div key={post.id} className=" rounded-2xl flex flex-col items-center " style={{ minWidth: 0 }}>
-                        <div className="w-[270px] h-[270px] rounded-4xl overflow-hidden mb-2 flex items-center justify-center border border-[#e7dcc2]">
+                        <div className="w-[300px] h-[290px] rounded-4xl overflow-hidden mb-2 flex items-center justify-center border border-[#e7dcc2]">
                           <Image
                             src={featuredImage || "/placeholder.svg"}
                             alt={post.title.rendered}
@@ -301,13 +301,13 @@ export default async function HomePage() {
                             className="object-cover w-full h-full"
                           />
                         </div>
-                        <h3 className=" w-[16rem] lg:w-0 text-center text-[1.1rem] lg:text-[1.15rem]  titulo-scotch text-[#b89c6c] mb-1 line-clamp-1" style={{display: 'webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                        <h3 className=" w-[16rem] lg:w-[14rem] text-center text-[1.1rem] lg:text-[1.4rem]  titulo-scotch text-[#b89c6c] mb-0 line-clamp-1" style={{display: 'webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                         <a href={`/blog/${post.slug}`} className="w-full mt-2 px-0">
-                          <button className="mx-auto px-4 flex items-center justify-center gap-2 bg-[#b89c6c] text-white  py-2 rounded-xl text-[0.95rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 ">
+                          <button className="mx-auto px-3 flex items-center justify-center gap-2 bg-[#b89c6c] text-white  py-1.5 rounded-xl text-[1.1rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 ">
                             LER POST DO BLOG
                             <span
-                              className="ml-2 border border-solid border-white rounded-full w-[25px] h-[25px] flex items-center justify-center  "
-                              style={{ minWidth: '25px', minHeight: '25px' }}
+                              className="ml-2 border border-solid border-white rounded-full w-[23px] h-[23px] flex items-center justify-center  "
+                              style={{ minWidth: '23px', minHeight: '23px' }}
                             >
                               →
                             </span>
