@@ -20,31 +20,9 @@ export default async function HomePage() {
       <main>
 
 
-        {/* Fundo Desktop */}
-        <div className="hidden lg:block w-full relative z-0">
-          <Image
-            src="/images/index/home-desktop-gray.png"
-            alt="Layout Desktop"
-            width={1920} // largura real da imagem
-            height={6100} // altura real da imagem
-            className="w-full h-auto absolute top-0 left-0 z-0"
-            priority
-          />
-        </div>
+     
 
-        {/* Fundo Mobile */}
-        <div className="block lg:hidden w-full relative z-0">
-          <Image
-            src="/images/index/home-mobile.png"
-            alt="Layout Mobile"
-            width={768} // largura real da imagem mobile
-            height={5700} // altura real da imagem mobile
-            className="w-full h-auto absolute top-0 left-0 z-0"
-            priority
-          />
-        </div>
-
-        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 opacity-40 
+        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 
         ">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
