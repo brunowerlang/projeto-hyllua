@@ -17,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="overflow-x-hidden">
+    <html lang="pt-BR" className="overflow-x-hidden debug-overlay">
       <body className=" ">
        
         <main className="mx-auto overflow-x-hidden">
            <Header />
           {children}</main>
-        <Footer />
+       
       </body>
     </html>
   );

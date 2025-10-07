@@ -20,7 +20,32 @@ export default async function HomePage() {
       <main>
 
 
-        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 ">
+        {/* Fundo Desktop */}
+        <div className="hidden lg:block w-full relative z-0">
+          <Image
+            src="/images/index/home-desktop-gray.png"
+            alt="Layout Desktop"
+            width={1920} // largura real da imagem
+            height={6100} // altura real da imagem
+            className="w-full h-auto absolute top-0 left-0 z-0"
+            priority
+          />
+        </div>
+
+        {/* Fundo Mobile */}
+        <div className="block lg:hidden w-full relative z-0">
+          <Image
+            src="/images/index/home-mobile.png"
+            alt="Layout Mobile"
+            width={768} // largura real da imagem mobile
+            height={5700} // altura real da imagem mobile
+            className="w-full h-auto absolute top-0 left-0 z-0"
+            priority
+          />
+        </div>
+
+        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 opacity-50 
+        ">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
           
@@ -58,7 +83,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Logos */}
-        <section className="bg-[#b89c6c] py-1.5">
+        <section className="bg-[#b89c6c] py-1.5 ">
           <div className="container max-w-full mx-auto px-1 lg:px-6">
             <div className="flex justify-between items-center overflow-hidden gap-2">
               <Image
@@ -157,52 +182,52 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Diferenciais */}
-        <section className="  lg:pt-16 lg:pb-14 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem] ">
+        <section className="  lg:pt-18 lg:pb-0 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem] ">
           {/* Imagem de fundo com curva */}
-          <div className="w-screen h-20 lg:h-60 relative">
+          <div className="w-screen h-20 lg:h-66 relative">
               <Image
                 src="/images/index/VETOR-SEÇÃO-3-PÁGINA-INICIAL.png"
                 alt="Curva decorativa"
                 width={1920}
                 height={800}
-                className="w-full object-cover object-top  "
+                className="w-full object-cover object-top opacity-0 "
               />
           </div>
           
           <div className="container  mx-auto lg:px-6 px-4  text-center relative z-10 bg-[#b89c6c]">
-            <p className="text-[16px] lg:text-[27px] titulo-scotch secundary-color font-light lg:w-[36rem] m-auto leading-tight relative lg:-top-10 mb-10 lg:mb-4">
+            <p className="text-[16px] lg:text-[24px] titulo-scotch secundary-color font-light lg:w-[36rem] m-auto leading-tight relative lg:-top-18 mb-10 lg:mb-4">
               O verdadeiro resultado não está no detalhe< br/> isolado
-              <span className="font-semibold titulo-scotch italic"> mas na harmonia do conjunto</span>
+              <span className="font-semibold titulo-scotch italic lg:text-[26px]"> mas na harmonia do conjunto</span>
             </p>
 
-            <div className="grid grid-cols-1 lg:flex lg:flex-nowrap gap-0 lg:gap-8 mb-6 lg:mb-16 m-auto relative lg:-bottom-1 justify-center items-center">
+            <div className="grid grid-cols-1 lg:flex lg:flex-nowrap gap-0 lg:gap-8 mb-6 lg:mb-16 m-auto relative lg:-top-6 justify-center items-center">
               <div className="flex items-center justify-center text-left gap-1 relative -left-28 lg:-left-0 ">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
+                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-19 -top-6 lg:right-0 lg:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
+                <p className="lg:text-[0.90rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -left-19 lg:-left-1 ">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
+                <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-30 -top-6 lg:right-0 lg:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
                   <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
-                <p className="lg:text-[0.95rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
+                <p className="lg:text-[0.90rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
               </div>
             </div>
             
-            <button className="px-6 py-3 mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] text-[1.1rem] rounded-3xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300">
+            <button className="px-4 py-2.5 mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] text-[1.2rem] rounded-2xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300 relative lg:-top-6 lg:-left-4">
               CONHEÇA A CLÍNICA
             </button>
           </div>
@@ -219,21 +244,21 @@ export default async function HomePage() {
     backgroundSize: 'cover'
   }}
 >
-              <div className="z-10 w-full max-w-lg text-white mt-12 lg:mt-24 relative left-12 lg:left-30 lg:top-13">
+              <div className="z-10 w-full max-w-lg mt-12 lg:mt-24 relative left-12 lg:left-28 lg:top-14.5">
                 <div className="flex  lg:items-start gap-4 mb-8 lg:ml-6">
                   <Image src="/images/index/objeto.webp" alt="Ícone Ensino" className="lg:w-[18px] w-[12px]" width={40} height={40} />
                   <div>
-                    <h2 className="text-xl lg:text-[1.7rem] font-light italic titulo-scotch mb-7 secundary-color lg:w-[17rem] w-[15rem]">
+                    <h2 className="text-xl lg:text-[1.88rem] font-light italic leading-normal titulo-scotch mb-7 secundary-color lg:w-[19rem] w-[15rem]">
                       Compartilhamos o que vivemos na prática.
                     </h2>
-                    <p className="leading-tight secundary-color lg:text-[1.30rem]">
+                    <p className="leading-[1.15] secundary-color lg:text-[1.43rem] relative lg:-top-1">
                       Transformamos <strong>experiências</strong><br />
                       em <strong>formação</strong>, para quem quer<br />
                       <strong>evoluir com propósito</strong>.
                     </p>
                   </div>
                 </div>
-                <p className="text-[0.95rem] lg:mb-16 mb-6 secundary-color leading-tight lg:w-[19rem] w-[15rem] relative left-7 lg:left-14">
+                <p className="text-[1rem] lg:mb-16 mb-6 secundary-color leading-normal lg:w-[19rem] w-[15rem] relative left-7 lg:left-14">
                   Nossos protocolos autorais <span className="font-semibold titulo-scotch">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch">Lapidare</span>, nasceram da prática diária 
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch">transformador.</span>
@@ -252,7 +277,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Blog */}
-        <section className="lg:py-28 py-10 relative overflow-hidden">
+        <section className="lg:py-28 py-10 relative overflow-hidden opacity-25">
           <div className="absolute inset-0 w-full h-full bg-[url('/images/index/BACKGROUND-SESSÃO-BLOG-PÁGINA-INICIAL.webp')] bg-cover bg-center "></div>
           <div className="container max-w-5xl mx-auto px-6 relative z-10">
             <h2 className="text-center text-xl lg:text-2xl text-[#b89c6c] mb-12 font-light relative lg:-top-2 lg:-ml-4 lg:w-[100%] w-[13rem] mx-auto ">
@@ -297,7 +322,7 @@ export default async function HomePage() {
           </div>
         </section>
         {/* Seção Final */}
-        <section className="py-10 bg-[#f7eccd] text-[#b89c6c] text-center">
+        <section className="py-10 bg-[#f7eccd] text-[#b89c6c] text-center ">
           <div className="container max-w-4xl mx-auto px-6">
             <p className="text-[19px] lg:text-2xl font-light">
               <span className="titulo-scotch font-semibold italic">Na Clínica Hyllua Husein,</span> o cuidado é integrado, o resultado é completo.
