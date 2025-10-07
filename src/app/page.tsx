@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import Link from "next/link";
 // Fetch posts from WordPress API
@@ -20,12 +18,36 @@ export default async function HomePage() {
   return (
     <>
       <main>
-        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center">
+        {/* Fundo Desktop */}
+        <div className="hidden lg:block w-full relative z-0">
+          <Image
+            src="/images/index/home-desktop.png"
+            alt="Layout Desktop"
+            width={1920} // largura real da imagem
+            height={6100} // altura real da imagem
+            className="w-full h-auto absolute top-0 left-0 z-0"
+            priority
+          />
+        </div>
+
+        {/* Fundo Mobile */}
+        <div className="block lg:hidden w-full relative z-0">
+          <Image
+            src="/images/index/home-mobile.png"
+            alt="Layout Mobile"
+            width={768} // largura real da imagem mobile
+            height={5700} // altura real da imagem mobile
+            className="w-full h-auto absolute top-0 left-0 z-0"
+            priority
+          />
+        </div>
+
+        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 ">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
           
           {/* Símbolo médico grande à direita */}
-          <div className="absolute top-10 -right-50 lg:right-4 lg:-top-0 lg:w-1/2 lg:h-[100%] h-full ">
+          <div className="absolute top-10 -right-50 lg:right-4 lg:-top-0 lg:w-1/2 lg:h-[105%] h-full ">
             <Image
               src="/images/index/SÍMBOLO-COM-EFEITO-HERO-PÁGINA-INICIAL.webp"
               alt="Símbolo médico"
@@ -37,19 +59,19 @@ export default async function HomePage() {
           </div>
           
           <div className="container max-w-4xl mx-auto  pt-50 pb-16 lg:pt-36 lg:pb-26 relative  z-10">
-            <div className="relative px-8 top-0 lg:px-0 lg:top-8 lg:left-4">
+            <div className="relative px-8 top-0 lg:px-0 lg:top-12 lg:-left-[10px]">
               {/* Texto principal */}
-              <h1 className="titulo-scotch font-medium italic text-[45px] lg:text-[60px] text-[#b89c6c] mb-10 leading-[1]">
+              <h1 className="titulo-scotch font-medium italic text-[45px] lg:text-[65px] text-[#b89c6c] mb-10 leading-[1] tracking-wide">
                 Clínica<br />
                 Hyllua
                 Husein
               </h1>
-              <p className="text-2xl lg:text-[2rem] text-[#b89c6c] mb-20 lg:mb-14 font-light leading-none relative ">
+              <p className="text-2xl lg:text-[2.2rem] tracking-wide text-[#b89c6c] mb-20 lg:mb-13 font-light leading-none relative ">
                 Onde saúde e estética<br />
                 <em className="font-semibold italic">se completam.</em>
               </p>
              <Link href="/clinica">
-  <button className="px-2 py-1 lg:px-6 lg:py-2 border-2 border-[#b89c6c] text-[#b89c6c] rounded-full font-semibold italic tracking-wide hover:bg-[#b89c6c] hover:text-[#f7eccd] hover:cursor-pointer transition-all duration-300 text-[18px]">
+  <button className="px-2 py-1 lg:px-6.5 lg:py-2 border-2 border-[#b89c6c] text-[#b89c6c] rounded-full font-semibold italic hover:bg-[#b89c6c] hover:text-[#f7eccd] hover:cursor-pointer transition-all duration-300 lg:text-[19px] tracking-[0.09rem]">
     Conheça a clínica
   </button>
 </Link>
@@ -159,7 +181,7 @@ export default async function HomePage() {
         {/* Seção Diferenciais */}
         <section className="  lg:pt-16 lg:pb-14 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem]">
           {/* Imagem de fundo com curva */}
-          <div className="w-screen h-20 lg:h-60 lg:h-80 relative">
+          <div className="w-screen h-20 lg:h-80 relative">
               <Image
                 src="/images/index/VETOR-SEÇÃO-3-PÁGINA-INICIAL.png"
                 alt="Curva decorativa"
@@ -178,25 +200,25 @@ export default async function HomePage() {
             <div className="grid grid-cols-1 lg:flex lg:flex-nowrap gap-0 lg:gap-8 mb-6 lg:mb-16 m-auto relative lg:-bottom-1 justify-center items-center">
               <div className="flex items-center justify-center text-left gap-1 relative -left-27 lg:left-0 ">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center">
-                  <Image src="/images/index/check.webp" alt="Check" width={15} height={15} />
+                  <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
                 <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-19 -top-6 lg:right-0 lg:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
-                  <Image src="/images/index/check.webp" alt="Check" width={15} height={15} />
+                  <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
                 <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -left-19 lg:left-0 ">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
-                  <Image src="/images/index/check.webp" alt="Check" width={15} height={15} />
+                  <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
                 <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-30 -top-6 lg:right-0 lg:top-0">
                 <div className="w-6 h-6  rounded-full flex items-center justify-center ">
-                  <Image src="/images/index/check.webp" alt="Check" width={15} height={15} />
+                  <Image src="/images/index/check.webp" alt="Check" width={20} height={20} />
                 </div>
                 <p className="lg:text-[0.9rem] text-[0.7rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
               </div>
@@ -254,11 +276,11 @@ export default async function HomePage() {
         {/* Seção Blog */}
         <section className="lg:py-28 py-10 relative overflow-hidden">
           <div className="absolute inset-0 w-full h-full bg-[url('/images/index/BACKGROUND-SESSÃO-BLOG-PÁGINA-INICIAL.webp')] bg-cover bg-center "></div>
-          <div className="container max-w-4xl mx-auto px-6 relative z-10">
+          <div className="container max-w-5xl mx-auto px-6 relative z-10">
             <h2 className="text-center text-xl lg:text-2xl text-[#b89c6c] mb-12 font-light relative lg:-top-2 lg:-ml-4 lg:w-[100%] w-[13rem] mx-auto ">
               Leia os últimos posts <span className="lg:text-[40px] text-[30px] titulo-scotch font-semibold italic lg:-mr-4">do nosso blog</span>
             </h2>
-            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-12 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[950px] before:lg:h-[200px] before:lg:rounded-2xl before:lg:border-2 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
+            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-10 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[1050px] before:lg:h-[200px] before:lg:rounded-2xl before:lg:border-2 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
               <div className="grid lg:grid-cols-3 gap-8 relative z-10">
                 {posts.length === 0 ? (
                   <div className="text-center text-red-500 col-span-3">Erro ao carregar posts do blog.</div>
