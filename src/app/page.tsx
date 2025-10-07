@@ -259,7 +259,7 @@ em <span className="font-semibold">formação</span>, para quem quer<br />
                   </div>
                 </div>
                 <p className="text-[1rem] lg:mb-17 mb-6 secundary-color leading-snug lg:w-[19rem] w-[15rem] relative left-7 lg:left-14">
-                  Nossos protocolos autorais <span className="font-semibold titulo-scotch">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática diária 
+                  Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática diária 
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch italic">transformador.</span>
                 </p>
