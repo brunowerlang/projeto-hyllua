@@ -125,7 +125,7 @@ export default async function HomePage() {
                   alt="Profissional da clínica"
                   width={1066}
                   height={1541}
-                  className="rounded-lg w-full h-auto relative -top-12 -right-3 lg:-top-34 lg:left-4 lg:-right-0 lg:scale-80 scale-110"
+                  className="rounded-lg w-full h-auto relative -top-12 -right-3 lg:-top-24 lg:-left-4 lg:-right-0 lg:scale-90 scale-110"
                 />
               </div>
               
@@ -141,12 +141,12 @@ export default async function HomePage() {
                   
                   {/* Box com ícone */}
                   <div className="flex-1  ">
-                    <div className=" rounded-4xl px-5 py-4 lg:py-8 lg:px-6 mb-6 relative lg:w-[24rem] lg:-top-7 lg:left-4 border-2 border-[#b89c6c]">
+                    <div className=" rounded-4xl px-5 py-4 lg:py-7 lg:px-0 mb-6 relative lg:w-[24.5rem] lg:-top-3 lg:left-3 border-2 border-[#b89c6c]">
                       <div className="absolute -top-2 -right-3 lg:-top-9 lg:-right-6 w-9 h-9 lg:w-17 lg:h-17  rounded-full flex items-center justify-center ">
                         <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-16 lg:h-16 w-9 h-9 object-contain" />
                       </div>
-                      <p className="text-[#b89c6c] lg:text-[1.35rem] lg:leading-[1.8] leading-[1.5]  text-[0.85rem] text-center ">
-                        Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando resultados e tocando o que<br className="d-none lg:d-block"/> é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
+                      <p className="text-[#b89c6c] lg:text-[1.5rem] lg:leading-[1.6] leading-snug  text-[0.85rem] text-center ">
+                        Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando<br className="d-none lg:d-block"/> resultados e tocando o que<br className="d-none lg:d-block"/> é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
                       </p>
                     </div>
                   </div>
