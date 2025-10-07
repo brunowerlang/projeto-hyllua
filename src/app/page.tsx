@@ -48,11 +48,11 @@ export default async function HomePage() {
                 Onde saúde e estética<br />
                 <em className="font-semibold italic">se completam.</em>
               </p>
-              <Link href="/clinica">
-              <button className="px-2 py-1 lg:px-6 lg:py-2 border-2 border-[#b89c6c] text-[#b89c6c] rounded-full font-semibold italic  tracking-wide hover:bg-[#b89c6c] hover:text-[#f7eccd] transition-all duration-300 text-[18px] ">
-                Conheça a clínica
-              </button>
-              </Link>
+             <Link href="/clinica">
+  <button className="px-2 py-1 lg:px-6 lg:py-2 border-2 border-[#b89c6c] text-[#b89c6c] rounded-full font-semibold italic tracking-wide hover:bg-[#b89c6c] hover:text-[#f7eccd] hover:cursor-pointer transition-all duration-300 text-[18px]">
+    Conheça a clínica
+  </button>
+</Link>
             </div>
           </div>
         </section>
