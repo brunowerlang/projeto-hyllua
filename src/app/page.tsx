@@ -125,7 +125,7 @@ export default async function HomePage() {
                   alt="Profissional da clínica"
                   width={1066}
                   height={1541}
-                  className="rounded-lg w-full h-auto relative -top-12 -right-3 lg:-top-28 lg:-left-8 lg:-right-0 lg:scale-85 scale-110"
+                  className="rounded-lg w-full h-auto relative -top-12 -right-3 lg:-top-28 lg:-left-8 lg:-right-0 lg:scale-80 scale-110"
                 />
               </div>
               
@@ -141,12 +141,12 @@ export default async function HomePage() {
                   
                   {/* Box com ícone */}
                   <div className="flex-1  lg:w-0">
-                    <div className=" rounded-4xl px-2 py-2 lg:py-5 lg:px-13 mb-6 relative lg:w-[22.5rem]  lg:left-6 border-2 border-[#b89c6c]">
+                    <div className=" rounded-4xl px-0 py-2 lg:py-5 lg:px-6 mb-6 relative lg:w-[23.5rem]  lg:left-4 border-2 border-[#b89c6c]">
                       <div className="absolute -top-2 -right-3 lg:-top-9 lg:-right-6 w-9 h-9 lg:w-17 lg:h-17  rounded-full flex items-center justify-center ">
                         <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-16 lg:h-16 w-9 h-9 object-contain" />
                       </div>
-                      <p className="text-[#b89c6c] lg:text-[1.3rem] lg:leading-[1.7] text-[0.8rem] text-center ">
-                        Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando resultados e tocando o que é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
+                      <p className="text-[#b89c6c] lg:text-[1.35rem] lg:leading-[1.6] text-[0.8rem] text-center ">
+                        Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando resultados e tocando o que<br /> é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
                       </p>
                     </div>
                   </div>
