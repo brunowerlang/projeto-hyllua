@@ -20,31 +20,8 @@ export default async function HomePage() {
       <main>
 
 
-        {/* Fundo Desktop */}
-        <div className="hidden lg:block w-full relative z-0">
-          <Image
-            src="/images/index/home-desktop-gray.png"
-            alt="Layout Desktop"
-            width={1920} // largura real da imagem
-            height={6100} // altura real da imagem
-            className="w-full h-auto absolute top-0 left-0 z-0"
-            priority
-          />
-        </div>
-
-        {/* Fundo Mobile */}
-        <div className="block lg:hidden w-full relative z-0">
-          <Image
-            src="/images/index/home-mobile-gray.png"
-            alt="Layout Mobile"
-            width={768} // largura real da imagem mobile
-            height={5700} // altura real da imagem mobile
-            className="w-full h-auto absolute top-0 left-0 z-0"
-            priority
-          />
-        </div>
-
-        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 opacity-40 
+  
+        <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10 
         ">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
@@ -140,7 +117,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Cuidamos de você */}
-        <section className="bg-[#f1edec] opacity-50">
+        <section className="bg-[#f1edec] ">
           <div className="container max-w-7xl mx-auto px-6 ">
             <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-8 items-start pt-6 lg:pt-0">
               {/* Mobile: Texto primeiro, Desktop: Imagem primeiro */}
@@ -182,7 +159,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Diferenciais */}
-        <section className="  lg:pt-18 lg:pb-0 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem] opacity-70">
+        <section className="  lg:pt-18 lg:pb-0 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem] ">
           {/* Imagem de fundo com curva */}
           <div className="w-screen h-20 lg:h-66 relative">
               <Image
@@ -234,7 +211,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Ensino */}
-        <section className="py-0  bg-white text-white relative overflow-hidden opacity-70">
+        <section className="py-0  bg-white text-white relative overflow-hidden">
           <div className="w-full flex flex-col lg:flex-row  lg:h-[750px]">
             {/* Esquerda: textos com imagem de fundo */}
             <div
@@ -263,7 +240,7 @@ export default async function HomePage() {
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch italic">transformador.</span>
                 </p>
-                <button className=" ml-7 mb-12 lg:mb-0 lg:ml-14 px-5 py-2 text-[1rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-medium uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
+                <button className=" ml-7 mb-12 lg:mb-0 lg:ml-14 px-5 py-2 text-[1rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300">
                   CONHEÇA NOSSO ENSINO
                 </button>
               </div>
