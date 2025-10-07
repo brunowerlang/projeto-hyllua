@@ -36,7 +36,7 @@ export default async function HomePage() {
             />
           </div>
           
-          <div className="container max-w-4xl mx-auto  py-36 relative  z-10">
+          <div className="container max-w-4xl mx-auto  lg:pt-36 lg:pb-26 relative  z-10">
             <div className="max-w-2xl relative px-8 top-6 lg:px-0 lg:top-8 lg:right-2">
               {/* Texto principal */}
               <h1 className="titulo-scotch font-medium italic text-[40px] lg:text-[60px] text-[#b89c6c] mb-10 leading-[1]">
@@ -44,11 +44,11 @@ export default async function HomePage() {
                 Hyllua
                 Husein
               </h1>
-              <p className="text-2xl lg:text-[2rem] text-[#b89c6c] mb-20 lg:mb-16 font-light leading-none relative ">
+              <p className="text-2xl lg:text-[2rem] text-[#b89c6c] mb-20 lg:mb-14 font-light leading-none relative ">
                 Onde saúde e estética<br />
                 <em className="font-semibold italic">se completam.</em>
               </p>
-              <button className="px-2 py-1 lg:px-8 lg:py-2 border-2 border-[#b89c6c] text-[#b89c6c] rounded-full font-semibold italic  tracking-wide hover:bg-[#b89c6c] hover:text-white transition-all duration-300 text-[18px] ">
+              <button className="px-2 py-1 lg:px-6 lg:py-2 border-2 border-[#b89c6c] text-[#b89c6c] rounded-full font-semibold italic  tracking-wide hover:bg-[#b89c6c] hover:text-[#f7eccd] transition-all duration-300 text-[18px] ">
                 Conheça a clínica
               </button>
             </div>
