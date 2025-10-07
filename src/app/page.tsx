@@ -37,7 +37,7 @@ export default async function HomePage() {
           </div>
           
           <div className="container max-w-4xl mx-auto  lg:pt-36 lg:pb-26 relative  z-10">
-            <div className="max-w-2xl relative px-8 top-6 lg:px-0 lg:top-8 lg:right-2">
+            <div className="relative px-8 top-6 lg:px-0 lg:top-8 lg:left-4">
               {/* Texto principal */}
               <h1 className="titulo-scotch font-medium italic text-[40px] lg:text-[60px] text-[#b89c6c] mb-10 leading-[1]">
                 Clínica<br />
