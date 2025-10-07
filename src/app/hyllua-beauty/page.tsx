@@ -53,19 +53,19 @@ export default function HylluaPage() {
 
       {/* Section 2 - Como tudo começou */}
       <section className="relative w-full overflow-hidden bg-[url('/images/beauty/background-secao-2-hyllua-beauty.webp')] bg-cover bg-center">
-        <div className="max-w-5xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 lg:px-8 lg:pb-24 pb-20 pt-12 lg:pt-0 items-center">
+        <div className="max-w-5xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 lg:px-8 lg:pb-14 pb-0 pt-12 lg:pt-0 items-center">
           {/* Textos à esquerda */}
-          <div className="relative z-10 flex flex-col items-center lg:items-start lg:text-left lg:pt-22">
+          <div className="relative z-10 flex flex-col items-center lg:items-start lg:text-left lg:pt-24 lg:-top-6 lg:-right-6">
             <h2 className="titulo-scotch text-[#e49390] text-[1.8rem] lg:text-[2.8rem] font-bold leading-none mb-6">
               Como tudo<br />
               <span className="font-bold italic">começou...</span>
             </h2>
-            <p className="text-[#e49390] text-[1.1rem] lg:text-[1.3rem] leading-snug max-w-[34rem] mb-4 lg:w-[24rem]">
+            <p className="text-[#e49390] text-[1.1rem] lg:text-[1.3rem] leading-tight max-w-[34rem] mb-4 lg:w-[24rem]">
               <span className="font-semibold">Hyllua Beauty</span>, nasceu da paixão da Dra.
               Hyllua Husein por cuidar da pele de forma
               científica e encantadora.
             </p> 
-            <p className="text-[#e49390] text-[1.1rem] lg:text-[1.3rem] leading-snug max-w-[34rem] mb-4 lg:w-[24rem]">
+            <p className="text-[#e49390] text-[1.1rem] lg:text-[1.3rem] leading-tight max-w-[34rem] mb-4 lg:w-[24rem]">
               Após anos de pesquisa, desenvolvimento
               e aplicação prática em suas pacientes,
               ela criou uma linha de dermocosméticos
@@ -73,7 +73,7 @@ export default function HylluaPage() {
               avançada com a delicadeza de<br />
               um toque mágico.
             </p>
-            <div className="mt-2 border border-[#e49390] text-[#e49390]  lg:px-4 px-2 py-1 text-center lg:w-[24rem]">
+            <div className="mt-8 border border-[#e49390] text-[#e49390]  lg:px-4 px-2 py-1 text-center lg:w-[23rem]">
               <p className="lg:text-[0.8rem] text-[0.8rem] leading-snug lg:leading-relaxed font-semibold ">
                 Todos os produtos são dermatologicamente testados,
                 hipoalergênicos, aprovados pela <span className="font-semibold">ANVISA</span>, 100% veganos e
@@ -85,9 +85,9 @@ export default function HylluaPage() {
      
         </div>
         {/* Imagem à direita no canto inferior da section (desktop) */}
-        <div className="pointer-events-none lg:absolute bottom-0 lg:right-0 z-0  ">
+        <div className="pointer-events-none lg:absolute bottom-0 right-0 z-0  lg:w-[54vw] w-[100%]">
           <Image
-            src="/images/beauty/foto-hyllua-secao-2-hyllua-beauty.webp"
+            src="/images/beauty/PETALAS-FOTO-LOGO-SEÇÃO-2-PÁGINA-HYLLUA-BEAUTY.png"
             alt="Hyllua segurando produto"
             width={1800}
             height={1500}
@@ -108,23 +108,23 @@ export default function HylluaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Card Skincare */}
             <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl lg:px-14 px-2 py-4 lg:py-6 flex flex-col items-center justify-center lg:min-h-[270px]">
-              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-8 shadow-md titulo-scotch">Skincare</span>
+              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-4 lg:px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-8 shadow-md titulo-scotch">Skincare</span>
               <p className="text-white text-center lg:text-[1.4rem] font-normal leading-snug relative lg:-top-6 px-2 lg:px-0 -top-6  tracking-wide">Formulados para proteger,<br className="block lg:hidden" /> hidratar, revigorar e renovar cada tipo de pele.</p>
             </div>
             {/* Card Cuidados corporais */}
             
-            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl lg:px-12 py-6 flex flex-col items-center justify-center lg:min-h-[270px]">
-              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-9 shadow-md titulo-scotch">Cuidados corporais</span>
+            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl  lg:px-12 py-6 flex flex-col items-center justify-center lg:min-h-[270px]">
+              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-4 lg:px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-9 shadow-md titulo-scotch">Cuidados corporais</span>
               <p className="text-white text-center lg:text-[1.4rem] font-normal leading-snug relative lg:-top-6 px-2 lg:px-0 -top-6  tracking-wide">Os produtos tratam a pele com tecnologia dermocosmética, ingredientes eficazes e fragrâncias delicadas, promovendo hidratação profunda, firmeza, luminosidade e bem-estar.</p>
             </div>
             {/* Card Maquiagens */}
-            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl lg:px-12 py-6 flex flex-col items-center justify-center lg:min-h-[270px]">
-              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-9 shadow-md titulo-scotch">Maquiagens</span>
+            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl  lg:px-12 py-6 flex flex-col items-center justify-center lg:min-h-[270px]">
+              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-4 lg:px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-9 shadow-md titulo-scotch">Maquiagens</span>
               <p className="text-white text-center lg:text-[1.4rem] font-normal leading-snug relative lg:-top-6 px-2 lg:px-0 -top-6  tracking-wide">Linha de maquiagens da Hyllua Beauty foi criada para ir além da estética: ela une cuidado com a pele, tecnologia dermocosmética e performance profissional em cada fórmula. Pensada especialmente para mulheres que buscam praticidade no dia a dia sem abrir mão da saúde da pele, cada item entrega beleza imediata e tratamento contínuo.</p>
             </div>
             {/* Card Eau de Parfum */}
-            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl lg:px-12 py-6 flex flex-col items-center justify-center lg:min-h-[270px]">
-              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-9 shadow-md titulo-scotch">Eau de Parfum</span>
+            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl  lg:px-12 py-6 flex flex-col items-center justify-center lg:min-h-[270px]">
+              <span className="bg-white text-[#e49390] font-bold italic rounded-full px-4 lg:px-8 py-1 text-[1rem] lg:text-[1.3rem] mb-4 relative lg:-top-24 -top-9 shadow-md titulo-scotch">Eau de Parfum</span>
               <p className="text-white text-center lg:text-[1.4rem] font-normal leading-snug relative lg:-top-6 px-2 lg:px-0 -top-6  tracking-wide">A linha de Eau de Parfum da Hyllua Beauty foi criada para envolver, marcar presença e eternizar momentos. Cada fragrância é uma composição autoral e sofisticada, pensada para traduzir em aroma tudo o que a marca representa: força, delicadeza, feminilidade e encantamento. Mais do que perfumes, são poções sensoriais que despertam memórias, refletem estados de espírito e revelam sua presença com elegância e personalidade.</p>
             </div>
           </div>

@@ -41,22 +41,7 @@ export default function EnsinoSections() {
         </div>
       </section>
 
-        {/* Section de contato igual ao print */}
-        <section className="w-full bg-[#eaeaea] py-12 px-4 flex items-center justify-center">
-          <div className="max-w-4xl w-full mx-auto flex flex-col lg:flex-row items-center lg:items-center justify-between gap-6">
-            <div className="flex-1 flex items-center justify-center lg:justify-start">
-              <p className="text-[#23409c] text-[1.1rem] lg:text-[1.25rem] font-light text-center lg:text-left">
-                Entre em contato e receba mais<br />
-                <span className="italic font-bold">informações sobre turmas.</span>
-              </p>
-            </div>
-            <div className="flex-1 flex items-center justify-center lg:justify-end">
-              <a href="#contato" className="bg-[#23409c] hover:bg-[#1b2a59] text-white font-bold py-2 px-6 rounded text-[0.95rem] transition-colors duration-200">
-                ENTRAR EM CONTATO
-              </a>
-            </div>
-          </div>
-        </section>
+      
 
      <section className=" bg-[#eaeaea] py-25 px-4 flex flex-col items-center justify-center relative ">
 
