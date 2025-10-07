@@ -190,7 +190,7 @@ export default async function HomePage() {
                 alt="Curva decorativa"
                 width={1920}
                 height={800}
-                className="w-full object-cover object-top opacity-0 "
+                className="w-full object-cover object-top  "
               />
           </div>
           
