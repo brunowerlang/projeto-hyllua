@@ -251,10 +251,10 @@ export default async function HomePage() {
                     <h2 className="text-xl lg:text-[1.8rem] font-normal italic leading-normal titulo-scotch mb-7 secundary-color lg:w-[19rem] w-[15rem]">
                       Compartilhamos o que vivemos na prática.
                     </h2>
-                    <p className="leading-[1.15] secundary-color font-light lg:text-[1.45rem] relative lg:top-[1px]">
-                      Transformamos <span className="font-semibold">experiências</span><br />
-em <span className="font-semibold">formação</span>, para quem quer<br />
-<span className="font-semibold">evoluir com propósito</span>.
+                    <p className="leading-[1.15] secundary-color font-light lg:text-[1.48rem] relative lg:top-[1px]">
+                      Transformamos <span className="font-medium">experiências</span><br />
+ <span className="font-medium">em formação</span>, para quem quer<br />
+<span className="font-medium">evoluir com propósito</span>.
                     </p>
                   </div>
                 </div>
