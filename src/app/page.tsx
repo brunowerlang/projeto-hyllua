@@ -141,7 +141,7 @@ export default async function HomePage() {
                   
                   {/* Box com ícone */}
                   <div className="flex-1  lg:w-0">
-                    <div className=" rounded-4xl px-2 py-2 lg:py-5 lg:px-13 mb-6 relative lg:w-[22.5rem]  lg:left-4 border-2 border-[#b89c6c]">
+                    <div className=" rounded-4xl px-2 py-2 lg:py-5 lg:px-13 mb-6 relative lg:w-[22.5rem]  lg:left-6 border-2 border-[#b89c6c]">
                       <div className="absolute -top-2 -right-3 lg:-top-9 lg:-right-6 w-9 h-9 lg:w-17 lg:h-17  rounded-full flex items-center justify-center ">
                         <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-16 lg:h-16 w-9 h-9 object-contain" />
                       </div>
