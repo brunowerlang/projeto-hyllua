@@ -60,49 +60,49 @@ export default async function HomePage() {
           <div className="container max-w-full mx-auto px-1 lg:px-6">
             <div className="flex justify-between items-center overflow-hidden gap-2">
               <Image
-                src="/images/index/CHH_logosAsset 55.webp"
+                src="/images/index/logo-faixa.webp"
                 alt="Logo Hyllua Husein"
                 width={60}
                 height={24}
                 className="h-3 lg:h-6 w-auto object-contain"
               />
               <Image
-                src="/images/index/CHH_logosAsset 55.webp"
+                src="/images/index/logo-faixa.webp"
                 alt="Logo Hyllua Husein"
                 width={60}
                 height={18}
                 className="h-3 lg:h-6 w-auto object-contain"
               />
               <Image
-                src="/images/index/CHH_logosAsset 55.webp"
+                src="/images/index/logo-faixa.webp"
                 alt="Logo Hyllua Husein"
                 width={60}
                 height={18}
                 className="h-3 lg:h-6 w-auto object-contain"
               />
               <Image
-                src="/images/index/CHH_logosAsset 55.webp"
+                src="/images/index/logo-faixa.webp"
                 alt="Logo Hyllua Husein"
                 width={60}
                 height={18}
                 className="h-3 lg:h-6 w-auto object-contain"
               />
               <Image
-                src="/images/index/CHH_logosAsset 55.webp"
+                src="/images/index/logo-faixa.webp"
                 alt="Logo Hyllua Husein"
                 width={60}
                 height={18}
                 className="h-3 lg:h-6 w-auto object-contain"
               />
               <Image
-                src="/images/index/CHH_logosAsset 55.webp"
+                src="/images/index/logo-faixa.webp"
                 alt="Logo Hyllua Husein"
                 width={80}
                 height={24}
                 className="h-6 w-auto object-contain hidden lg:block"
               />
               <Image
-                src="/images/index/CHH_logosAsset 55.webp"
+                src="/images/index/logo-faixa.webp"
                 alt="Logo Hyllua Husein"
                 width={80}
                 height={24}

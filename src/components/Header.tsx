@@ -27,7 +27,7 @@ export default function Header() {
           {/* Logo à esquerda */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/header/logo-header.webp"
+              src="/images/header/logo-header-1.webp"
               alt="Hyllua Husein"
               width={140}
               height={34}
@@ -35,7 +35,7 @@ export default function Header() {
               priority
             />
             <Image
-              src="/images/header/logo-header-hover.webp"
+              src="/images/header/logo-header-hover-1.webp"
               alt="Hyllua Husein Hover"
               width={140}
               height={34}
@@ -49,22 +49,22 @@ export default function Header() {
             <ul className="flex gap-8 items-center">
               
               <li>
-                <Link href="/clinica" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
+                <Link href="/clinica" className="primary-color texto-montrea font-medium text-[0.75rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   CLÍNICA
                 </Link>
               </li>
               <li>
-                <Link href="/ensino" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
+                <Link href="/ensino" className="primary-color texto-montrea font-medium text-[0.75rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   ENSINO
                 </Link>
               </li>
               <li>
-                <Link href="/hyllua-beauty" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
+                <Link href="/hyllua-beauty" className="primary-color texto-montrea font-medium text-[0.75rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   HYLLUA BEAUTY
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.8rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
+                <Link href="/blog" className="primary-color texto-montrea font-medium text-[0.75rem] hover:underline transition uppercase tracking-wide group-hover:text-[#f7eccd]">
                   BLOG
                 </Link>
               </li>
