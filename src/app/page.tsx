@@ -25,7 +25,7 @@ export default async function HomePage() {
           <div className="absolute inset-0"></div>
           
           {/* Símbolo médico grande à direita */}
-          <div className="absolute top-0 -right-48 lg:right-4 lg:-top-0 lg:w-1/2 h-[100%] ">
+          <div className="absolute top-10 -right-50 lg:right-4 lg:-top-0 lg:w-1/2 lg:h-[100%] h-full ">
             <Image
               src="/images/index/SÍMBOLO-COM-EFEITO-HERO-PÁGINA-INICIAL.webp"
               alt="Símbolo médico"
@@ -36,10 +36,10 @@ export default async function HomePage() {
             />
           </div>
           
-          <div className="container max-w-4xl mx-auto  lg:pt-36 lg:pb-26 relative  z-10">
-            <div className="relative px-8 top-6 lg:px-0 lg:top-8 lg:left-4">
+          <div className="container max-w-4xl mx-auto  pt-50 pb-16 lg:pt-36 lg:pb-26 relative  z-10">
+            <div className="relative px-8 top-0 lg:px-0 lg:top-8 lg:left-4">
               {/* Texto principal */}
-              <h1 className="titulo-scotch font-medium italic text-[40px] lg:text-[60px] text-[#b89c6c] mb-10 leading-[1]">
+              <h1 className="titulo-scotch font-medium italic text-[45px] lg:text-[60px] text-[#b89c6c] mb-10 leading-[1]">
                 Clínica<br />
                 Hyllua
                 Husein
