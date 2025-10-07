@@ -25,7 +25,7 @@ export default async function HomePage() {
           <div className="absolute inset-0"></div>
           
           {/* Símbolo médico grande à direita */}
-          <div className="absolute top-0 -right-48 lg:right-4 lg:-top-0 lg:w-1/2 h-[90%] ">
+          <div className="absolute top-0 -right-48 lg:right-4 lg:-top-0 lg:w-1/2 h-[95%] ">
             <Image
               src="/images/index/SÍMBOLO-COM-EFEITO-HERO-PÁGINA-INICIAL.webp"
               alt="Símbolo médico"
@@ -48,9 +48,11 @@ export default async function HomePage() {
                 Onde saúde e estética<br />
                 <em className="font-semibold italic">se completam.</em>
               </p>
+              <Link href="/clinica">
               <button className="px-2 py-1 lg:px-6 lg:py-2 border-2 border-[#b89c6c] text-[#b89c6c] rounded-full font-semibold italic  tracking-wide hover:bg-[#b89c6c] hover:text-[#f7eccd] transition-all duration-300 text-[18px] ">
                 Conheça a clínica
               </button>
+              </Link>
             </div>
           </div>
         </section>
