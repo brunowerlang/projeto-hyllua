@@ -24,15 +24,7 @@
 }
 
 
-.swiper-slide-next {
-  position: relative;
-  right: -3rem;
-}
 
-.swiper-slide-prev {
-  position: relative;
-  left: -3rem;
-}
 
 .swiper-button-prev, .swiper-button-next {
   color: #FFF;
@@ -40,17 +32,53 @@
 
 
 
-.swiper-button-prev{
-  left: 4rem;
-}
-.swiper-button-next{
-  right: 4rem;
-}
-
-.swiper-button-prev:after, .swiper-button-next:after {
+@media (min-width: 1024px) { /* Ajuste o valor conforme necessário para o seu breakpoint de desktop */
+  .swiper-button-prev {
+    left: 6.5rem;
+  }
+  
+  .swiper-button-next {
+    right: 6.5rem;
+  }
+  .swiper-button-prev:after, .swiper-button-next:after {
 font-weight: 700;
 font-size: 33px;
 }
+.swiper-slide-next {
+  position: relative;
+  right: -2rem;
+}
+
+.swiper-slide-prev {
+  position: relative;
+  left: -3rem;
+}
+}
+
+.swiper-slide-next {
+  position: relative;
+  right: -1.5rem;
+}
+
+.swiper-slide-prev {
+  position: relative;
+  left: -1.5rem;
+}
+
+  .swiper-button-prev {
+    left: 5rem;
+  }
+  
+  .swiper-button-next {
+    right: 5rem;
+  }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
 
 @media (min-width: 1536px) {
   .texto-hero {
@@ -58,3 +86,5 @@ font-size: 33px;
   top: -6rem;
 }
 }
+
+

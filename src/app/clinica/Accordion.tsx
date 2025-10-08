@@ -22,7 +22,7 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
 
 
   return (
-    <aside className=" lg:w-107 w-[85%]   lg:-ml-0 mx-auto max-w-md rounded-lg overflow-hidden bg-[#3e4a2b] text-white flex flex-col    relative z-99 ">
+    <aside className=" lg:w-107 w-[75%]   lg:-ml-0 mx-auto max-w-md rounded-lg overflow-hidden bg-[#353a2c] text-white flex flex-col    relative z-99 ">
       {/* Imagem fixa no topo */}
       <div className="   shrink-0 ">
         <img
@@ -37,7 +37,7 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
           <div key={index} className="border-t border-[#d2d2c7]">
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full flex justify-between items-center px-4 py-3 bg-[#3e4a2b] text-white font-normal tracking-normal uppercase text-[0.9rem]"
+              className="w-full flex justify-between items-center px-4 py-3 bg-[#353a2c] text-white font-normal tracking-normal uppercase text-[0.9rem]"
               type="button"
             >
               {item.titulo}
@@ -48,13 +48,13 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
               </span>
             </button>
             <div
-              className={`transition-[max-height,opacity,padding] duration-700 ease-in-out border-2 border-[#d2d2c7] ${openIndex === index ? "max-h-[1000px] opacity-100 py-4 bg-[#a9b18f]" : "max-h-0 opacity-0 py-0 bg-[#a9b18f]"}`}
+              className={`transition-[max-height,opacity,padding] duration-700 ease-in-out border-2 border-[#d2d2c7] ${openIndex === index ? "max-h-[1000px] opacity-100 py-4 bg-[#abb48d]" : "max-h-0 opacity-0 py-0 bg-[#abb48d]"}`}
             >
               {openIndex === index && (
                 <div className="px-0 py-2 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.7rem]">
                   {item.conteudo.map((linha, i) => (
                     linha.includes("Exclusivas") ? (
-                      <p key={i} className="font-bold bg-[#3e4a2b] text-white py-1 col-span-2 px-2 lg:px-6">{linha}</p>
+                      <p key={i} className="font-bold bg-[#353a2c] text-white py-1 col-span-2 px-2 lg:px-6">{linha}</p>
                     ) : (
                       <p key={i} className=" px-2 lg:px-6 lg:w-[15rem]">{linha}</p>
                     )

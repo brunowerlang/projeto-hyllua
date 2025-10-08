@@ -7,21 +7,47 @@ import { useState } from "react";
 export default function EnsinoSections() {
   return (
     <>
-      <section className="bg-[url('/images/ensino/background-hero-ensino.webp')] bg-cover bg-[position:80%_20%] lg:bg-center relative overflow-hidden">
-        <div className="max-w-4xl mx-auto w-full flex flex-col lg:flex-row pt-40 lg:pt-46">
+
+    
+        {/* Fundo Desktop */}
+            <div className="hidden lg:block w-full relative z-0">
+              <Image
+                src="/images/ensino/home-desktop.png"
+                alt="Layout Desktop"
+                width={1920} // largura real da imagem
+                height={6100} // altura real da imagem
+                className="w-full h-auto absolute -top-27 left-0 z-0"
+                priority
+              />
+            </div>
+    
+            {/* Fundo Mobile */}
+            <div className="block lg:hidden w-full relative z-0">
+              <Image
+                src="/images/ensino/home-mobile.png"
+                alt="Layout Mobile"
+                width={768} // largura real da imagem mobile
+                height={5700} // altura real da imagem mobile
+                className="w-full h-auto absolute top-0 left-0 z-0"
+                priority
+              />
+            </div>
+        
+      <section className="bg-[url('/images/ensino/background-hero-ensino.webp')] bg-cover bg-[position:80%_20%] lg:bg-center relative overflow-hidden ">
+        <div className="max-w-4xl mx-auto w-full flex flex-col lg:flex-row pt-27 lg:pt-46">
           
           {/* Conteúdo do texto - em cima no mobile, à esquerda no desktop */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start px-6 lg:px-0">
             <div className="max-w-md">
-              <div className="flex items-start gap-2 justify-center lg:justify-start">
-                <div className="titulo-scotch font-normal text-white text-right leading-none text-[22px] lg:text-[36px]">
+              <div className="flex items-start gap-2 justify-center lg:justify-start relative lg:-left-3 ">
+                <div className="titulo-scotch font-normal text-white text-right leading-none text-[22px] lg:text-[36px] relative lg:-top-0 -bottom-12 -left-2 lg:-left-0">
                   Estética<br /> <span className="font-light">exige</span>
                 </div>
-                <div className="titulo-scotch font-bold italic text-white text-[70px] lg:text-[120px] leading-none relative -top-5 lg:-top-9">ética</div>
+                <div className="titulo-scotch font-bold italic text-white text-[70px] lg:text-[120px] leading-none relative -bottom-6 lg:-top-8.5">ética</div>
               </div>
-              <p className="text-[1.1rem] w-[12rem] lg:w-full tracking-wide text-white mb-8 lg:mb-8 font-light leading-tight  text-right relative -right-17 lg:-right-0 -top-4 lg:-top-6 lg:-left-3">
-                E não existe cuidado ético e seguro
-                sem <span className="font-semibold">atualização profissional.</span>
+              <p className="lg:text-[1rem] text-[1.15rem]  top-7  tracking-wide text-white mb-8 lg:mb-8 font-light leading-none  text-right relative  lg:-right-39.5  lg:-top-7   lg:w-[16rem]">
+                E não existe cuidado<br className="block lg:hidden" /> ético e seguro
+                sem<br className="block lg:hidden" /> <span className="font-semibold ">atualização<br className="block lg:hidden" /> profissional.</span>
               </p>
             </div>
           </div>
@@ -33,7 +59,7 @@ export default function EnsinoSections() {
               alt="Dra. Hyllua Husein"
               width={250}
               height={300}
-              className="max-w-full max-h-full object-contain lg:w-[300px] lg:h-[400px]"
+              className="max-w-full max-h-full object-contain lg:w-[300px] lg:scale-105  scale-95 top-4 -right-4 relative lg:-top-2"
               priority
             />
           </div>
@@ -43,60 +69,60 @@ export default function EnsinoSections() {
 
       
 
-     <section className=" bg-[#eaeaea] py-25 px-4 flex flex-col items-center justify-center relative ">
+     <section className=" bg-[#eaeaea] lg:py-25 py-8 px-4 flex flex-col items-center justify-center relative opacity-40">
 
 
-  <div className="max-w-4xl w-full flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 text-center lg:text-left mb-8">
+  <div className="max-w-4xl w-full flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 text-center lg:text-left mb-5">
     {/* Texto principal */}
     <div className="flex flex-1 flex-col items-center lg:items-start titulo-scotch">
-      <p className="text-[#23409c] font-normal text-[1.1rem] lg:text-[1.35rem] self-start leading-none">A prática precisa</p>
-      <h2 className="font-bold italic text-[#23409c] text-5xl lg:text-[65px] leading-none">acompanhar</h2>
-      <span className="text-[#23409c] font-normal text-[1.1rem] lg:text-[1.35rem] mb-4 self-end lg:-left-33 relative">o conhecimento</span>
+      <p className="text-[#23409c] font-normal text-[0.85rem] lg:text-[1.4rem] self-start leading-none -right-0 top-1 relative lg:-right-2.5 lg:top-2">A prática precisa</p>
+      <h2 className="font-bold italic text-[#23409c] text-[33px] lg:text-[66px] leading-none">acompanhar</h2>
+      <span className="text-[#23409c] font-normal text-[0.85rem] lg:text-[1.4rem] mb-4 self-end lg:-left-31 lg:-top-1 relative">o conhecimento</span>
     </div>
     {/* Balão azul */}
-    <div className="bg-[#23409c] w-[16rem] lg:w-full text-white rounded-2xl lg:px-10 px-8 py-4 lg:py-2 text-[1.1rem] lg:text-[1.3rem] font-light leading-5 lg:leading-normal  mb-6 lg:mb-0 max-w-[20rem] mx-auto lg:mx-0 text-center lg:-left-12 relative z-3" >
+    <div className="bg-[#23409c] w-[12rem] lg:w-full text-white rounded-[0.8rem] lg:px-10 px-2 py-2 lg:py-2 text-[0.85rem] lg:text-[1.3rem] font-light leading-5 lg:leading-relaxed  mb-4 lg:mb-0 max-w-[20rem] mx-auto lg:mx-0 text-center lg:-left-12 relative z-3 -top-4" >
       Investir em formação constante é o mínimo que um profissional deve fazer para <span className="font-semibold italic">oferecer segurança e excelência.</span>
     </div>
   </div>
 
   {/* Chamada para ação */}
-  <div className="text-center lg:mt-10 texto-montreal lg:self-center relative -left-18 lg:-left-60 lg:-top-8">
-    <span className="text-[#23409c] font-normal uppercase lg:text-[1.35rem] block">CONHEÇA NOSSAS</span>
-    <span className="text-[#23409c] italic font-semibold block lg:text-[1.35rem]">FORMAÇÕES EXCLUSIVAS</span>
+  <div className="text-center lg:mt-10 texto-montreal lg:self-center relative -left-18 lg:-left-58 lg:-top-10 -top-2">
+    <span className="text-[#23409c] font-normal uppercase lg:text-[1.4rem] text-[0.85rem] block">CONHEÇA NOSSAS</span>
+    <span className="text-[#23409c] italic font-semibold block lg:text-[1.4rem] text-[0.85rem]">FORMAÇÕES EXCLUSIVAS</span>
     <div className="flex justify-center mt-2 z-1">
       <Image
         src="/images/ensino/icon-01.webp"
         alt="Ícone de seta para baixo"
         width={20}
         height={20}
-        className="object-contain w-5 h-5 lg:w-8 lg:h-8"
+        className="object-contain w-4 h-4 lg:w-8 lg:h-8"
         priority
       />
     </div>
   </div>
 
 {/* Estrela na parte de baixo da primeira section */}
-<div className="absolute  right-[-290px] bottom-[-150px] lg:right-[-200px] lg:bottom-[-400px] z-2">
+<div className="absolute  right-[-290px] bottom-[-150px] lg:right-[-190px] lg:bottom-[-400px] z-2">
   <Image
     src="/images/ensino/camada-secao-2.webp"
     alt="Estrela decorativa"
     width={800}
     height={800}
-    className="object-contain w-[440px] h-[440px] sm:w-[400px] sm:h-[400px] lg:w-[800px] lg:h-[800px]"
+    className="object-contain w-[440px] h-[440px] sm:w-[400px] sm:h-[400px] lg:w-[825px] lg:h-[825px]"
   />
 </div>
 
 
 </section>
 
-  <section className="w-full bg-[#202e5e] pt-10 pb-4 px-0 flex flex-col items-center justify-center relative ">
-    <div className="w-full flex justify-center items-end relative z-3 -top-46 lg:-top-66 -right-10 lg:-right-16">
+  <section className="w-full bg-[#202e5e] pt-10 pb-4 px-0 flex flex-col items-center justify-center relative opacity-60">
+    <div className="w-full flex justify-center items-end relative z-3 -top-46 lg:-top-58 -right-10 lg:-right-9">
       <Image
         src="/images/ensino/hyllua-secao-2.webp"
         alt="Hyllua deitada"
         width={650}
         height={450}
-        className="object-contain max-w-full h-auto"
+        className="object-contain max-w-full h-auto lg:scale-130"
         priority
       />
     </div>

@@ -20,8 +20,6 @@ export default async function HomePage() {
       <main>
 
 
-    
-
         <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10  
         ">
           {/* Overlay para melhor legibilidade */}
@@ -144,12 +142,12 @@ export default async function HomePage() {
                   
                   {/* Box com ícone */}
                   <div className="flex-1  ">
-                    <div className=" rounded-2xl px-4 py-2 lg:py-[28px] lg:px-0 mb-6 relative lg:w-[25rem] lg:-top-3 lg:left-2 -left-3 border-2 border-[#b89c6c]">
+                    <div className=" rounded-2xl lg:rounded-4xl px-4 py-2 lg:py-[28px] lg:px-4 mb-6 relative lg:w-[25rem] lg:-top-3 lg:left-2 -left-3 border-2 border-[#b89c6c]">
                       <div className="absolute -top-2 -right-3 lg:-top-7 lg:-right-6 w-7 h-7 lg:w-18 lg:h-18  rounded-full flex items-center justify-center ">
                         <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-18 lg:h-18 w-7 h-7 object-contain" />
                       </div>
                       <p className="text-[#b89c6c] lg:text-[1.5rem] lg:leading-[1.65] leading-none  text-[0.85rem] text-center ">
-                        Transformamos a<br /> experiência estética, <span className="font-semibold italic titulo-stoch">unindo especialidades,</span> ampliando resultados e tocando o que é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
+                        Transformamos a<br /> experiência estética, <span className="font-semibold italictitulo-stoch">unindo especialidades,</span> ampliando resultados e tocando o que<br className="hidden lg:block"/> é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
                       </p>
                     </div>
                   </div>
@@ -168,11 +166,11 @@ export default async function HomePage() {
                 alt="Curva decorativa"
                 width={1920}
                 height={800}
-                className="w-full object-cover object-top  "
+                className="w-full object-cover object-top "
               />
           </div>
           
-          <div className="container  mx-auto lg:px-6 px-4  text-center relative z-10 bg-[#b89c6c]">
+          <div className="container  mx-auto lg:px-6 px-4  text-center relative z-10 bg-[#b89c6c] ">
             <p className="text-[14px] lg:text-[25px] titulo-scotch secundary-color font-light lg:w-[36rem] w-[20rem] m-auto leading-tight relative -top-3 lg:-top-18 mb-4
             
             lg:mb-4 lg:-left-2 ">
@@ -214,7 +212,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Ensino */}
-        <section className="py-0  bg-white text-white relative overflow-hidden ">
+        <section className="py-0  bg-white text-white relative overflow-hidden">
           <div className="w-full flex flex-col lg:flex-row  lg:h-[750px]">
             {/* Esquerda: textos com imagem de fundo */}
             <div
@@ -226,7 +224,7 @@ export default async function HomePage() {
 >
               <div className="z-10 w-full max-w-lg mt-12 lg:mt-24 relative left-15 -top-8 lg:left-28 lg:top-14.5">
                 <div className="flex relative lg:items-start gap-4 mb-8 mt-7 lg:mt-0 lg:ml-6 ">
-                  <Image src="/images/index/objeto.webp" alt="Ícone Ensino" className="lg:w-[20px] w-[10px] h-[105px] relative -right-2 lg:-right-0" width={40} height={40} />
+                  <Image src="/images/index/objeto.webp" alt="Ícone Ensino" className="lg:w-[20px] w-[10px] h-[105px] lg:h-full relative -right-2 lg:-right-0" width={40} height={40} />
                   <div>
                     <h2 className="text-[18px] lg:text-[1.8rem] font-normal italic leading-normal titulo-scotch lg:mb-7 mb-1 secundary-color lg:w-[19rem] w-[13rem] ">
                       Compartilhamos o que vivemos na prática.
@@ -238,13 +236,13 @@ export default async function HomePage() {
                     </p>
                   </div>
                 </div>
-                <p className="text-[0.8rem] lg:mb-17 mb-6 secundary-color lg:leading-snug leading-[1.3] lg:w-[19rem] w-[13rem] relative left-6 -top-6 lg:left-14">
+                <p className="text-[0.8rem] lg:text-[1.03rem] lg:mb-17 mb-6 secundary-color lg:leading-tight leading-[1.3] lg:w-[19rem] w-[13rem] relative left-6 -top-6 lg:left-14 lg:top-0">
                   Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch italic">transformador.</span>
                 </p>
                 <Link href="/ensino">
-                  <button className="ml-6 mb-0 lg:mb-0 lg:ml-14 lg:px-5 px-4 py-1.5 lg:py-2 lg:text-[1rem] text-[0.75rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer relative -top-8">
+                  <button className="ml-6 mb-0 lg:mb-0 lg:ml-14 lg:px-5 px-4 py-1.5 lg:py-2 lg:text-[1rem] text-[0.75rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer relative -top-8 lg:-top-0">
                     CONHEÇA NOSSO ENSINO
                   </button>
                 </Link>
