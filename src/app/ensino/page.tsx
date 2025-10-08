@@ -37,7 +37,7 @@ export default function EnsinoSections() {
               alt="Dra. Hyllua Husein"
               width={250}
               height={300}
-              className="max-w-full max-h-full object-contain lg:w-[300px]  scale-105  top-4 -right-4 relative lg:-top-2"
+              className="max-w-full max-h-full object-contain lg:w-[300px]  scale-105  top-0 -right-4 relative lg:-top-2"
               priority
             />
           </div>
