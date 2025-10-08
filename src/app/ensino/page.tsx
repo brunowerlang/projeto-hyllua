@@ -107,7 +107,7 @@ export default function EnsinoSections() {
     </div>
 
 
-     <div className="absolute inset-y-15 lg:inset-y-14 right-0 w-1/2 z-4 lg:mt-50 mt-250">
+     <div className="absolute inset-y-5 lg:inset-y-14 right-0 w-1/2 z-4 lg:mt-50 mt-210">
     <Image
       src="/images/ensino/foto-05-wonderfull-ensino.webp"
       alt="Fundo Wonderfull"
@@ -133,7 +133,7 @@ export default function EnsinoSections() {
   className="w-5 h-5 md:w-10 md:h-10" 
 />
     </div>
-              <span className="font-normal text-[0.7rem] lg:text-[1rem] lg:leading-normal leading-none">
+              <span className="font-normal text-[0.7rem] lg:text-[1rem] lg:leading-normal leading-none relative top-1 lg:top-0">
                 Curso presencial<br />realizado apenas<br /><span className="font-semibold ">2 vezes ao ano</span>
               </span>
             </div>

@@ -14,7 +14,7 @@ export default function CasosClinicos() {
   
   return (
     <section
-      className="relative pt-14 pb-24 overflow-hidden bg-[#d2d9c1] "
+      className="relative lg:pt-14 pt-8 lg:pb-24 pb-8 overflow-hidden bg-[#d2d9c1] "
       style={{
         backgroundImage: "url(/images/clinica/background-5-clinica.webp)",
         backgroundSize: "cover",
@@ -24,29 +24,29 @@ export default function CasosClinicos() {
     >
       <div className="mx-auto lg:px-2 text-center relative z-10 lg:max-w-6xl  ">
         {/* Bloco de textos */}
-        <div className="flex flex-col items-center justify-center scale-90 lg:scale-100 mb-12 lg:mb-28 mx-auto">
-          <div className="   flex flex-col lg:flex-row items-center justify-between mb-20  gap-12">
-            <h2 className="text-white text-[1.1rem] lg:text-[1.75rem] font-normal lg:leading-none leading-7 text-center lg:text-left relative lg:-left-17">
+        <div className="flex flex-col items-center justify-center scale-90 lg:scale-100 mb-0 lg:mb-28 mx-auto">
+          <div className="   flex flex-col lg:flex-row items-center justify-between lg:mb-20   gap-12">
+            <h2 className="text-white text-[1rem] lg:text-[1.8rem] font-normal lg:leading-none leading-7 tracking-wider text-center lg:text-left relative lg:-left-14">
               NOSSO CUIDADO VAI<br /> ALÉM DO QUE É{" "}
               <span className="font-bold">BONITO<br /> OU FUNCIONAL.</span>
             </h2>
-            <p className="text-white text-[1.1rem] lg:text-[1.7rem] font-light text-center lg:text-left titulo-scotch leading-none relative lg:-right-15">
+            <p className="text-white text-[1.1rem] lg:text-[1.7rem] font-light text-center lg:text-left titulo-scotch leading-none relative lg:-right-15 -top-6">
               Ele é<br /> <span className="italic font-semibold lg:text-[3.65rem] text-[2.25rem] ">transformador</span>
             </p>
           </div>
-          <div className="w-48 h-[2px] bg-white mx-auto mb-6" />
+          <div className="w-48 h-[2px] bg-white mx-auto mb-6.5" />
           <p className="text-white uppercase tracking-wide font-medium text-center lg:text-[1.5rem]  text-[0.8rem] leading-none">
             Veja <span className="font-bold">CASOS CLÍNICOS</span> da nossa equipe
           </p>
-          <div className="w-48 h-[2px] bg-white mx-auto mt-6" />
+          <div className="w-48 h-[2px] bg-white mx-auto mt-4" />
         </div>
 
        <Swiper
   effect="coverflow"
   grabCursor={true}
   centeredSlides={true}
-  slidesPerView={1.5}
-  spaceBetween={30}
+  slidesPerView={1.6}
+  spaceBetween={50}
   loop={true}
   navigation={true}
   coverflowEffect={{
@@ -70,55 +70,55 @@ export default function CasosClinicos() {
       },
     }}
           modules={[EffectCoverflow, Navigation]}
-          className="mySwiper relative lg:-top-14"
+          className="mySwiper relative lg:-top-14 mt-6 lg:mt-0 "
         >
-          <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 " >
-            <img src="/images/clinica/felipe-01.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Felipe</p>
+          <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center  scale-90 lg:scale-100 " >
+            <img src="/images/clinica/felipe-01.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full  object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2  text-white">Dr. Felipe1</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/felipe-02.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Felipe</p>
+            <img src="/images/clinica/felipe-02.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full  object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Felipe</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/felipe-03.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Felipe</p>
+            <img src="/images/clinica/felipe-03.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Felipe</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/danielle-01.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Danielle</p>
+            <img src="/images/clinica/danielle-01.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Danielle</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/danielle-02.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Danielle</p>
+            <img src="/images/clinica/danielle-02.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Danielle</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/danielle-03.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Danielle</p>
+            <img src="/images/clinica/danielle-03.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Danielle</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/luiza-01.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Luiza</p>
+            <img src="/images/clinica/luiza-01.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Luiza</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/luiza-02.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Luiza</p>
+            <img src="/images/clinica/luiza-02.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Luiza</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/luiza-03.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Luiza</p>
+            <img src="/images/clinica/luiza-03.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Luiza</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/hyllua-01.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Hyllua Husein</p>
+            <img src="/images/clinica/hyllua-01.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Hyllua Husein</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/hyllua-02.webp" className="lg:w-[450px] lg:h-[240px]  object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Hyllua Husein</p>
+            <img src="/images/clinica/hyllua-02.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-xl" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Hyllua Husein</p>
           </SwiperSlide>
           <SwiperSlide className="border border-white lg:p-4 p-3  flex  items-center justify-center scale-90 lg:scale-100 ">
-            <img src="/images/clinica/hyllua-03.webp" className="lg:w-[450px] lg:h-[240px] object-cover rounded-2xl" />
-            <p className="mt-4 text-white">Dr. Hyllua Husein</p>
+            <img src="/images/clinica/hyllua-03.webp" className="lg:w-[450px] lg:h-[240px] h-[130px] w-full object-cover lg:rounded-2xl rounded-[0.5rem]" />
+            <p className="lg:mt-4 mt-2 text-white">Dr. Hyllua Husein</p>
           </SwiperSlide>
         </Swiper>
       </div>

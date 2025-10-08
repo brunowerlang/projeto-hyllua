@@ -66,16 +66,16 @@ font-size: 33px;
 }
 
   .swiper-button-prev {
-    left: 5rem;
+    left: 5.5rem;
   }
   
   .swiper-button-next {
-    right: 5rem;
+    right: 5.5rem;
   }
 
   .swiper-button-prev:after, .swiper-button-next:after {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 

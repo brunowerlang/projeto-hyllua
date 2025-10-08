@@ -49,12 +49,12 @@ export default function ClinicaPage() {
 
       <main>
 
-      
-         
-         
+     
+          
+ 
                       
         {/* Hero Section Clínica */}
-        <section className="relative w-full flex items-center overflow-hidden pt-15 -mb-13 lg:lg:-mb-14 ">
+        <section className="relative w-full flex items-center overflow-hidden lg:pt-15 pt-9 -mb-13 lg:lg:-mb-14 ">
           {/* Background image */}
           <div className="absolute inset-0 w-full h-full">
             <Image
@@ -77,13 +77,13 @@ export default function ClinicaPage() {
                 Por isso integramos<br className="block lg:hidden"/> <span className="font-semibold">saúde e estética</span> para<br className="block lg:hidden"/> cuidar de você por inteiro.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end lg:mr-8 mt-8 lg:mt-0 relative -right-15 -top-11 lg:-right-6 lg:-top-2">
+            <div className="flex-1 flex justify-center items-end lg:mr-8 mt-8 lg:mt-0 relative -right-15 -top-10 lg:-right-6 lg:-top-2">
               <Image
                 src="/images/clinica/equipe-hero-clinica.webp"
                 alt="Equipe Clínica Hyllua"
                 width={900}
                 height={780}
-                className="object-contain drop-shadow-xl scale-123 lg:scale-105"
+                className="object-contain drop-shadow-xl scale-130 lg:scale-105"
                 priority
               />
             </div>
@@ -92,7 +92,7 @@ export default function ClinicaPage() {
 
       {/* Section Procedimentos */}
 <section
-  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center   z-50 flex items-center -mb-110 lg:-mb-180 "
+  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center   z-50 flex items-center -mb-115 lg:-mb-190 "
 >
   <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 py-[14.7rem] items-center max-w-4xl">
     {/* Lado Direito - Mobile primeiro */}
@@ -104,7 +104,7 @@ export default function ClinicaPage() {
         rosto, sorriso <br /> e corpo
       </h2>
       <p className="mt-2 uppercase tracking-wider lg:text-[1.60rem] text-[0.85rem] text-white font-regular relative lg:-right-2 ">Andam em harmonia</p>
-      <button className="lg:mt-17 mt-12 lg:text-[1.25rem] text-[0.8rem] font-semibold border-t-2 border-white relative lg:-right-2">
+      <button className="lg:mt-17 mt-7 lg:text-[1.25rem] text-[0.8rem] font-semibold border-t-2 border-white relative lg:-right-2">
         Conheça nossos procedimentos
       </button>
     </div>
@@ -117,12 +117,8 @@ export default function ClinicaPage() {
   </div>
 </section>
 
-
-      {/* Section Procedimentos */}
-<section
-  className="relative bg-[#dddfde]   flex items-center lg:pb-10 "
->
-  <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10  items-center max-w-4xl  mt-40">
+<section className="relative bg-[#dddfde] flex items-center lg:pb-10">
+    <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10  items-center max-w-4xl mt-40">
     {/* Lado Direito - Mobile primeiro */}
     <div className="text-center lg:text-right order-1 lg:order-2 ">
    
@@ -135,14 +131,14 @@ export default function ClinicaPage() {
       
       <AccordionAside procedimentos={procedimentos} />
     </div>
-  </div>
+     </div>
 </section>
 
 
       {/* Section Equipe Multidisciplinar */}
-      <section className="bg-[#dddfde] lg:pt-15 pt-44 pb-18 lg:pb-12 -mt-24 ">
+      <section className="bg-[#dddfde] lg:pt-35 pt-46 pb-18 lg:pb-12 -mt-24 ">
         <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center text-center lg:text-left " >
-          <div className="text-[#353a2c] lg:text-[1.75rem] text-[1.4rem] font-normal flex items-center justify-center lg:justify-start h-full leading-none lg:-left-6 relative titulo-scotch">
+          <div className="text-[#353a2c] lg:text-[1.75rem] text-[1rem] font-normal flex items-center justify-center lg:justify-start h-full leading-none lg:-left-6 relative titulo-scotch">
             <span className="block lg:text-left">Nossa equipe<br />se alinha para</span>
           </div>
           <div className="text-[#353a2c] titulo-scotch text-[2rem] lg:text-[58px] font-bold italic leading-none text-center flex flex-col items-center justify-center">
@@ -150,14 +146,14 @@ export default function ClinicaPage() {
             de você <br />
            como um <br />todo.</span>
           </div>
-          <div className="text-[#353a2c] text-[1.15rem]  font-normal flex items-center justify-center lg:justify-end h-full  relative lg:-right-6">
-            <span className="block lg:text-right leading-4 px-18 lg:px-0 lg:pl-24">
-              Aqui, você é acolhido por uma <span className="font-bold">equipe qualificada</span> que compartilha a mesma <span className="font-bold">visão de cuidado</span> e atua de forma integrada entre especialidades.
+          <div className="text-[#353a2c] lg:text-[1.25rem] text-[1.15rem]  font-normal flex items-center justify-center lg:justify-end h-full  relative lg:-right-6">
+            <span className="block lg:text-right leading-[1.08rem] lg:leading-[1.3rem] px-18 lg:px-0 lg:pl-24">
+              Aqui, você é<br className="hidden lg:block" />  acolhido por uma <span className="font-bold">equipe qualificada</span> que compartilha a mesma <span className="font-bold">visão de cuidado</span> e atua de forma integrada<br className="hidden lg:block" />  entre<br className="hidden lg:block" />  especialidades.
             </span>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 mt-24 text-center">
-          <span className="tracking-wide text-[#353a2c] lg:text-[1.20rem] ">
+        <div className="max-w-4xl mx-auto px-4 lg:mt-24 mt-10  text-center">
+          <span className="tracking-wide text-[#353a2c] lg:text-[1.20rem]  ">
             CONHEÇA NOSSA <span className="font-semibold">EQUIPE MULTIDISCIPLINAR</span>
           </span>
         </div>
@@ -170,8 +166,8 @@ export default function ClinicaPage() {
           {/* Coluna Esquerda: textos e card - Mobile segundo, Desktop primeiro */}
           <div className="flex flex-col gap-8 order-2 lg:order-1 px-8 lg:px-0 items-center  ">
             {/* Texto e dados */}
-            <div>
-              <h2 className="font-bold lg:text-3xl text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-32 before:w-20 before:h-1 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">Dra. Hyllua Husein</h2>
+            <div className="relative lg:-left-6">
+              <h2 className="font-bold lg:text-[2rem] text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">Dra. Hyllua Husein</h2>
               <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold mb-10 block">CRBM 6817</span>
               <ul className="text-[#353a2c] lg:text-[1.07rem] text-[0.85rem] space-y-2 list-none pl-0 font-normal">
                 <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Biomédica, com Especialização em Estética</li>
@@ -186,7 +182,7 @@ export default function ClinicaPage() {
             </div>
               
         {/* Card de procedimentos */}
-              <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:-right-0">
+              <div className="flex flex-col items-start lg:w-[320px] w-[210px] relative lg:right-9 lg:top-4">
   {/* Card fixo no lugar */}
   <div className="bg-[#353a2c] w-full relative">
     {(() => {
@@ -196,12 +192,12 @@ export default function ClinicaPage() {
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.75rem] uppercase bg-[#353a2c]"
+            className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
             <span
-              className={`transition-transform duration-500 ease-in-out text-xl font-bold ${open ? "rotate-180" : "rotate-0"}`}
+              className={`transition-transform duration-500 ease-in-out lg:text-xl lg:font-bold ${open ? "rotate-180" : "rotate-0"}`}
             >
               {open ? "−" : "+"}
             </span>
@@ -244,7 +240,7 @@ export default function ClinicaPage() {
           
         </div>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 py-15">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 lg:py-15 py-4">
   {/* Coluna Esquerda: imagem - Mobile primeiro, Desktop primeiro */}
   <div className="flex justify-center items-start order-1 lg:order-1 px-16 lg:px-0">
     <div className="overflow-hidden flex items-center justify-center">
@@ -260,7 +256,7 @@ export default function ClinicaPage() {
   <div className="flex flex-col gap-8 relative lg:-bottom-8 lg:-right-8 order-2 lg:order-2 px-8 lg:px-0 items-center">
     {/* Texto e dados */}
     <div>
-      <h2 className="font-bold lg:text-3xl text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-32 before:w-20 before:h-1 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">
+      <h2 className="font-bold lg:text-[2rem] text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">
         Dra. Luíza Souza
       </h2>
       <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold mb-10 block">
@@ -341,14 +337,14 @@ export default function ClinicaPage() {
   </div>
         </div>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4  py-15">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 lg:py-15 py-4">
           {/* Coluna Esquerda: textos e card - Mobile segundo, Desktop primeiro */}
           <div className="flex flex-col gap-8 order-2 lg:order-1 px-8 lg:px-0 items-center  ">
             {/* Texto e dados */}
             <div>
-              <h2 className="font-bold lg:text-3xl text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-32 before:w-20 before:h-1 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">Dra. Felipe Vendramini</h2>
+              <h2 className="font-bold lg:text-[2rem] text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">Dra. Felipe Vendramini</h2>
               <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold mb-10 block">CRBM 22723</span>
-              <ul className="text-[#353a2c] lg:text-[1.07rem] text-[0.85rem] space-y-2 list-none pl-0 font-normal">
+              <ul className="text-[#353a2c] lg:text-[1.07rem] leading-snug text-[0.85rem] space-y-2 list-none pl-0 font-normal">
                 <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Cirurgião-Dentista, com mais de 10 anos de experiência</li>
                 <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formado pela Faculdade Meridional - IMED (2014)</li>
                 <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Pós-graduado em Endodontia (CEOM - 2016), área<br className="hidden lg:block" /> da odontologia que trata os canais radiculares e<br className="hidden lg:block" /> evita perdas dentárias</li>
@@ -361,7 +357,7 @@ export default function ClinicaPage() {
             </div>
               
         {/* Card de procedimentos */}
-              <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:-right-0">
+              <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:right-9 lg:top-4">
   {/* Card fixo no lugar */}
   <div className="bg-[#353a2c] w-full relative">
     {(() => {
@@ -419,7 +415,7 @@ export default function ClinicaPage() {
           
         </div>
 
-         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 py-15">
+         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 lg:py-15 py-4">
   {/* Coluna Esquerda: imagem - Mobile primeiro, Desktop primeiro */}
   <div className="flex justify-center items-start order-1 lg:order-1 px-16 lg:px-0">
     <div className="overflow-hidden flex items-center justify-center">
@@ -435,7 +431,7 @@ export default function ClinicaPage() {
   <div className="flex flex-col gap-8 relative lg:-bottom-8 lg:-right-8 order-2 lg:order-2 px-8 lg:px-0 items-center">
     {/* Texto e dados */}
     <div>
-      <h2 className="font-bold lg:text-3xl text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-32 before:w-20 before:h-1 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">
+      <h2 className="font-bold lg:text-[2rem] text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">
         Dra. Danielle Marcon
       </h2>
       <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold mb-10 block">
