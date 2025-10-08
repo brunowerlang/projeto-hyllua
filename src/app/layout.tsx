@@ -21,9 +21,11 @@ export default function RootLayout({
       <body className=" ">
        
         <main className="mx-auto overflow-x-hidden">
-          
-          {children}</main>
-       
+          <Header />
+          {children}
+            <Footer />
+        </main>
+      
       </body>
     </html>
   );
