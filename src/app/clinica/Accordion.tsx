@@ -48,7 +48,7 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
               </span>
             </button>
             <div
-              className={`transition-[max-height,opacity,padding] duration-700 ease-in-out border-2 border-[#d2d2c7] ${openIndex === index ? "lg:max-h-[240px] opacity-100 py-4 bg-[#abb48d]" : "max-h-0 opacity-0 py-0 bg-[#abb48d]"}`}
+              className={`transition-[max-height,opacity,padding] duration-700 ease-in-out border-1 border-white ${openIndex === index ? "lg:max-h-[240px] opacity-100 py-4 bg-[#abb48d]" : "max-h-0 opacity-0 py-0 bg-[#abb48d]"}`}
             >
               {openIndex === index && (
                 <div className="px-0 py-2 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.7rem]">

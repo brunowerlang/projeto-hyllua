@@ -54,7 +54,7 @@ export default function ClinicaPage() {
  
                       
         {/* Hero Section Clínica */}
-        <section className="relative w-full flex items-center overflow-hidden lg:pt-15 pt-9 -mb-13 lg:lg:-mb-14 ">
+        <section className="relative w-full flex items-center overflow-hidden lg:pt-15 pt-17 -mb-13 lg:lg:-mb-14 ">
           {/* Background image */}
           <div className="absolute inset-0 w-full h-full">
             <Image
