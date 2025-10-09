@@ -239,12 +239,12 @@ export default async function HomePage() {
                   </div>
                 </div>
                 <p className="text-[0.8rem] lg:text-[1.03rem] lg:mb-17 mb-6 secundary-color lg:leading-tight leading-[1.3] lg:w-[19rem] w-[13rem] relative left-6 font-light -top-6 lg:left-14 lg:top-0">
-                  Nossos protocolos autorais <span className="font-bold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-bold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
-                  com pacientes reais e hoje são <span className="font-bold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
-                  ético e <span className="font-bold titulo-scotch italic">transformador.</span>
+                  Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
+                  com pacientes reais e hoje são <span className="font-semibold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
+                  ético e <span className="font-semibold titulo-scotch italic">transformador.</span>
                 </p>
                 <Link href="/ensino">
-                  <button className="ml-6 mb-0 lg:mb-0 lg:ml-14 lg:px-5 px-4 py-1.5 lg:py-2 lg:text-[0.9rem] text-[0.75rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-widest hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer relative -top-8 lg:-top-0">
+                  <button className="ml-6 mb-0 lg:mb-0 lg:ml-14 lg:px-5 px-4 py-1.5 lg:py-2.5 lg:text-[0.9rem] text-[0.75rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-widest hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer relative -top-8 lg:-top-0">
                     CONHEÇA NOSSO ENSINO
                   </button>
                 </Link>
@@ -284,7 +284,7 @@ export default async function HomePage() {
                         </div>
                         <h3 className=" w-[11rem] lg:w-[14rem] text-center text-[0.95rem] font-semibold lg:py-[0.3rem] lg:pt-2 lg:text-[1.2rem]  titulo-scotch text-[#b89c6c] mb-0 line-clamp-2" style={{display: 'webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                         <a href={`/blog/${post.slug}`} className="w-full mt-2 px-0">
-                          <button className="mx-auto px-3 flex items-center justify-center gap-2 bg-[#b89c6c] text-white lg:px-4.5 lg:py-2 py-1.5 rounded-xl lg:text-[16px] text-[0.85rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer">
+                          <button className="mx-auto px-3 flex items-center justify-center gap-2 bg-[#b89c6c] text-white lg:px-5.5 lg:py-2.5 py-1.5 rounded-xl lg:text-[14px] text-[0.85rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer">
                             LER POST DO BLOG
                             <span
                               className="ml-[14px] border-2 border-solid border-white rounded-full w-[23px] h-[23px] flex items-center justify-center font-bold "
