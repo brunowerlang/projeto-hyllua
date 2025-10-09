@@ -94,7 +94,7 @@ export default function ClinicaPage() {
 
       {/* Section Procedimentos */}
 <section
-  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center  lg:-mt-18 -mt-13 z-50 flex items-center  "
+  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center bg-no-repeat lg:-mt-18 -mt-13 z-50 flex items-center  "
 >
   <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 py-[15rem] items-center max-w-4xl">
     {/* Lado Direito - Mobile primeiro */}
