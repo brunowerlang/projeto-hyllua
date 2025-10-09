@@ -6,6 +6,8 @@ import Image from "next/image";
 import { useState } from "react";
 import AccordionAside from "./Accordion";
 import CasosClinicos from "./CasosClinicos";
+import "./casos.css";
+
 
 export default function ClinicaPage() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -49,11 +51,13 @@ export default function ClinicaPage() {
 
       <main>
 
-                      
+
+
         {/* Hero Section Clínica */}
-        <section className="relative w-full flex items-center overflow-hidden lg:pt-46 pt-24 -mb-32 lg:-mb-43 ">
+        <section className="relative w-full flex items-center overflow-hidden lg:pt-46 pt-24  z-20 ">
+          <div className=" max-w-[100rem]">
           {/* Background image */}
-          <div className="absolute inset-0 w-full h-full">
+          <div className="relative inset-0 w-full h-full">
             <Image
               src="/images/clinica/background-hero-clinica.webp"
               alt="Fundo decorativo clínica"
@@ -62,38 +66,39 @@ export default function ClinicaPage() {
               priority
             />
           </div>
-          <div className="container relative z-10 flex flex-col lg:flex-row items-end justify-between mx-auto pt-0 lg:pt-0">
+          <div className="  relative z-10 flex flex-col lg:flex-row items-end justify-between mx-auto pt-0 lg:pt-0">
             {/* Texto */}
-            <div className="texto-hero max-w-lg lg:ml-8 text-center lg:text-left flex-1 pb-12 relative lg:-top-34 lg:left-38">
-              <h1 className="text-[1.1rem] titulo-scotch lg:text-[1.8rem] font-normal text-[#abb48d] mb-2 leading-none relative -left-3 lg:-left-0">
+            <div className=" lg:ml-8 text-center lg:text-left flex-1 pb-12 relative lg:-top-10 lg:left-44 text-hero">
+              <h1 className="text-[1.1rem] titulo-scotch lg:text-[1.8rem] font-normal text-[#abb48d] mb-3 leading-none relative -left-3 lg:left-4 ">
                 Você não é <br /> feita em partes<br />
                 <span className="text-[#abb48d] font-bold text-[2.3rem] lg:text-[4rem] titulo-scotch italic relative lg:-top-1.5 ">e o seu <br /> cuidado</span><br />
-                <span className="text-[#abb48d] lg:text-[2rem] text-[1.1rem] font-normal titulo-scotch block mt-3 lg:inline lg:mt-0 relative lg:-top-2 -top-3 -left-1">também não <br /> deveria ser.</span>
+                <span className="text-[#abb48d] lg:text-[2rem] text-[1.1rem] font-normal titulo-scotch block mt-3 lg:inline lg:mt-0 relative lg:-top-2 -top-3 -left-1 lg:left-1">também não <br /> deveria ser.</span>
               </h1>
-              <p className="mt-4 text-[#abb48d] text-[0.95rem] lg:text-[1.1rem]  px-25 lg:px-0 lg:w-[13rem]  leading-none lg:leading-6 relative -top-3 lg:-top-0 -left-3 lg:-left-0">
+              <p className="mt-4 text-[#abb48d] text-[0.95rem] lg:text-[1.1rem]  px-25 lg:px-0 lg:w-[13rem]  leading-none lg:leading-6 relative -top-3 lg:-top-0 -left-3 lg:left-4">
                 Por isso integramos<br className="block lg:hidden"/> <span className="font-semibold">saúde e estética</span> para<br className="block lg:hidden"/> cuidar de você por inteiro.
               </p>
             </div>
-            <div className="flex-1 flex justify-center items-end lg:mr-8 mt-8 lg:mt-0 relative -right-10 -top-12 lg:-left-5 lg:-top-8">
+            <div className="flex-1 flex justify-center items-end  lg:mt-0 relative lg:-right-6  lg:top-4 -right-9 -top-6 z-99">
               <Image
                 src="/images/clinica/equipe-hero-clinica1.webp"
                 alt="Equipe Clínica Hyllua"
                 width={900}
                 height={780}
-                className="object-contain drop-shadow-xl scale-115 lg:scale-98"
+                className="object-contain drop-shadow-xl lg:scale-118 scale-115"
                 priority
               />
             </div>
+          </div>
           </div>
         </section>
 
       {/* Section Procedimentos */}
 <section
-  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center   z-50 flex items-center  "
+  className="relative  bg-[url('/images/clinica/background-2-clinica.webp')] bg-cover bg-center  lg:-mt-18 -mt-13 z-50 flex items-center  "
 >
   <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 py-[15rem] items-center max-w-4xl">
     {/* Lado Direito - Mobile primeiro */}
-    <div className="text-center lg:text-right order-1 lg:order-2 -mt-33 lg:-mt-3">
+    <div className="text-center lg:text-right order-1 lg:order-2 relative -top-44 lg:-top-3">
       <p className="uppercase tracking-wide lg:text-[1.35rem] text-[0.9rem] text-white font-normal relative lg:-right-2 lg:top-1 lg:mb-1">
         Na Clínica Hyllua Husein
       </p>
@@ -114,7 +119,7 @@ export default function ClinicaPage() {
   </div>
 </section>
 
-<section className="relative bg-[#dddfde] flex items-center lg:pb-10 ">
+<section className="relative  flex items-center lg:pb-10 -mt-56 lg:-top-99 z-99  ">
       <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10  items-center max-w-4xl -mt-75 lg:-mt-154">
     {/* Lado Direito - Mobile primeiro */}
     <div className="text-center lg:text-right order-1 lg:order-2 ">
@@ -125,15 +130,15 @@ export default function ClinicaPage() {
     <div className=" text-white rounded-lg overflow-hidden items-center flex flex-col order-2 lg:order-1">
       {/* Accordion Aside */}
 
-      
-      <AccordionAside procedimentos={procedimentos} />
+
+      <AccordionAside  procedimentos={procedimentos} />
     </div>
      </div>
 </section>
 
 
       {/* Section Equipe Multidisciplinar */}
-      <section className="bg-[#dddfde] lg:pt-5 pt-64 pb-24 lg:pb-18 lg:-mt-16 -mt-80 relative z-90">
+      <section className="bg-[#dddfde] lg:pt-100 pt-72 pb-24 lg:pb-18 lg:-mt-20 -mt-0 relative z-10 ">
         <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center text-center lg:text-left " >
           <div className="text-[#353a2c] lg:text-[1.75rem] text-[1rem] font-normal flex items-center justify-center lg:justify-start h-full leading-none lg:-left-6 relative titulo-scotch">
             <span className="block lg:text-left">Nossa equipe<br />se alinha para</span>

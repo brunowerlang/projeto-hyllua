@@ -88,3 +88,8 @@ font-size: 33px;
 }
 
 
+@media (min-width: 1500px) {
+  .texto-hero {
+  top: -200rem !important;
+}
+}
