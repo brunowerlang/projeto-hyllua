@@ -54,7 +54,7 @@ export default function ClinicaPage() {
 
 
         {/* Hero Section Clínica */}
-        <section className="relative w-full flex items-center overflow-hidden lg:pt-46 pt-24  z-20 ">
+        <section className="relative w-full flex items-center overflow-hidden lg:pt-46 pt-32  z-20 ">
           <div className=" max-w-[100rem]">
           {/* Background image */}
           <div className="relative inset-0 w-full h-full">
@@ -163,7 +163,7 @@ export default function ClinicaPage() {
 
 
       {/* Section Dra. Hyllua */}
-      <section className=" bg-[#dddfde] relative  lg:pt-16 -mt-12 lg:-mt-0 ">
+      <section className=" bg-[#dddfde] relative  lg:pt-16 -mt-12 lg:-mt-0 z-99">
 
 
         <div className="max-w-[61rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-6 lg:px-4">
