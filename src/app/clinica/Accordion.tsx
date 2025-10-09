@@ -22,9 +22,9 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
 
 
   return (
-    <aside className=" lg:w-107 w-[75%]   lg:-ml-0 mx-auto max-w-md lg:rounded-lg rounded-[0.25rem] overflow-hidden bg-[#353a2c] text-white flex flex-col    relative z-99 ">
+    <aside className=" lg:w-107 w-[75%] lg:pt-44 pt-24 -top-24 lg:-top-44 lg:-ml-0 mx-auto max-w-md lg:rounded-lg rounded-[0.25rem] overflow-hidden bg-[#353a2c] text-white flex flex-col    relative z-99 ">
       {/* Imagem fixa no topo */}
-      <div className="   shrink-0 ">
+      <div className="   shrink-0 lg:h-[19rem]">
         <img
           src="/images/clinica/foto-hyllua-secao-2-clinica.webp"
           alt="Procedimento"
@@ -34,21 +34,23 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
       {/* Accordion */}
   <div className="flex flex-col justify-start ">
         {procedimentos.map((item, index) => (
-          <div key={index} className="border-t border-[#d2d2c7]">
+          <div key={index} className="border-t border-[#d2d2c7]" >
+
+       
             <button
               onClick={() => toggleAccordion(index)}
-              className="w-full flex justify-between items-center px-4 lg:py-4 py-2 bg-[#353a2c] text-white font-normal tracking-normal uppercase text-[0.85rem]"
+              className="w-full flex justify-between items-center px-4 lg:py-4 py-2 bg-[#353a2c] text-white font-normal tracking-normal uppercase lg:text-[0.85rem] text-[0.66rem] "
               type="button"
             >
               {item.titulo}
               <span
-                className={`transition-transform duration-500 ease-in-out font-black text-[17px] ${openIndex === index ? "rotate-180" : "rotate-0"}`}
+                className={`transition-transform duration-500 ease-in-out font-black text-[10px] lg:text-[17px] ${openIndex === index ? "rotate-180" : "rotate-0"}`}
               >
                 {openIndex === index ? "−" : "+"}
               </span>
             </button>
             <div
-              className={`transition-[max-height,opacity,padding] duration-700 ease-in-out border-1 border-white ${openIndex === index ? "lg:max-h-[240px] opacity-100 py-4 bg-[#abb48d]" : "max-h-0 opacity-0 py-0 bg-[#abb48d]"}`}
+              className={`transition-[max-height,opacity,padding] duration-700 ease-in-out border border-white ${openIndex === index ? " opacity-100  bg-[#abb48d]" : "max-h-0 opacity-0 py-0 bg-[#abb48d]"}`}
             >
               {openIndex === index && (
                 <div className="px-0 py-2 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.7rem]">

@@ -330,13 +330,13 @@ export default function EnsinoSections() {
      
     </div>
 
-    <div className="  w-full bg-[#37518c] lg:-mt-55 -mt-32"><div className="lg:py-30 py-18"></div></div>
+    <div className="  w-full bg-[#37518c] lg:-mt-55 -mt-22"><div className="lg:py-30 py-18"></div></div>
   </section>
 
 
 
 <section className="bg-[#e8e8e9] relative overflow-hidden">
-  <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 items-end lg:items-start  lg:px-12 pt-20  lg:pt-22 gap-8 z-2">
+  <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 items-end lg:items-start  lg:px-12 pt-12  lg:pt-22 gap-8 z-2">
 
     {/* Texto à esquerda (coluna 1) */}
     <div className="col-span-1 flex flex-col lg:justify-center lg:items-start items-end lg:text-left text-right z-10 lg:top-30 lg:left-2 relative">

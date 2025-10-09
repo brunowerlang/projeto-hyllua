@@ -1,0 +1,171 @@
+<div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 lg:py-15 py-4">
+          {/* Coluna Esquerda: textos e card - Mobile segundo, Desktop primeiro */}
+          <div className="flex flex-col gap-8 order-2 lg:order-1 px-8 lg:px-0 items-center  ">
+            {/* Texto e dados */}
+            <div>
+              <h2 className="font-bold lg:text-[2rem] text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">Dra. Felipe Vendramini</h2>
+              <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold mb-10 block">CRBM 22723</span>
+              <ul className="text-[#353a2c] lg:text-[1.07rem] leading-snug text-[0.85rem] space-y-2 list-none pl-0 font-normal">
+                <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Cirurgião-Dentista, com mais de 10 anos de experiência</li>
+                <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formado pela Faculdade Meridional - IMED (2014)</li>
+                <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Pós-graduado em Endodontia (CEOM - 2016), área<br className="hidden lg:block" /> da odontologia que trata os canais radiculares e<br className="hidden lg:block" /> evita perdas dentárias</li>
+                <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Pós-graduado em Prótese Dentária (Odontocenter<br className="hidden lg:block" /> - 2022), responsável pela reabilitação com coroas, lentes de contato e próteses estéticas</li>
+                
+                <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formações complementares em estética dental,<br className="hidden lg:block" /> com foco em devolver harmonia, função e naturalidade ao sorriso de forma personalizada</li>
+                <li className="flex items-start gap-2"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Especialização internacional em Anatomia em<br className="hidden lg:block" /> Fresh Frozen Cadaver, pela EBRIS (European Biomedical Research Institute of Salerno) na Itália, chancelada pela Harvard Medical School</li>
+               
+              </ul>
+            </div>
+              
+        {/* Card de procedimentos */}
+              <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:right-9 lg:top-4">
+  {/* Card fixo no lugar */}
+  <div className="bg-[#353a2c] w-full relative">
+    {(() => {
+      const [open, setOpen] = useState(false);
+      return (
+        <div>
+          {/* Botão fixo */}
+          <button
+            onClick={() => setOpen((prev) => !prev)}
+            className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.75rem] uppercase bg-[#353a2c]"
+            type="button"
+          >
+            PROCEDIMENTOS QUE REALIZA
+            <span
+              className={`transition-transform duration-500 ease-in-out text-xl font-bold ${open ? "rotate-180" : "rotate-0"}`}
+            >
+              {open ? "−" : "+"}
+            </span>
+          </button>
+
+          {/* Conteúdo absoluto que abre e fecha */}
+          <div
+            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-80"}`}
+          >
+            <div className="px-4 py-4 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.65rem]">
+              <span>Bioestimulador de Colágeno Radiesse</span>
+              <span>Protocoll Controll</span>
+              <span>Bioestimulador de Colágeno Sculptra</span>
+              <span>Preenchimento<br />Labial</span>
+              <span>Botox</span>
+              <span>Rinomodelação</span>
+              <span>Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
+              <span>Técnica LAPIDARE</span>
+              <span>Protocoll</span>
+              <span>Método WONDERFULL<br /> FACE</span>
+            </div>
+          </div>
+        </div>
+      );
+    })()}
+  </div>
+</div>
+
+          </div>
+          {/* Coluna Direita: imagem - Mobile primeiro, Desktop segundo */}
+          <div className="flex justify-center items-start order-1 lg:order-2">
+            <div className=" overflow-hidden   flex items-center justify-center px-16 lg:px-0">
+              <img
+                src="/images/clinica/felipe.webp"
+                alt="Dra. Felipe Vendramini"
+                className="object-cover lg:w-full h-full"
+              />
+            </div>
+          </div>
+          
+        </div>
+
+         <div className="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-4 lg:py-15 py-4">
+  {/* Coluna Esquerda: imagem - Mobile primeiro, Desktop primeiro */}
+  <div className="flex justify-center items-start order-1 lg:order-1 px-16 lg:px-0">
+    <div className="overflow-hidden flex items-center justify-center">
+      <img
+        src="/images/clinica/danielle.webp"
+        alt="Dra. Danielle Marcon"
+        className="object-cover w-full h-full"
+      />
+    </div>
+  </div>
+
+  {/* Coluna Direita: textos e card - Mobile segundo, Desktop segundo */}
+  <div className="flex flex-col gap-8 relative lg:-bottom-8 lg:-right-8 order-2 lg:order-2 px-8 lg:px-0 items-center">
+    {/* Texto e dados */}
+    <div>
+      <h2 className="font-bold lg:text-[2rem] text-xl text-[#353a2c] mb-1 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:-top-2 before:left-0">
+        Dra. Danielle Marcon
+      </h2>
+      <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold mb-10 block">
+        CRBM 25514
+      </span>
+      <ul className="text-[#353a2c] lg:text-[1.07rem] text-[0.85rem] space-y-2 list-none pl-0 font-normal">
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Cirurgiã-dentista, atuando há mais de 8 anos na área
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Formação pela PUCRS com graduação sanduíche na SAPIENZA UNIVERSITÀ DI ROMA, em Roma, na Itália
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Especialista em Implantodontia e Prótese dentária
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Extensão em Cirurgia Oral Menor na PUCRS
+        </li>
+        <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Especialização internacional em Anatomia em<br /> Fresh Frozen Cadaver, pela EBRIS (European<br /> Biomedical Research Institute of Salerno) na Itália,<br /> chancelada pela Harvard Medical School
+        </li>
+       
+      </ul>
+    </div>
+
+    {/* Card de procedimentos */}
+              <div className="flex flex-col items-start lg:w-[320px] w-[240px] relative lg:-right-0">
+  {/* Card fixo no lugar */}
+  <div className="bg-[#353a2c] w-full relative">
+    {(() => {
+      const [open, setOpen] = useState(false);
+      return (
+        <div>
+          {/* Botão fixo */}
+          <button
+            onClick={() => setOpen((prev) => !prev)}
+            className="w-full flex justify-between items-center px-4 py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.75rem] uppercase bg-[#353a2c]"
+            type="button"
+          >
+            PROCEDIMENTOS QUE REALIZA
+            <span
+              className={`transition-transform duration-500 ease-in-out text-xl font-bold ${open ? "rotate-180" : "rotate-0"}`}
+            >
+              {open ? "−" : "+"}
+            </span>
+          </button>
+
+          {/* Conteúdo absoluto que abre e fecha */}
+          <div
+            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-80"}`}
+          >
+            <div className="px-4 py-4 grid grid-cols-2 gap-x-6 gap-y-2 text-white text-[0.65rem]">
+              <span>Bioestimulador de Colágeno Radiesse</span>
+              <span>Protocoll Controll</span>
+              <span>Bioestimulador de Colágeno Sculptra</span>
+              <span>Preenchimento<br />Labial</span>
+              <span>Botox</span>
+              <span>Rinomodelação</span>
+              <span>Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
+              <span>Técnica LAPIDARE</span>
+              <span>Protocoll</span>
+              <span>Método WONDERFULL<br /> FACE</span>
+            </div>
+          </div>
+        </div>
+      );
+    })()}
+  </div>
+</div>
+  </div>
+        </div>

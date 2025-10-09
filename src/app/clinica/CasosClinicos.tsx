@@ -14,7 +14,7 @@ export default function CasosClinicos() {
   
   return (
     <section
-      className="relative lg:pt-14 pt-8 lg:pb-24 pb-8 overflow-hidden bg-[#d2d9c1] "
+      className="relative lg:pt-26 pt-8 lg:pb-24 pb-8 overflow-hidden bg-[#d2d9c1] "
       style={{
         backgroundImage: "url(/images/clinica/background-5-clinica.webp)",
         backgroundSize: "cover",
