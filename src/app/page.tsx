@@ -19,31 +19,11 @@ export default async function HomePage() {
     <>
       <main>
 
-{/* Fundo Desktop */}
-                  <div className="hidden lg:block w-full relative z-0">
-                    <Image
-                      src="/images/index/home-desktop-gray.png"
-                      alt="Layout Desktop"
-                      width={1920} // largura real da imagem
-                      height={6100} // altura real da imagem
-                      className="w-full h-auto absolute top-0 left-0 z-0"
-                      priority
-                    />
-                  </div>
-          
-                  {/* Fundo Mobile */}
-                  <div className="block lg:hidden w-full relative z-0">
-                    <Image
-                      src="/images/beauty/mobile-beauty.png"
-                      alt="Layout Mobile"
-                      width={768} // largura real da imagem mobile
-                      height={5700} // altura real da imagem mobile
-                      className="w-full h-auto absolute top-0 left-0 z-0"
-                      priority
-                    />
-                  </div>
+
+
+
         <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10  
-        opacity-40 lg:pb-8">
+         lg:pb-8">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
           
@@ -81,7 +61,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Logos */}
-        <section className="bg-[#b89c6c] py-1.5 opacity-40">
+        <section className="bg-[#b89c6c] py-1.5 relative z-90 ">
           <div className="container max-w-full mx-auto px-1 lg:px-6">
             <div className="flex justify-between items-center overflow-hidden gap-2">
               <Image
@@ -138,7 +118,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Cuidamos de você */}
-        <section className="bg-[#f1edec] ">
+        <section className="bg-[#f1edec] relative lg:-top-7 ">
           <div className="container max-w-7xl mx-auto px-6 ">
             <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-8 items-start pt-6 lg:pt-0">
               {/* Mobile: Texto primeiro, Desktop: Imagem primeiro */}
@@ -180,7 +160,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Diferenciais */}
-        <section className="  lg:pt-18 lg:pb-0 text-[#b89c6c] relative lg:-mt-[42rem] -mt-[16rem] ">
+        <section className="  lg:pt-18 lg:pb-0 text-[#b89c6c] relative lg:-mt-[43.5rem] -mt-[16rem] ">
           {/* Imagem de fundo com curva */}
           <div className="w-screen h-20 lg:h-66 relative">
               <Image
@@ -234,7 +214,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Ensino */}
-        <section className="py-0  bg-white text-white relative overflow-hidden">
+        <section className="py-0  bg-white text-white relative overflow-hidden ">
           <div className="w-full flex flex-col lg:flex-row  lg:h-[750px]">
             {/* Esquerda: textos com imagem de fundo */}
             <div
@@ -248,7 +228,7 @@ export default async function HomePage() {
                 <div className="flex relative lg:items-start gap-4 mb-8 mt-7 lg:mt-0 lg:ml-6 ">
                   <Image src="/images/index/objeto.webp" alt="Ícone Ensino" className="lg:w-[20px] w-[10px] h-[105px] lg:h-full relative -right-2 lg:-right-0" width={40} height={40} />
                   <div>
-                    <h2 className="text-[18px] lg:text-[1.8rem] font-normal italic leading-normal titulo-scotch lg:mb-7 mb-1 secundary-color lg:w-[19rem] w-[13rem] ">
+                    <h2 className="text-[18px] lg:text-[1.8rem] font-medium italic leading-normal titulo-scotch lg:mb-7 mb-1 secundary-color lg:w-[20rem] w-[13rem] ">
                       Compartilhamos o que vivemos na prática.
                     </h2>
                     <p className="leading-[1.15] secundary-color font-light lg:text-[1.48rem] text-[0.93rem] relative lg:top-[1px]">
@@ -258,18 +238,17 @@ export default async function HomePage() {
                     </p>
                   </div>
                 </div>
-                <p className="text-[0.8rem] lg:text-[1.03rem] lg:mb-17 mb-6 secundary-color lg:leading-tight leading-[1.3] lg:w-[19rem] w-[13rem] relative left-6 -top-6 lg:left-14 lg:top-0">
-                  Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
-                  com pacientes reais e hoje são <span className="font-semibold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
-                  ético e <span className="font-semibold titulo-scotch italic">transformador.</span>
+                <p className="text-[0.8rem] lg:text-[1.03rem] lg:mb-17 mb-6 secundary-color lg:leading-tight leading-[1.3] lg:w-[19rem] w-[13rem] relative left-6 font-light -top-6 lg:left-14 lg:top-0">
+                  Nossos protocolos autorais <span className="font-bold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-bold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
+                  com pacientes reais e hoje são <span className="font-bold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
+                  ético e <span className="font-bold titulo-scotch italic">transformador.</span>
                 </p>
                 <Link href="/ensino">
-                  <button className="ml-6 mb-0 lg:mb-0 lg:ml-14 lg:px-5 px-4 py-1.5 lg:py-2 lg:text-[1rem] text-[0.75rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer relative -top-8 lg:-top-0">
+                  <button className="ml-6 mb-0 lg:mb-0 lg:ml-14 lg:px-5 px-4 py-1.5 lg:py-2 lg:text-[0.9rem] text-[0.75rem] bg-[#f7eccd] text-[#151f40]  rounded-full font-semibold uppercase tracking-widest hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer relative -top-8 lg:-top-0">
                     CONHEÇA NOSSO ENSINO
                   </button>
                 </Link>
               </div>
-              <div className="absolute inset-0 bg-black/40 lg:bg-black/30"></div>
             </div>
             {/* Direita: apenas imagem de fundo */}
             <div className="relative w-full lg:w-1/2 h-full min-h-[500px]">
@@ -279,13 +258,13 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Blog */}
-        <section className="lg:py-28 py-10 relative overflow-hidden ">
+        <section className="lg:pt-28 lg:pb-36 py-10 relative overflow-hidden ">
           <div className="absolute inset-0 w-full h-full bg-[url('/images/index/BACKGROUND-SESSÃO-BLOG-PÁGINA-INICIAL.webp')] bg-cover bg-center "></div>
           <div className="container max-w-[62rem] mx-auto px-22 lg:px-6 relative z-10">
             <h2 className="text-center text-xl lg:text-[26px] text-[#b89c6c] lg:mb-16 mb-4 font-light relative  lg:-top-0  lg:w-[100%] w-[13rem] mx-auto lg:-left-1">
               Leia os últimos posts <span className="lg:text-[44px] text-[30px] titulo-scotch font-semibold italic relative lg:-right-2">do nosso blog</span>
             </h2>
-            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-20 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[1115px] before:lg:h-[235px] before:lg:rounded-2xl before:lg:border-2 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
+            <div className="relative lg:top-7 z-10 before:lg:content-[''] before:lg:absolute before:lg:-left-20 before:lg:right-0 before:lg:top-36 before:lg:mx-auto before:lg:w-[1115px] before:lg:h-[252px] before:lg:rounded-2xl before:lg:border-1 before:lg:border-[#b89c6c] before:lg:z-0 before:lg:pointer-events-none">
               <div className="grid lg:grid-cols-3 gap-0 relative z-10">
                 {posts.length === 0 ? (
                   <div className="text-center text-red-500 col-span-3">Erro ao carregar posts do blog.</div>
@@ -303,9 +282,9 @@ export default async function HomePage() {
                             className="object-cover w-full h-full"
                           />
                         </div>
-                        <h3 className=" w-[11rem] lg:w-[14rem] text-center text-[0.95rem] lg:text-[1.15rem]  titulo-scotch text-[#b89c6c] mb-0 line-clamp-2" style={{display: 'webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                        <h3 className=" w-[11rem] lg:w-[14rem] text-center text-[0.95rem] font-semibold lg:py-[0.3rem] lg:pt-2 lg:text-[1.2rem]  titulo-scotch text-[#b89c6c] mb-0 line-clamp-2" style={{display: 'webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden'}} dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                         <a href={`/blog/${post.slug}`} className="w-full mt-2 px-0">
-                          <button className="mx-auto px-3 flex items-center justify-center gap-2 bg-[#b89c6c] text-white  py-1.5 rounded-xl lg:text-[1.1rem] text-[0.85rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer">
+                          <button className="mx-auto px-3 flex items-center justify-center gap-2 bg-[#b89c6c] text-white lg:px-4.5 lg:py-2 py-1.5 rounded-xl lg:text-[16px] text-[0.85rem] uppercase tracking-wide hover:bg-[#a08a5f] transition-colors duration-300 hover:cursor-pointer">
                             LER POST DO BLOG
                             <span
                               className="ml-[14px] border-2 border-solid border-white rounded-full w-[23px] h-[23px] flex items-center justify-center font-bold "
@@ -326,7 +305,7 @@ export default async function HomePage() {
         {/* Seção Final */}
         <section className="py-10 bg-[#f7eccd] text-[#b89c6c] text-center ">
           <div className="container max-w-4xl mx-auto px-6">
-            <p className="text-[19px] lg:text-2xl font-light">
+            <p className="text-[19px] lg:text-2xl font-normal">
               <span className="titulo-scotch font-semibold italic">Na Clínica Hyllua Husein,</span> o cuidado é integrado, o resultado é completo.
             </p>
           </div>
