@@ -74,7 +74,7 @@ export default function Header() {
           {/* Botão desktop */}
           <Link
             href="http://wa.me/5551992122175"
-            className="hidden md:inline-block  px-6.5 py-2.5 rounded-full border-none bg-[#b89c6c] secundary-color font-normal text-[0.7rem] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide botao transform hover:-translate-y-0.5 duration-300"
+            className="hidden md:inline-block  px-6.5 py-2.5 rounded-full border-none bg-[#b89c6c] secundary-color font-medium text-[0.7rem] hover:text-[#b89c6c] hover:border hover:border-[#b89c6c] transition uppercase tracking-wide botao transform hover:-translate-y-0.5 duration-300"
             style={{ boxShadow: "0 1px 4px 0 rgba(184,156,108,0.08)" }}
           >
             AGENDAR PROCEDIMENTO

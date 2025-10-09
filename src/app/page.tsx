@@ -19,9 +19,31 @@ export default async function HomePage() {
     <>
       <main>
 
-
+{/* Fundo Desktop */}
+                  <div className="hidden lg:block w-full relative z-0">
+                    <Image
+                      src="/images/index/home-desktop-gray.png"
+                      alt="Layout Desktop"
+                      width={1920} // largura real da imagem
+                      height={6100} // altura real da imagem
+                      className="w-full h-auto absolute top-0 left-0 z-0"
+                      priority
+                    />
+                  </div>
+          
+                  {/* Fundo Mobile */}
+                  <div className="block lg:hidden w-full relative z-0">
+                    <Image
+                      src="/images/beauty/mobile-beauty.png"
+                      alt="Layout Mobile"
+                      width={768} // largura real da imagem mobile
+                      height={5700} // altura real da imagem mobile
+                      className="w-full h-auto absolute top-0 left-0 z-0"
+                      priority
+                    />
+                  </div>
         <section className=" bg-[url('/images/index/BACKGROUND-HERO-PÁGINA-INICIAL.webp')] bg-cover bg-left lg:bg-center relative overflow-hidden flex items-center z-10  
-        ">
+        opacity-40 lg:pb-8">
           {/* Overlay para melhor legibilidade */}
           <div className="absolute inset-0"></div>
           
@@ -45,7 +67,7 @@ export default async function HomePage() {
                 Hyllua
                 Husein
               </h1>
-              <p className="text-2xl lg:text-[2.2rem] tracking-wide text-[#b89c6c] mb-26 lg:mb-13 font-light leading-none relative ">
+              <p className="text-2xl lg:text-[2.2rem] tracking-wide text-[#b89c6c] mb-26 lg:mb-14 font-light leading-[0.9] relative ">
                 Onde saúde e estética<br />
                 <em className="font-semibold italic">se completam.</em>
               </p>
@@ -59,7 +81,7 @@ export default async function HomePage() {
         </section>
 
         {/* Seção Logos */}
-        <section className="bg-[#b89c6c] py-1.5 ">
+        <section className="bg-[#b89c6c] py-1.5 opacity-40">
           <div className="container max-w-full mx-auto px-1 lg:px-6">
             <div className="flex justify-between items-center overflow-hidden gap-2">
               <Image
