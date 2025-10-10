@@ -172,7 +172,7 @@ export default async function HomePage() {
               />
           </div>
           
-          <div className="  bg-[#b89c6c] mx-auto lg:px-6 px-4  text-center relative z-10  ">
+          <div className="  bg-[#b89c6c] mx-auto lg:px-6 px-4  text-center relative z-10  lg:-mt-8">
             <p className="text-[14px] lg:text-[25px] titulo-scotch secundary-color font-light lg:w-[36rem] w-[20rem] m-auto leading-tight relative -top-3 lg:-top-18 mb-4
             
             lg:mb-4 lg:-left-2 ">
@@ -183,34 +183,34 @@ export default async function HomePage() {
             <div className="grid grid-cols-1 lg:flex lg:flex-nowrap gap-0 lg:gap-8 mb-0 lg:mb-16 m-auto relative lg:-top-6 justify-center items-center">
               <div className="flex items-center justify-center text-left gap-1 relative -left-24 -top-2 lg:-left-1 lg:-top-1 ">
                 <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center">
-                  <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
+                  <Image src="/images/index/check.webp" alt="Check" width={23} height={23} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
+                <p className="lg:text-[0.9rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] font-light pb-1">Visão <span className="font-semibold italic">multidisciplinar</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-17 -top-8 lg:-left-2 lg:-top-1">
                 <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center ">
-                  <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
+                  <Image src="/images/index/check.webp" alt="Check" width={23} height={23} />
                 </div>
-                <p className="lg:text-[0.90rem] text-[0.66rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
+                <p className="lg:text-[0.90rem] text-[0.66rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 font-light  whitespace-nowrap ">Protocolos <span className="font-semibold italic">autorais e exclusivos</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -left-17 -top-5 lg:-left-1 lg:-top-1">
                 <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center ">
-                  <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
+                  <Image src="/images/index/check.webp" alt="Check" width={23} height={23} />
                 </div>
-                <p className="lg:text-[0.9rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
+                <p className="lg:text-[0.9rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 font-light">Equipe com <span className="font-semibold italic ">certificação internacional</span></p>
               </div>
               <div className="flex items-center justify-center text-left gap-1 relative -right-28 -top-11 lg:right-0 lg:-top-1">
                 <div className="lg:w-7 lg:h-7 w-4 h-4  rounded-full flex items-center justify-center ">
-                  <Image src="/images/index/check.webp" alt="Check" width={22} height={22} />
+                  <Image src="/images/index/check.webp" alt="Check" width={23} height={23} />
                 </div>
-                <p className="lg:text-[0.90rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 ">Cuidado <span className="font-semibold italic">integrado</span></p>
+                <p className="lg:text-[0.90rem] text-[0.65rem] secundary-color m-0 border-b-2 border-[#f7eccd] pb-1 font-light ">Cuidado <span className="font-semibold italic">integrado</span></p>
               </div>
             </div>
             <Link href="/clinica">
-            <button className="lg:px-4 px-2 lg:py-[8px] py-1 mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] lg:text-[1.2rem] text-[0.9rem] rounded-3xl font-medium uppercase tracking-wide hover:bg-gray-100 transition-colors duration-300 relative -top-3 lg:-top-6.5 lg:-left-3 hover:cursor-pointer">
+            <button className="lg:px-4 px-2 lg:py-[8px] py-1 mb-10 lg:mb-8 bg-[#f7eccd] text-[#b89c6c] lg:text-[16px] tracking-[0.1rem] text-[0.9rem] rounded-[18px] font-normal uppercase   duration-300 relative -top-3 lg:-top-6.5 lg:-left-3 hover:cursor-pointer hover:-translate-y-0.5 transition ">
               CONHEÇA A CLÍNICA
-            </button></Link>
-          </div>
+            </button></Link> 
+          </div>   
         </section>
 
         {/* Seção Ensino */}
