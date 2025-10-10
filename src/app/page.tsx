@@ -164,7 +164,7 @@ export default async function HomePage() {
           {/* Imagem de fundo com curva */}
           <div className="w-screen h-20 lg:h-66 relative">
               <Image
-                src="/images/index/VETOR-SEÇÃO-3-PÁGINA-INICIAL.png"
+                src="/images/index/formas-secao-2.webp"
                 alt="Curva decorativa"
                 width={1920}
                 height={800}
@@ -172,7 +172,7 @@ export default async function HomePage() {
               />
           </div>
           
-          <div className="container  mx-auto lg:px-6 px-4  text-center relative z-10 bg-[#b89c6c] ">
+          <div className="  bg-[#b89c6c] mx-auto lg:px-6 px-4  text-center relative z-10  ">
             <p className="text-[14px] lg:text-[25px] titulo-scotch secundary-color font-light lg:w-[36rem] w-[20rem] m-auto leading-tight relative -top-3 lg:-top-18 mb-4
             
             lg:mb-4 lg:-left-2 ">
