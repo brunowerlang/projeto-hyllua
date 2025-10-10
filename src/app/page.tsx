@@ -146,7 +146,13 @@ export default async function HomePage() {
                   <div className="flex-1  ">
                     <div className=" rounded-2xl lg:rounded-4xl px-4 py-2 lg:py-[28px] lg:px-4 mb-6 relative lg:w-[25rem] lg:-top-3 lg:left-2 -left-3 border-2 border-[#b89c6c]">
                       <div className="absolute -top-2 -right-3 lg:-top-7 lg:-right-6 w-7 h-7 lg:w-18 lg:h-18  rounded-full flex items-center justify-center ">
-                        <Image src="/images/index/simbolo-secao-2-inicial.webp" alt="Logo Hyllua" width={24} height={24} className="lg:w-18 lg:h-18 w-7 h-7 object-contain" />
+                        <Image
+  src="/images/index/simbolo-secao-2-inicial11.webp"
+  alt="Logo Hyllua"
+  width={200}
+  height={200}
+  className="object-contain w-auto h-auto max-w-[28px] lg:max-w-[72px]"
+/>
                       </div>
                       <p className="text-[#b89c6c] lg:text-[1.5rem] lg:leading-[1.65] leading-[1.1] py-1 lg:py-0  text-[0.85rem] text-center ">
                         Transformamos a<br /> experiência estética, <span className="font-semibold italictitulo-stoch">unindo especialidades,</span> ampliando resultados e tocando o que<br className="hidden lg:block"/> é <span className="font-semibold italic titulo-stoch">visível e essencial.</span>
