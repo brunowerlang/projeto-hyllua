@@ -54,15 +54,15 @@ export default function ClinicaPage() {
 
 
         {/* Hero Section Clínica */}
-        <section className="relative w-full flex items-center overflow-hidden lg:pt-46 pt-32  z-20 ">
-          <div className=" max-w-[100rem]">
+        <section className="relative w-full flex items-center  lg:pt-46 pt-32  z-20 ">
+          <div className="">
           {/* Background image */}
-          <div className="relative inset-0 w-full h-full">
+          <div className=" inset-0 w-full h-full">
             <Image
               src="/images/clinica/background-hero-clinica.webp"
               alt="Fundo decorativo clínica"
               fill
-              className="object-cover object-left "
+              className="object-cover "
               priority
             />
           </div>
