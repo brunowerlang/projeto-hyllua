@@ -120,7 +120,7 @@ export default async function HomePage() {
         {/* Seção Cuidamos de você */}
         <section className="bg-[#f1edec] relative lg:-top-7 ">
           <div className="container max-w-7xl mx-auto px-6 ">
-            <div className="flex flex-col lg:grid lg:grid-cols-5 lg:gap-8 items-start pt-6 lg:pt-0">
+            <div className="flex flex-col lg:grid lg:grid-cols-3 lg:gap-8 items-start pt-6 lg:pt-0">
               {/* Mobile: Texto primeiro, Desktop: Imagem primeiro */}
               <div className="order-2 lg:order-1 lg:col-span-2 relative">
                 <Image
@@ -133,7 +133,7 @@ export default async function HomePage() {
               </div>
               
               {/* Mobile: Imagem segundo, Desktop: Texto segundo */}
-              <div className="order-1 lg:order-2 lg:col-span-1 relative lg:mt-33 lg:-ml-50 px-0 ">
+              <div className="order-1 lg:order-2 lg:col-span-1  relative lg:mt-33 lg:-ml-50 px-0 ">
                 <div className="flex gap-4 lg:block  ">
                   {/* Título */}
                   <div className="flex-1 lg:w-[26rem] relative -left-2 lg:-left-0 top-3 lg:top-0">
