@@ -47,22 +47,26 @@ font-size: 33px;
 .swiper-slide-next {
   position: relative;
   right: -3rem !important;
+  top: 0 !important;
 }
 
 .swiper-slide-prev {
   position: relative;
   left: -3rem !important;
+  top: 0 !important;
 }
 }
 
 .swiper-slide-next {
   position: relative;
   right: -1.5rem;
+   top: -2rem;
 }
 
 .swiper-slide-prev {
   position: relative;
   left: -1.5rem;
+  top: -2rem;
 }
 
   .swiper-button-prev {
@@ -80,37 +84,7 @@ font-size: 33px;
 
 
 
-@media (min-width: 1536px) {
-  .texto-hero {
-  position: relative;
-  top: -6rem;
-}
-}
 
 
-@media (min-width: 1500px) {
-  .texto-hero {
-  top: -200rem !important;
-}
-}
 
 
-.custom-shape-divider-bottom-1760105079 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1760105079 svg {
-    position: relative;
-    display: block;
-    width: calc(115% + 1.3px);
-    height: 40px;
-}
-
-.custom-shape-divider-bottom-1760105079 .shape-fill {
-    fill:#ABB48D;
-}

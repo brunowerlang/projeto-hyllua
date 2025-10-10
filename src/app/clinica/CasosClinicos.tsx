@@ -14,7 +14,7 @@ export default function CasosClinicos() {
   
   return (
     <section
-      className="relative lg:pt-26 pt-8 lg:pb-7 pb-8  bg-[#d2d9c1] "
+      className="relative lg:pt-26 pt-12 lg:pb-7 pb-8  bg-[#d2d9c1] "
       style={{
         backgroundImage: "url(/images/clinica/background-5-clinica.webp)",
         backgroundSize: "cover",
@@ -25,20 +25,20 @@ export default function CasosClinicos() {
       <div className="mx-auto lg:px-2 text-center relative z-10 lg:max-w-6xl  ">
         {/* Bloco de textos */}
         <div className="flex flex-col items-center justify-center  mb-0 lg:mb-28 mx-auto">
-          <div className="   flex flex-col lg:flex-row items-center justify-between lg:mb-20   gap-12">
+          <div className="   flex flex-col lg:flex-row items-center justify-between lg:mb-20  lg:gap-12 gap-7">
             <h2 className="text-white text-[1rem] lg:text-[25px] font-light lg:leading-[28px] leading-7 tracking-wider text-center lg:text-left relative lg:-left-14">
               NOSSO CUIDADO VAI<br /> ALÉM DO QUE É{" "}
               <span className="font-semibold">BONITO<br /> OU FUNCIONAL.</span>
             </h2>
-            <p className="text-white text-[1.1rem] lg:text-[1.7rem] font-light text-center lg:text-left titulo-scotch leading-none relative lg:-right-15 ">
+            <p className="text-white text-[1.1rem] lg:text-[1.7rem] font-light text-center lg:text-left titulo-scotch leading-none relative lg:-right-15 mb-10 lg:mb-0">
               Ele é<br /> <span className="italic font-semibold lg:text-[3.65rem] text-[2.25rem] ">transformador</span>
             </p>
           </div>
-          <div className="w-48 h-[2px] bg-white mx-auto mb-6.5" />
-          <p className="text-white uppercase tracking-wider font-light text-center lg:text-[22px]  text-[0.8rem] leading-none">
+          <div className="lg:w-48 w-35 h-[2px] bg-white mx-auto mb-6.5" />
+          <p className="text-white uppercase tracking-wider font-light text-center lg:text-[22px]  text-[14px] leading-none">
             Veja <span className="font-semibold">CASOS CLÍNICOS</span> da nossa equipe
           </p>
-          <div className="w-48 h-[2px] bg-white mx-auto mt-6.5" />
+          <div className="lg:w-48 w-35 h-[2px] bg-white mx-auto mt-6.5" />
         </div>
 
        <Swiper
