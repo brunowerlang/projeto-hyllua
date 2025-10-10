@@ -21,9 +21,9 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
   };
 
   return (
-    <aside className="lg:w-108 w-[75%] lg:pt-44 pt-28 -top-80 lg:-top-44 lg:-ml-0 mx-auto text-[#e5e6e1] flex flex-col absolute z-99">
+    <aside className="lg:w-121 w-[75%] lg:pt-44 pt-28 -top-80 lg:-top-44 lg:-ml-0 mx-auto text-[#e5e6e1] flex flex-col absolute z-99">
       {/* Imagem fixa no topo */}
-      <div className="shrink-0 lg:h-[19rem] relative z-99">
+      <div className="shrink-0  relative z-99">
         <img
           src="/images/clinica/foto-hyllua-secao-2-clinica.webp"
           alt="Procedimento"

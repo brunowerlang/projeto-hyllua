@@ -15,30 +15,49 @@ export default function ClinicaPage() {
   const procedimentos = [
     {
       titulo: "PROCEDIMENTOS FACIAIS",
-      conteudo: [
-        "Bioestimulador de Colágeno Radiesse",
-        "Protocol Control",
-        "Bioestimulador de Colágeno Sculptra",
-        "Lavieen",
-        "Botox",
-        "Lavieen + PDRN",
-        "Injetáveis: Mandíbula, Malár, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomedificação",
-        "Microagulhamento",
-        "Protocoll",
-        "Visalift",
-        "Técnicas Exclusivas Dra. Hyllua Husein",
-        "Técnica LAPIDARE",
-        "Método WONDERFULL FACE",
-      ],
+     conteudo: [
+  "- Bioestimulador de Colágeno Radiesse",
+  "- Protocol Control",
+  "- Bioestimulador de Colágeno Sculptra",
+  "- Lavieen",
+  "- Botox",
+  "- Lavieen + PDRN",
+  "- Injetáveis: Mandíbula, Malár, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomedificação",
+  "- Microagulhamento",
+  "- Protocoll",
+  "- Visalift",
+  "- Técnicas Exclusivas Dra. Hyllua Husein",
+  "- Técnica LAPIDARE",
+  "- Método WONDERFULL FACE"
+],
+
     },
     {
       
       titulo: "PROCEDIMENTOS CORPORAIS",
-      conteudo: ["Exemplo 1", "Exemplo 2", "Exemplo 3"],
+       conteudo: [
+    "- Brazilian ASS - Radiesse",
+    "- Brazilian ASS - Sculptra",
+    "- PEIM - Secagem de Micro Vasos",
+    "- Subcisão de Celulites",
+    "- Visalift"
+  ],
     },
     {
       titulo: "PROCEDIMENTOS ODONTOLÓGICOS",
-      conteudo: ["Exemplo 1", "Exemplo 2", "Exemplo 3"],
+       conteudo: [
+    "- Profilaxia (limpeza)",
+    "- Próteses dentárias",
+    "- Implantes",
+    "- Cirurgia oral menor (siso, extrações em geral, bichectomia)",
+    "- Cirurgia periodontal",
+    "- Facetas e lentes de contato em cerâmica e resina",
+    "- Clareamento dental (caseiro e de consultório)",
+    "- Restaurações (cáries, retrações gengivais, fraturas)",
+    "- Restaurações estéticas",
+    "- Tratamento de canal",
+    "- Placa de bruxismo"
+  ],
     },
   ];
 
@@ -561,8 +580,10 @@ chancelada pela Harvard Medical School
                   </p>
                 </div>
                 {/* Bottom Section */}
-                <div className="bg-[#abb48d] flex-1 lg:px-12 px-6 lg:rounded-b-[2.8rem] rounded-b-[1.25rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem] flex items-center justify-center mb-4">
-                  
+                <div className="relative bg-[#abb48d] flex-1 lg:px-12 px-6 lg:rounded-b-[2.8rem] rounded-b-[1.25rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem] flex items-center justify-center mb-4">
+                   <div className="absolute -top-7 right-0 w-[30px] h-[30px]  ">
+    <img src="/images/clinica/CANTO-VETOR.webp" alt="teste" className="w-full h-full object-contain" />
+  </div>
                   <p className="text-white py-5 lg:px-3 lg:text-[20px] text-center lg:leading-6 leading-4 font-light tracking-[1.5px]">
                     Construímos relações<br className="block lg:hidden"/><br className="hidden lg:block" /> baseadas em <br className="hidden lg:block"/>
                     
@@ -591,9 +612,9 @@ chancelada pela Harvard Medical School
                 </div>
                 {/* Bottom Section */}
                 <div className="relative bg-[#abb48d] flex-1 px-12  lg:rounded-b-[2.8rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem]  rounded-b-[1.25rem]  flex items-center justify-center mb-4">
-
-
-
+ <div className="absolute -top-7 right-0 w-[30px] h-[30px]  ">
+    <img src="/images/clinica/CANTO-VETOR.webp" alt="teste" className="w-full h-full object-contain" />
+  </div>
                   <p className="text-white py-5 px-3 lg:text-[20px] text-center lg:leading-6 leading-4 font-light tracking-[1.5px]">
                     Nosso modelo é baseado em <span className="font-semibold">diálogo</span> entre especialidades,<br />
                     <span className="font-semibold">visão ampla</span> e <span className="font-semibold">construção conjunta</span> de cada plano de cuidado.
