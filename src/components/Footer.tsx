@@ -4,7 +4,7 @@ import { BsInstagram } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#b89c6c] text-[#f5f3ea] border-t border-[#ede9dd] pt-20 pb-6 ">
+    <footer className="bg-[#b89c6c] text-[#f5f3ea] pt-20 pb-6 ">
       <div className="max-w-5xl mx-auto  flex flex-col md:flex-row md:justify-between md:items-start gap-10">
         {/* Logo */}
         <div className="flex flex-col items-center md:w-1/4">

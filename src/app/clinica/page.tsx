@@ -72,9 +72,9 @@ export default function ClinicaPage() {
               <h1 className="text-[1.1rem] titulo-scotch lg:text-[1.8rem] font-normal text-[#abb48d] mb-3 leading-none relative -left-3 lg:left-4 ">
                 Você não é <br /> feita em partes<br />
                 <span className="text-[#abb48d] font-bold text-[2.3rem] lg:text-[4rem] titulo-scotch italic relative lg:-top-1.5 ">e o seu <br /> cuidado</span><br />
-                <span className="text-[#abb48d] lg:text-[2rem] text-[1.1rem] font-normal titulo-scotch block mt-3 lg:inline lg:mt-0 relative lg:-top-2 -top-3 -left-1 lg:left-1">também não <br /> deveria ser.</span>
+                <span className="text-[#abb48d] lg:text-[2rem] text-[1.1rem] font-normal titulo-scotch block mt-3 lg:inline lg:mt-0 relative lg:-top-1 -top-3 -left-1 lg:left-1">também não <br /> deveria ser.</span>
               </h1>
-              <p className="mt-4 text-[#abb48d] text-[0.95rem] lg:text-[1.1rem]  px-25 lg:px-0 lg:w-[13rem]  leading-none lg:leading-6 relative -top-3 lg:-top-0 -left-3 lg:left-4">
+              <p className="mt-4 text-[#abb48d] text-[0.95rem] lg:text-[1.1rem]  font-light px-25 lg:px-0 lg:w-[13rem]  leading-none lg:leading-6 relative -top-3 lg:-top-0 -left-3 lg:left-4 tracking-[0.01em]">
                 Por isso integramos<br className="block lg:hidden"/> <span className="font-semibold">saúde e estética</span> para<br className="block lg:hidden"/> cuidar de você por inteiro.
               </p>
             </div>
@@ -99,14 +99,14 @@ export default function ClinicaPage() {
   <div className="container mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 py-[15rem] items-center max-w-4xl">
     {/* Lado Direito - Mobile primeiro */}
     <div className="text-center lg:text-right order-1 lg:order-2 relative -top-44 lg:-top-3">
-      <p className="uppercase tracking-wide lg:text-[1.35rem] text-[0.9rem] text-white font-normal relative lg:-right-2 lg:top-1 lg:mb-1">
+      <p className="uppercase tracking-wide lg:text-[1.35rem] text-[0.9rem] text-[#e5e6e1] font-normal relative lg:-right-2 lg:top-1 lg:mb-1">
         Na Clínica Hyllua Husein
       </p>
-      <h2 className="lg:text-[52px] text-[1.7rem] font-bold leading-none  titulo-scotch relative">
+      <h2 className="lg:text-[52px] text-[1.7rem] lg:-right-2 font-bold leading-none  text-[#353a2c] titulo-scotch relative">
         rosto, sorriso <br /> e corpo
       </h2>
-      <p className="mt-2 uppercase tracking-wider lg:text-[1.60rem] text-[0.85rem] text-white font-regular relative lg:-right-2 ">Andam em harmonia</p>
-      <button className="lg:mt-17 mt-7 lg:text-[1.25rem] text-[0.8rem] font-semibold border-t-2 border-white relative lg:-right-2">
+      <p className="mt-2 uppercase tracking-wider lg:text-[1.60rem] text-[0.85rem] text-[#e5e6e1] font-regular relative lg:-right-2 ">Andam em harmonia</p>
+      <button className="lg:mt-17 mt-7 lg:text-[1.25rem] text-[0.8rem] font-semibold border-t-2 border-[#e5e6e1] relative lg:-right-2 text-[#353a2c]">
         Conheça nossos procedimentos
       </button>
     </div>
@@ -138,7 +138,7 @@ export default function ClinicaPage() {
 
 
       {/* Section Equipe Multidisciplinar */}
-      <section className="bg-[#dddfde] lg:pt-100 pt-72 pb-24 lg:pb-18 lg:-mt-20 -mt-0 relative z-10 ">
+      <section className="bg-[#dddfde] lg:pt-100 pt-72 pb-24 lg:pb-12 lg:-mt-20 -mt-0 relative z-10 ">
         <div className="max-w-4xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center text-center lg:text-left " >
           <div className="text-[#353a2c] lg:text-[1.75rem] text-[1rem] font-normal flex items-center justify-center lg:justify-start h-full leading-none lg:-left-6 relative titulo-scotch">
             <span className="block lg:text-left">Nossa equipe<br />se alinha para</span>
@@ -148,13 +148,13 @@ export default function ClinicaPage() {
             de você <br />
            como um <br />todo.</span>
           </div>
-          <div className="text-[#353a2c] lg:text-[1.25rem] text-[1.15rem]  font-normal flex items-center justify-center lg:justify-end h-full  relative lg:-right-6">
-            <span className="block lg:text-right leading-[1.08rem] lg:leading-[1.3rem] px-18 lg:px-0 lg:pl-24">
+          <div className="text-[#353a2c] lg:text-[17px] text-[1.15rem]  font-normal flex items-center justify-center lg:justify-end h-full  relative lg:-right-6">
+            <span className="block lg:text-right leading-[1.08rem] lg:leading-[21px] tracking-[0.05em] px-18 lg:px-0 lg:pl-24">
               Aqui, você é<br className="hidden lg:block" />  acolhido por uma <span className="font-bold">equipe qualificada</span> que compartilha a mesma <span className="font-bold">visão de cuidado</span> e atua de forma integrada<br className="hidden lg:block" />  entre<br className="hidden lg:block" />  especialidades.
             </span>
           </div>
         </div>
-        <div className="max-w-4xl mx-auto px-4 lg:mt-24 mt-10  text-center">
+        <div className="max-w-4xl mx-auto px-4 lg:mt-26 mt-10  text-center">
           <span className="tracking-wide text-[#353a2c] lg:text-[1.20rem]  ">
             CONHEÇA NOSSA <span className="font-semibold">EQUIPE MULTIDISCIPLINAR</span>
           </span>
@@ -163,7 +163,7 @@ export default function ClinicaPage() {
 
 
       {/* Section Dra. Hyllua */}
-      <section className=" bg-[#dddfde] relative  lg:pt-16 -mt-12 lg:-mt-0 z-99">
+      <section className=" bg-[#dddfde] relative  lg:pt-16 lg:pb-12 -mt-12 lg:-mt-0 z-99">
 
 
         <div className="max-w-[61rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-6 lg:px-4">
@@ -172,10 +172,10 @@ export default function ClinicaPage() {
             {/* Texto e dados */}
             <div className="relative lg:-left-4 -left-0 -top-3 lg:-top-0">
               <h2 className="font-bold lg:text-[1.75rem] text-[16px] text-[#353a2c] mb-0 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:lg:-top-5 before:-top-2 before:left-0 titulo-scotch">Dra. Hyllua Husein</h2>
-              <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold lg:mb-12 mb-3 block">CRBM 6817</span>
+              <span className="lg:text-[17px] text-[0.65rem] text-[#353a2c] font-medium lg:mb-12 mb-3 block">CRBM 6817</span>
               <ul className="text-[#353a2c]  lg:space-y-4 space-y-3 list-none pl-0 font-normal lg:leading-[1.4rem] leading-[1rem]">
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.83rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Biomédica, com Especialização em Estética</li>
-                <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Há 18 anos atuando na estética • 180 alunos em<br className="hidden lg:block" /> turmas VIP presencial, +3000 pacientes atendidos</li>
+                <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Há 9 anos atuando na estética +180 alunos em<br className="hidden lg:block" /> turmas VIP presencial, +3000 pacientes atendidos</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Especializações internacionais em HOF:<br className="hidden lg:block" /> Formações realizadas na Suíça, Itália e Estados<br className="hidden lg:block" /> Unidos, com foco em anatomia aplicada,<br className="hidden lg:block" /> rejuvenescimento avançado e técnicas de<br className="hidden lg:block" /> refinamento estético</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Referência nacional em lábios e rinomodelação <br className="hidden lg:block" />com a técnica LAPIDARE</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Mentora e criadora do método WONDERFULL<br className="hidden lg:block" /> FACE</li>
@@ -186,17 +186,17 @@ export default function ClinicaPage() {
             </div>
               
         {/* Card de procedimentos */}
-              <div className="flex flex-col items-start lg:w-[320px] w-[210px] relative -mt-4 lg:-mt-0 lg:right-5 lg:top-4">
+              <div className="flex flex-col items-start lg:w-[440px] w-[210px] relative -mt-4 lg:-mt-0 lg:-right-8 lg:top-6">
   {/* Card fixo no lugar */}
   <div className="bg-[#353a2c] w-full relative">
     {(() => {
-      const [open, setOpen] = useState(true);
+      const [open, setOpen] = useState(false);
       return (
         <div>
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c]"
+            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -209,19 +209,19 @@ export default function ClinicaPage() {
 
           {/* Conteúdo absoluto que abre e fecha */}
           <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "lg:max-h-[740px] max-h-[225px] opacity-100" : "max-h-0 opacity-100"}`}
+            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? "lg:max-h-[740px] max-h-[225px] opacity-100" : "max-h-0 opacity-100"}`}
           >
-            <div className="px-4 py-2 grid grid-cols-2 gap-x-6 gap-y-1 text-white lg:text-[0.65rem] text-[0.35rem]">
-              <span>Bioestimulador de Colágeno Radiesse</span>
-              <span>Protocoll Controll</span>
-              <span>Bioestimulador de Colágeno Sculptra</span>
-              <span>Preenchimento<br />Labial</span>
-              <span>Botox</span>
-              <span>Rinomodelação</span>
-              <span>Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
-              <span>Técnica LAPIDARE</span>
-              <span>Protocoll</span>
-              <span>Método WONDERFULL<br /> FACE</span>
+            <div className="px-6 py-4 grid grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-1 text-[#e5e6e1] lg:text-[13px] text-[0.35rem]">
+              <span>- Bioestimulador de Colágeno Radiesse</span>
+              <span>- Protocoll Controll</span>
+              <span>- Bioestimulador de Colágeno Sculptra</span>
+              <span>- Preenchimento Labial</span>
+              <span>- Botox</span>
+              <span>- Rinomodelação</span>
+              <span>- Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
+              <span>- Técnica LAPIDARE</span>
+              <span>- Protocoll</span>
+              <span>- Método WONDERFULL FACE</span>
             </div>
           </div>
         </div>
@@ -244,7 +244,7 @@ export default function ClinicaPage() {
           
         </div>
 
-        <div className="max-w-[61rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-6 lg:px-4 lg:py-17 py-4">
+        <div className="max-w-[61rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-6 lg:px-4 lg:py-24 py-4">
   {/* Coluna Esquerda: imagem - Mobile primeiro, Desktop primeiro */}
   <div className="flex justify-center items-start order-1 lg:order-1 px-16 lg:px-0">
     <div className="overflow-hidden flex items-center justify-center">
@@ -263,7 +263,7 @@ export default function ClinicaPage() {
       <h2 className="font-bold lg:text-[1.75rem] text-[16px] text-[#353a2c] mb-0 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:lg:-top-5 before:-top-2 before:left-0 titulo-scotch">
         Dra. Luíza Souza
       </h2>
-      <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold lg:mb-13 mb-3 block">
+      <span className="lg:text-[17px] text-[0.65rem] text-[#353a2c] font-medium lg:mb-12 mb-3 block">
         CRBM 4597
       </span>
       <ul className="text-[#353a2c]  lg:space-y-4 space-y-3 list-none pl-0 font-normal lg:leading-[1.4rem] leading-[1rem] lg:text-[1.07rem] text-[0.85rem]">
@@ -294,8 +294,8 @@ export default function ClinicaPage() {
       </ul>
     </div>
 
-      {/* Card de procedimentos */}
-              <div className="flex flex-col items-start lg:w-[320px] w-[210px] relative -mt-4 lg:-mt-0 lg:right-0 lg:top-4">
+            {/* Card de procedimentos */}
+              <div className="flex flex-col items-start lg:w-[440px] w-[210px] relative -mt-4 lg:-mt-0 lg:-right-7 lg:top-6">
   {/* Card fixo no lugar */}
   <div className="bg-[#353a2c] w-full relative">
     {(() => {
@@ -305,7 +305,7 @@ export default function ClinicaPage() {
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c]"
+            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -318,19 +318,26 @@ export default function ClinicaPage() {
 
           {/* Conteúdo absoluto que abre e fecha */}
           <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "lg:max-h-[800px] max-h-[220px] opacity-100" : "max-h-0 opacity-100"}`}
+            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? "lg:max-h-[740px] max-h-[225px] opacity-100" : "max-h-0 opacity-100"}`}
           >
-            <div className="px-4 py-2 grid grid-cols-2 gap-x-6 gap-y-2 text-white lg:text-[0.65rem] text-[0.35rem]">
-              <span>Bioestimulador de Colágeno Radiesse</span>
-              <span>Protocoll Controll</span>
-              <span>Bioestimulador de Colágeno Sculptra</span>
-              <span>Preenchimento<br />Labial</span>
-              <span>Botox</span>
-              <span>Rinomodelação</span>
-              <span>Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
-              <span>Técnica LAPIDARE</span>
-              <span>Protocoll</span>
-              <span>Método WONDERFULL<br /> FACE</span>
+            <div className="px-6 py-4 grid grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-1 text-[#e5e6e1] lg:text-[13px] text-[0.35rem]">
+                    <span>- Bioestimulador de Colágeno Radiesse</span>
+                    <span>- Bioestimulador de Colágeno Sculptra</span>
+                    <span>- Botox</span>
+                    <span>- Brazilian ASS - Radiesse</span>
+                    <span>- Brazilian ASS - Sculptra</span>
+                    <span>- Geral (ml)</span>
+                    <span>- Mandíbula, Malar, Olheiras, Mento, Bigode Chinês</span>
+                    <span>- Lavieen</span>
+                    <span>- Lavieen + PDRN</span>
+                    <span>- Microagulhamento</span>
+                    <span>- PEIM</span>
+                    <span>- Secagem de Micro Vasos</span>
+                    <span>- Preenchimento Labial</span>
+                    <span>- Rinomodelação</span>
+                    <span>- Subsição de Celulites</span>
+                    <span>- Visalift corporal</span>
+                    <span>- Visalift facial</span>
             </div>
           </div>
         </div>
@@ -348,20 +355,20 @@ export default function ClinicaPage() {
             {/* Texto e dados */}
             <div className="relative lg:-left-4 -left-0 -top-3 lg:top-4">
               <h2 className="font-bold lg:text-[1.75rem] text-[16px] text-[#353a2c] mb-0 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:lg:-top-5 before:-top-2 before:left-0 titulo-scotch">Dra. Felipe Vendramini</h2>
-              <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold lg:mb-12 mb-3 block">CRBM 22723</span>
+              <span className="lg:text-[17px] text-[0.65rem] text-[#353a2c] font-medium lg:mb-12 mb-3 block">CRBM 22723</span>
               <ul className="text-[#353a2c]  lg:space-y-4 space-y-3 list-none pl-0 font-normal lg:leading-[1.4rem] leading-[1rem]">
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.83rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Cirurgião-Dentista, com mais de 10 anos de experiência</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formado pela Faculdade Meridional - IMED (2014)</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Pós-graduado em Endodontia (CEOM - 2016), área<br className="hidden lg:block" /> da odontologia que trata os canais radiculares e<br className="hidden lg:block" /> evita perdas dentárias</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Pós-graduado em Prótese Dentária (Odontocenter<br className="hidden lg:block" /> - 2022), responsável pela reabilitação com coroas, lentes de contato e próteses estéticas</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formações complementares em estética dental,<br className="hidden lg:block" /> com foco em devolver harmonia, função e naturalidade ao sorriso de forma personalizada</li>
-                <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Fresh Frozen Cadaver, pela EBRIS (European Biomedical Research Institute of Salerno) na Itália, chancelada pela Harvard Medical School</li>
+                <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Especialização internacional em Anatomia em Fresh Frozen Cadaver, pela EBRIS (European Biomedical Research Institute of Salerno) na Itália, chancelada pela Harvard Medical School</li>
              
               </ul>
             </div>
               
-        {/* Card de procedimentos */}
-              <div className="flex flex-col items-start lg:w-[320px] w-[210px] relative -mt-4 lg:-mt-0 lg:right-5 lg:top-4">
+         {/* Card de procedimentos */}
+              <div className="flex flex-col items-start lg:w-[440px] w-[210px] relative -mt-4 lg:-mt-0 lg:-right-0 lg:top-6">
   {/* Card fixo no lugar */}
   <div className="bg-[#353a2c] w-full relative">
     {(() => {
@@ -371,7 +378,7 @@ export default function ClinicaPage() {
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c]"
+            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -384,19 +391,20 @@ export default function ClinicaPage() {
 
           {/* Conteúdo absoluto que abre e fecha */}
           <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "lg:max-h-[740px] max-h-[225px] opacity-100" : "max-h-0 opacity-100"}`}
+            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? "lg:max-h-[740px] max-h-[225px] opacity-100" : "max-h-0 opacity-100"}`}
           >
-            <div className="px-4 py-2 grid grid-cols-2 gap-x-6 gap-y-1 text-white lg:text-[0.65rem] text-[0.35rem]">
-              <span>Bioestimulador de Colágeno Radiesse</span>
-              <span>Protocoll Controll</span>
-              <span>Bioestimulador de Colágeno Sculptra</span>
-              <span>Preenchimento<br />Labial</span>
-              <span>Botox</span>
-              <span>Rinomodelação</span>
-              <span>Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
-              <span>Técnica LAPIDARE</span>
-              <span>Protocoll</span>
-              <span>Método WONDERFULL<br /> FACE</span>
+            <div className="px-6 py-4 grid grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-1 text-text-[#e5e6e1] lg:text-[13px] text-[0.35rem] text-[#e5e6e1]">
+              <span>- Avaliações e planejamentos</span>
+<span>- Profilaxia (limpeza)</span>
+<span>- Clareamento dental (caseiro e de consultório)</span>
+<span>- Restaurações (cáries, retrações gengivais, fraturas)</span>
+<span>- Restaurações estéticas</span>
+<span>- Facetas e lentes de contato em cerâmica/resina</span>
+<span>- Tratamento de canal</span>
+<span>- Placa de bruxismo</span>
+<span>- Próteses dentárias</span>
+<span>- Reabilitações estéticas e funcionais</span>
+
             </div>
           </div>
         </div>
@@ -420,14 +428,14 @@ export default function ClinicaPage() {
         </div>
 
 
-        <div className="max-w-[61rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-6 lg:px-4 lg:py-17 py-4">
+        <div className="max-w-[61rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start px-6 lg:px-4 lg:pt-30 py-4">
   {/* Coluna Esquerda: imagem - Mobile primeiro, Desktop primeiro */}
   <div className="flex justify-center items-start order-1 lg:order-1 px-16 lg:px-0">
     <div className="overflow-hidden flex items-center justify-center">
       <img
         src="/images/clinica/danielle.webp"
         alt="Dra. Danielle Souza"
-        className="object-cover w-full h-full  relative lg:scale-90 lg:-right-0 lg:-left-4 lg:-top-10"
+        className="object-cover w-full h-full  relative lg:scale-87 lg:-right-0 lg:-left-4 lg:-top-10"
       />
     </div>
   </div>
@@ -439,7 +447,7 @@ export default function ClinicaPage() {
       <h2 className="font-bold lg:text-[1.75rem] text-[16px] text-[#353a2c] mb-0 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:h-1.5 before:bg-[#353a2c] before:mb-3  before:absolute before:lg:-top-5 before:-top-2 before:left-0 titulo-scotch">
         Dra. Danielle Marcon
       </h2>
-      <span className="lg:text-[0.95rem] text-[0.65rem] text-[#353a2c] font-semibold lg:mb-13 mb-3 block">
+      <span className="lg:text-[17px] text-[0.65rem] text-[#353a2c] font-medium lg:mb-12 mb-3 block">
         CRBM 25514
       </span>
       <ul className="text-[#353a2c]  lg:space-y-4 space-y-3 list-none pl-0 font-normal lg:leading-[1.4rem] leading-[1rem] lg:text-[1.07rem] text-[0.85rem]">
@@ -470,8 +478,8 @@ chancelada pela Harvard Medical School
       </ul>
     </div>
 
-      {/* Card de procedimentos */}
-              <div className="flex flex-col items-start lg:w-[320px] w-[210px] relative -mt-4 lg:-mt-0 lg:right-0 lg:top-4">
+          {/* Card de procedimentos */}
+              <div className="flex flex-col items-start lg:w-[440px] w-[210px] relative -mt-4 lg:-mt-0 lg:-right-13 lg:top-6">
   {/* Card fixo no lugar */}
   <div className="bg-[#353a2c] w-full relative">
     {(() => {
@@ -481,7 +489,7 @@ chancelada pela Harvard Medical School
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-white font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c]"
+            className="w-full flex justify-between items-center px-4 py-1 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[0.7rem] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -494,19 +502,17 @@ chancelada pela Harvard Medical School
 
           {/* Conteúdo absoluto que abre e fecha */}
           <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#bfc0b6] overflow-hidden  ${open ? "lg:max-h-[800px] max-h-[220px] opacity-100" : "max-h-0 opacity-100"}`}
+            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? "lg:max-h-[740px] max-h-[225px] opacity-100" : "max-h-0 opacity-100"}`}
           >
-            <div className="px-4 py-2 grid grid-cols-2 gap-x-6 gap-y-2 text-white lg:text-[0.65rem] text-[0.35rem]">
-              <span>Bioestimulador de Colágeno Radiesse</span>
-              <span>Protocoll Controll</span>
-              <span>Bioestimulador de Colágeno Sculptra</span>
-              <span>Preenchimento<br />Labial</span>
-              <span>Botox</span>
-              <span>Rinomodelação</span>
-              <span>Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
-              <span>Técnica LAPIDARE</span>
-              <span>Protocoll</span>
-              <span>Método WONDERFULL<br /> FACE</span>
+            <div className="px-6 py-4 grid grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-1 text-[#e5e6e1] lg:text-[13px] text-[0.35rem]">
+            <span>- Avaliações e planejamentos</span>
+            <span>- Profilaxia (limpeza)</span>
+            <span>- Próteses dentárias</span>
+            <span>- Implantes</span>
+            <span>- Cirurgia oral menor (siso, extrações em geral, bichectomia)</span>
+            <span>- Cirurgia periodontal</span>
+            <span>- Facetas e lentes de contato em cerâmica</span>
+
             </div>
           </div>
         </div>
@@ -541,26 +547,26 @@ chancelada pela Harvard Medical School
 
 {/* Card 1 - Cuidado de Verdade */}
  <div className="flex items-center justify-center lg:min-h-[480px] px-16 lg:px-0">
-              <div className=" border border-[#bfcfae] lg:rounded-[2.8rem]  rounded-[1.25rem] lg:w-[300px] lg:h-[400px] w-[180px] flex flex-col overflow-hidden shadow-sm" style={{ boxSizing: "border-box" }}>
+              <div className=" border border-[#abb48d] lg:rounded-[2.8rem]  rounded-[1.25rem] lg:w-[300px] lg:h-[400px] w-[180px] flex flex-col overflow-hidden shadow-sm" style={{ boxSizing: "border-box" }}>
                 {/* Top Section */}
                 <div className=" lg:px-7 lg:pt-8 pt-4 lg:pb-1 pb-2 text-center lg:rounded-t-[2.8rem]  leading-none ">
-                  <p className="text-[#a8b896] lg:text-[1.5rem] font-normal  tracking-wide  titulo-scotch relative lg:-left-8 -left-5" style={{ letterSpacing: "0.02em" }}>
+                  <p className="text-[#abb48d] lg:text-[22px] font-normal  tracking-[1.5px] titulo-scotch relative lg:-left-8 -left-5" >
                     Tratamos
                   </p> 
-                  <p className="font-serif italic text-[#8b9b7a] lg:text-[3rem] text-[1.8rem] leading-none font-bold  titulo-scotch relative lg:-top-2">
+                  <p className="font-serif italic text-[#abb48d] lg:text-[3rem] text-[1.8rem] leading-none font-bold  titulo-scotch relative lg:-top-2">
                     pessoas
                   </p>
-                  <p className="text-[#a8b896] lg:text-[1.5rem] font-normal tracking-wide  titulo-scotch relative lg:-right-9 lg:-top-3 -right-3" style={{ letterSpacing: "0.02em" }}>
+                  <p className="text-[#abb48d] lg:text-[22px] font-normal tracking-[1.5px] titulo-scotch relative lg:-right-9 lg:-top-3 -right-3" >
                     não casos
                   </p>
                 </div>
                 {/* Bottom Section */}
-                <div className="bg-[#a8b896] flex-1 lg:px-12 px-6 lg:rounded-b-[2.8rem] rounded-b-[1.25rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem] flex items-center justify-center mb-4">
+                <div className="bg-[#abb48d] flex-1 lg:px-12 px-6 lg:rounded-b-[2.8rem] rounded-b-[1.25rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem] flex items-center justify-center mb-4">
                   
-                  <p className="text-white py-5 lg:px-3 lg:text-[1.4rem] text-center lg:leading-6 leading-4 font-normal">
+                  <p className="text-white py-5 lg:px-3 lg:text-[20px] text-center lg:leading-6 leading-4 font-light tracking-[1.5px]">
                     Construímos relações<br className="block lg:hidden"/><br className="hidden lg:block" /> baseadas em <br className="hidden lg:block"/>
                     
-                    <span className="font-bold">confiança, pertencimento<br className="block lg:hidden"/> e<br className="hidden lg:block"/> escuta ativa.</span>
+                    <span className="font-semibold">confiança, pertencimento<br className="block lg:hidden"/> e<br className="hidden lg:block"/> escuta ativa.</span>
                   </p>
                 </div>
               </div>
@@ -570,23 +576,27 @@ chancelada pela Harvard Medical School
             {/* Card 2 - Cuidado de Verdade */}
            <div className="flex items-center justify-center lg:min-h-[480px] px-16 lg:px-0">
               <div className=" border border-[#bfcfae] lg:rounded-[2.8rem] rounded-[1.25rem] lg:w-[300px] lg:h-[400px] w-[180px] flex flex-col overflow-hidden shadow-sm" style={{ boxSizing: "border-box" }}>
+                 
                 {/* Top Section */}
                 <div className=" lg:px-7 lg:pt-8 pt-4 lg:pb-1 pb-2 text-center lg:rounded-t-[2.8rem] rounded-t -[1.25rem] *:leading-none">
-                  <p className="text-[#a8b896] lg:text-[1.5rem] font-normal  tracking-wide titulo-scotch relative lg:-left-7 -left-5" style={{ letterSpacing: "0.02em" }}>
+                  <p className="text-[#abb48d] lg:text-[22px] font-normal  tracking-[1.5px] titulo-scotch relative lg:-left-7 -left-5" >
                     Cuidado de
                   </p>
-                  <p className="font-serif italic text-[#8b9b7a] lg:text-[3rem] text-[1.8rem] leading-none font-bold titulo-scotch relative lg:-top-2 lg:-left-0">
+                  <p className="font-serif italic text-[#abb48d] lg:text-[3rem] text-[1.8rem] leading-none font-bold titulo-scotch relative lg:-top-2 lg:-left-0">
                     verdade
                   </p>
-                  <p className="text-[#a8b896] lg:text-[1.5rem] font-normal tracking-wide titulo-scotch relative lg:-right-9 lg:-top-3 -right-3" style={{ letterSpacing: "0.02em" }}>
+                  <p className="text-[#abb48d] lg:text-[22px] font-normal tracking-[1.5px] titulo-scotch relative lg:-right-9 lg:-top-3 -right-3" >
                     é integrado
                   </p>
                 </div>
                 {/* Bottom Section */}
-                <div className="bg-[#a8b896] flex-1 px-12  lg:rounded-b-[2.8rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem]  rounded-b-[1.25rem]  flex items-center justify-center mb-4">
-                  <p className="text-white py-5 px-3 lg:text-[1.4rem] text-center lg:leading-6 leading-4 font-normal ">
-                    Nosso modelo é baseado em <span className="font-bold">diálogo</span> entre especialidades,<br />
-                    <span className="font-bold">visão ampla</span> e <span className="font-bold">construção conjunta</span> de cada plano de cuidado.
+                <div className="relative bg-[#abb48d] flex-1 px-12  lg:rounded-b-[2.8rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem]  rounded-b-[1.25rem]  flex items-center justify-center mb-4">
+
+
+
+                  <p className="text-white py-5 px-3 lg:text-[20px] text-center lg:leading-6 leading-4 font-light tracking-[1.5px]">
+                    Nosso modelo é baseado em <span className="font-semibold">diálogo</span> entre especialidades,<br />
+                    <span className="font-semibold">visão ampla</span> e <span className="font-semibold">construção conjunta</span> de cada plano de cuidado.
                   </p>
                 </div>
               </div>
@@ -597,7 +607,7 @@ chancelada pela Harvard Medical School
       </div>
 
       {/* Full Width Banner */}
-      <div className="bg-[#a8b896]  py-8 lg:py-22">
+      <div className="bg-[#abb48d]  py-8 lg:py-22">
         <p className="text-center text-lg text-white lg:text-[2.2rem] titulo-scotch ">
           O cuidado que te reconhece <span className=" italic titulo-scotch font-semibold">por completo.</span>
         </p>
@@ -607,16 +617,16 @@ chancelada pela Harvard Medical School
       <div className=" px-6 pt-12 pb-12 lg:py-40">
         <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-8 lg:flex-row lg:items-center">
           <div className="text-center lg:text-left">
-            <p className="lg:mb-4 mb-12 lg:text-[2rem]  text-[1.4rem] text-[#4a5442] titulo-scotch leading-none px-16 lg:px-0">Agende seu procedimento</p>
-            <p className="font-semibold titulo-scotch  italic text-[#4a5442] lg:text-[2.6rem] text-[1.8rem] leading-none px-16 lg:px-0 lg:pr-12">
+            <p className="lg:mb-4 mb-12 lg:text-[2rem]  text-[1.4rem] text-[#353a2c] titulo-scotch leading-none px-16 lg:px-0">Agende seu procedimento</p>
+            <p className="font-semibold titulo-scotch  italic text-[#353a2c] lg:text-[2.6rem] text-[1.8rem] leading-none px-16 lg:px-0 lg:pr-18">
               e descubra uma nova
               
               forma de se cuidar
               
               por inteiro.
             </p>
-          </div>
-          <button className="rounded-lg bg-[#a8b896] px-8 relative lg:-right-4 py-4 text-sm font-semibold uppercase tracking-wide text-black border-b-4 border-black transition-colors hover:bg-[#96a684] lg:text-[1.15rem] text-nowrap">
+          </div> 
+          <button className="rounded-lg bg-[#abb48d] px-8 relative lg:-right-4 lg:py-3.5 text-sm font-medium uppercase tracking-wide text-[#353a2c] border-b-4 border-[#353a2c] transition-colors hover:bg-[#96a684] lg:text-[1.15rem] text-nowrap">
             AGENDAR MEU PROCEDIMENTO
           </button>
         </div>
