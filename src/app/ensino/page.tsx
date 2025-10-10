@@ -11,7 +11,7 @@ export default function EnsinoSections() {
     
         
         
-      <section className="bg-[url('/images/ensino/background-hero-ensino.webp')] bg-cover bg-[position:80%_20%] lg:bg-center relative overflow-hidden ">
+      <section className="lg:bg-[url('/images/ensino/background-hero-ensino.webp')] bg-[url('/images/ensino/background-hero-ensino-mobile.webp')] bg-cover  lg:bg-center relative overflow-hidden ">
         <div className="max-w-4xl mx-auto w-full flex flex-col lg:flex-row pt-27 lg:pt-46">
           
           {/* Conteúdo do texto - em cima no mobile, à esquerda no desktop */}
@@ -37,7 +37,7 @@ export default function EnsinoSections() {
               alt="Dra. Hyllua Husein"
               width={250}
               height={300}
-              className="max-w-full max-h-full object-contain lg:w-[300px]  scale-105  top-0 -right-4 relative lg:-top-2"
+              className="max-w-full max-h-full object-contain lg:w-[300px]  scale-90  top-5 -right-4 relative lg:-top-2"
               priority
             />
           </div>
