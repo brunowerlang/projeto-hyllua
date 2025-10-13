@@ -28,7 +28,7 @@ export default async function HomePage() {
           <div className="absolute inset-0"></div>
           
           {/* Símbolo médico grande à direita */}
-          <div className="absolute -top-16 -right-37 lg:right-4 lg:-top-0 lg:w-1/2 lg:h-[105%] h-[130%] ">
+          <div className="absolute -top-30 -right-37 lg:right-4 lg:-top-0 lg:w-1/2 lg:h-[105%] h-[130%] ">
             <Image
               src="/images/index/simbolo-hero.webp"
               alt="Símbolo médico"
