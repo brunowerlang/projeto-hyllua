@@ -297,7 +297,7 @@ export default function EnsinoSections() {
              
 
               <span className=" text-[13px] lg:text-[15px] text-white lg:leading-snug leading-[1.2] font-light">
-                4 dias:<br /><span className="font-medium  ">2 dia de teoria<br /> +<br className="block lg:hidden" /> 2 dia de prática</span>
+                3 dias:<br /><span className="font-medium  ">1 dia de teoria<br /> +<br className="block lg:hidden" /> 2 dia de prática</span>
               </span>
             </div>
           </div>
@@ -393,31 +393,47 @@ export default function EnsinoSections() {
        
             <div className="flex items-start gap-3 mb-2">
               <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
-              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none  text-[0.9rem] lg:text-[1.1rem]">Há 9 anos atuando na estética: +180 alunos em turmas VIP presencial, +5.000 pacientes atendidos</span>
+              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none  text-[0.9rem] lg:text-[1.1rem]">Biomédica, com Especialização em Estética</span>
             </div>
             <div className="flex items-start gap-3 mb-2">
               <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
-              <span className="lg:w-[19rem] w-[21rem] lg:leading-tight leading-none text-[0.9rem] lg:text-[1.1rem]">Especializações internacionais em HOF: Formações realizadas na Suíça, Itália e Estados Unidos, com foco em anatomia aplicada, rejuvenescimento avançado e técnicas de refinamento estético</span>
+              <span className="lg:w-[19rem] w-[21rem] lg:leading-tight leading-none text-[0.9rem] lg:text-[1.1rem]">Há 9 anos atuando na estética: +250 alunos em turmas VIP presencial, +5000 pacientes atendidos</span>
             </div>
             <div className="flex items-start gap-3  mb-2">
               <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
-              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.9rem] lg:text-[1.1rem]">Referência nacional em lábios e rinomodelação com a técnica LAPIDARE</span>
+              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.9rem] lg:text-[1.1rem]">Especializações internacionais em HOF:<br className="hidden lg:block" /> Formações realizadas na Suíça, Itália e Estados Unidos, com foco em anatomia aplicada, rejuvenescimento avançado e técnicas de refinamento estético</span>
             </div>
+
+              <div className="flex items-start gap-3 mb-2">
+              <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
+              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.95rem] lg:text-[1.1rem]">Referência nacional em lábios e rinomodelação com a técnica LAPIDARE</span>
+            </div>
+            
           </div>
           <div className="flex-1 flex flex-col lg:gap-2 gap-2 text-white  font-light  lg:-bottom-42  -bottom-50 relative">
+         
+<div className="flex items-start gap-3 mb-4">
+              <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
+              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.87rem] lg:text-[1.02rem]">Mentora e criadora do método WONDERFULL FACE</span>
+            </div>
+
             <div className="flex items-start gap-3 mb-2">
               <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
-              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.95rem] lg:text-[1.1rem]">Mentora e criadora do método WONDERFULL FACE</span>
-            </div>
-            <div className="flex items-start gap-3 mb-4">
-              <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
-              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.87rem] lg:text-[1.02rem]">CEO da Clinica Hyllua Husein e da marca nacional de dermocosméticos Hyllua Beauty</span>
+              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.88rem] lg:text-[1.1rem]">CEO da Clínica Hyllua Husein e da marca nacional de dermocosméticos Hyllua Beauty</span>
             </div>
             <div className="flex items-start gap-3 mb-2">
               <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
-              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.88rem] lg:text-[1.1rem]">Professora convidada no European Biomedical Research Institute of Salerno (EBRIS)</span>
+              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.87rem] lg:text-[1.1rem]">Professora convidada no European Biomedical Research Institute of Salerno (EBRIS)</span>
             </div>
-            <div className="flex items-start gap-3 mb-2">
+
+              
+
+               <div className="flex items-start gap-3 mb-2">
+              <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
+              <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.87rem] lg:text-[1.1rem]">Professora convidada no American Anatomy Institute</span>
+            </div>
+
+              <div className="flex items-start gap-3 mb-2">
               <span className="mt-1 lg:w-3 lg:h-3 w-2 h-2 bg-white  inline-block " />
               <span className="lg:w-[19rem] w-[22rem] lg:leading-tight leading-none text-[0.87rem] lg:text-[1.1rem]">Professora chancelada pela Harvard Medical School</span>
             </div>
