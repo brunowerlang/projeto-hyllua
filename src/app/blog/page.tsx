@@ -54,7 +54,7 @@ export default async function BlogPage() {
   const recentPosts = posts.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-[url('/images/blog/background-posts.webp')] bg-contain bg-top ">
+    <div className="min-h-screen bg-[url('/images/blog/background-blog.webp')] bg-contain bg-top ">
       {/* HERO SECTION */}
 <section className="
   w-full flex items-center

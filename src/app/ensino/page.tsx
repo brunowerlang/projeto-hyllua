@@ -33,7 +33,7 @@ export default function EnsinoSections() {
           {/* Imagem - embaixo no mobile, à direita no desktop */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center relative -right-8 lg:-right-16 mt-6 lg:mt-0">
             <Image
-              src="/images/ensino/hyllua-hero.webp"
+              src="/images/ensino/hyllua-hero-01.webp"
               alt="Dra. Hyllua Husein"
               width={250}
               height={300}
