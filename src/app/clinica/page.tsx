@@ -268,7 +268,7 @@ export default function ClinicaPage() {
           <div className="flex justify-center items-start order-1 lg:order-2">
             <div className=" overflow-hidden   flex items-center justify-center px-16 lg:px-0">
               <img
-                src="/images/clinica/hyllua.webp"
+                src="/images/clinica/hyllua-nova.png"
                 alt="Dra. Hyllua Husein"
                 className="object-cover lg:w-full h-full relative lg:scale-90 lg:-right-3 lg:top-4"
               />
