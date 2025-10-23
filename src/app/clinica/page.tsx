@@ -209,48 +209,58 @@ export default function ClinicaPage() {
               
         {/* Card de procedimentos */}
               <div className="flex flex-col items-start lg:w-[440px] w-[270px] relative -mt-4 lg:-mt-0 lg:-right-8 lg:top-6 mb-4 lg:mb-0">
-  {/* Card fixo no lugar */}
-  <div className="bg-[#353a2c] w-full relative">
-    {(() => {
-      const [open, setOpen] = useState(false);
-      return (
-        <div>
-          {/* Botão fixo */}
-          <button
-            onClick={() => setOpen((prev) => !prev)}
-            className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
-            type="button"
+{/* Card fixo no lugar */}
+<div className="bg-[#353a2c] w-full relative">
+  {(() => {
+    const [open, setOpen] = useState(false);
+    return (
+      <div>
+        {/* Botão fixo */}
+        <button
+          onClick={() => setOpen((prev) => !prev)}
+          className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+          type="button"
+        >
+          PROCEDIMENTOS QUE REALIZA
+          <span
+            className={`transition-transform duration-500 ease-in-out text-[14px] lg:text-[21px] font-black ${
+              open ? "rotate-180" : "rotate-0"
+            }`}
           >
-            PROCEDIMENTOS QUE REALIZA
-            <span
-              className={`transition-transform duration-500 ease-in-out text-[14px] lg:text-[21px] font-black ${open ? "rotate-180" : "rotate-0"}`}
-            >
-              {open ? "−" : "+"}
-            </span>
-          </button>
+            {open ? "−" : "+"}
+          </span>
+        </button>
 
-          {/* Conteúdo absoluto que abre e fecha */}
-          <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? " max-h-[100%] opacity-100" : "max-h-0 opacity-100"}`}
-          >
-            <div className="px-6 py-4 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
-              <span>- Injetáveis:  Mandíbula, Malar, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomodelação</span>
-              <span>- Bioestimulador de Colágeno Radiesse</span>
-              <span>- Protocoll Controll</span>
-              <span>- Bioestimulador de Colágeno Sculptra</span>
-              <span>- Preenchimento Labial</span>
-              <span>- Botox</span>
-              <span>- Rinomodelação</span>
-              
-              <span>- Técnica LAPIDARE</span>
-              <span>- Protocoll</span>
-              <span>- Método WONDERFULL FACE</span>
-            </div>
+        {/* Conteúdo absoluto que abre e fecha */}
+        <div
+          // 🚨 CLASSE ALTERADA: Adiciona transição de padding e ajusta a duração e opacidade
+          className={`transition-[max-height,opacity,padding] duration-500 ease-in-out bg-[#898c85] overflow-hidden ${
+            open
+              ? "max-h-[1000px] opacity-100 py-4"
+              : "max-h-0 opacity-0 py-0"
+          }`}
+        >
+          {/* O conteúdo interno original tinha py-4. Agora, o padding é controlado pelo div pai, então o padding interno pode ser removido/ajustado se necessário. */}
+          <div className="px-6 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
+            <span>
+              - Injetáveis: Mandíbula, Malar, Olheiras, Mento, Bigode Chinês,
+              Preenchimento Labial, Rinomodelação
+            </span>
+            <span>- Bioestimulador de Colágeno Radiesse</span>
+            <span>- Protocoll Controll</span>
+            <span>- Bioestimulador de Colágeno Sculptra</span>
+            <span>- Preenchimento Labial</span>
+            <span>- Botox</span>
+            <span>- Rinomodelação</span>
+            <span>- Técnica LAPIDARE</span>
+            <span>- Protocoll</span>
+            <span>- Método WONDERFULL FACE</span>
           </div>
         </div>
-      );
-    })()}
-  </div>
+      </div>
+    );
+  })()}
+</div>
 </div>
 
           </div>
@@ -324,32 +334,42 @@ export default function ClinicaPage() {
 
             {/* Card de procedimentos */}
               <div className="flex flex-col items-start lg:w-[440px] w-[270px] relative -mt-4 lg:-mt-0 lg:-right-7 lg:top-6 mb-4 lg:mb-0">
-  {/* Card fixo no lugar */}
-  <div className="bg-[#353a2c] w-full relative">
-    {(() => {
-      const [open, setOpen] = useState(false);
-      return (
-        <div>
-          {/* Botão fixo */}
-          <button
-            onClick={() => setOpen((prev) => !prev)}
-            className=" cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
-            type="button"
-          >
-            PROCEDIMENTOS QUE REALIZA
-            <span
-              className={`transition-transform duration-500 ease-in-out lg:text-xl font-black text-[14px] ${open ? "rotate-180" : "rotate-0"}`}
-            >
-              {open ? "−" : "+"}
-            </span>
-          </button>
 
-          {/* Conteúdo absoluto que abre e fecha */}
-          <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? " max-h-[100%] opacity-100" : "max-h-0 opacity-100"}`}
+
+{/* Card fixo no lugar */}
+<div className="bg-[#353a2c] w-full relative">
+  {(() => {
+    const [open, setOpen] = useState(false);
+    return (
+      <div>
+        {/* Botão fixo */}
+        <button
+          onClick={() => setOpen((prev) => !prev)}
+          className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+          type="button"
+        >
+          PROCEDIMENTOS QUE REALIZA
+          <span
+            className={`transition-transform duration-500 ease-in-out text-[14px] lg:text-[21px] font-black ${
+              open ? "rotate-180" : "rotate-0"
+            }`}
           >
-            <div className="px-6 py-4 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
-                    <span>- Bioestimulador de Colágeno Radiesse (facial e corporal)</span>
+            {open ? "−" : "+"}
+          </span>
+        </button>
+
+        {/* Conteúdo absoluto que abre e fecha */}
+        <div
+          // 🚨 CLASSE ALTERADA: Adiciona transição de padding e ajusta a duração e opacidade
+          className={`transition-[max-height,opacity,padding] duration-500 ease-in-out bg-[#898c85] overflow-hidden ${
+            open
+              ? "max-h-[1000px] opacity-100 py-4"
+              : "max-h-0 opacity-0 py-0"
+          }`}
+        >
+          {/* O conteúdo interno original tinha py-4. Agora, o padding é controlado pelo div pai, então o padding interno pode ser removido/ajustado se necessário. */}
+          <div className="px-6 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
+            <span>- Bioestimulador de Colágeno Radiesse (facial e corporal)</span>
                     <span>- Bioestimulador de Colágeno Sculptra (facial e corporal)</span>
                     <span>- Método Brazilian Bumbum Up: associação de tratamentos com bioestimuladores + ácido hialurônico</span>
                     
@@ -361,12 +381,14 @@ export default function ClinicaPage() {
                     <span>- Botox</span>
                     <span>- Subsição de Celulites</span>
                     <span>- Microagulhamento</span>
-            </div>
           </div>
         </div>
-      );
-    })()}
-  </div>
+      </div>
+    );
+  })()}
+</div>
+
+  
 </div>
   </div>
         </div>
@@ -392,32 +414,42 @@ export default function ClinicaPage() {
               
          {/* Card de procedimentos */}
               <div className="flex flex-col items-start lg:w-[440px] w-[280px] relative -mt-4 lg:-mt-0 lg:-right-0 lg:top-6 mb-4 lg:mb-0">
-  {/* Card fixo no lugar */}
-  <div className="bg-[#353a2c] w-full relative">
-    {(() => {
-      const [open, setOpen] = useState(false);
-      return (
-        <div>
-          {/* Botão fixo */}
-          <button
-            onClick={() => setOpen((prev) => !prev)}
-            className=" cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
-            type="button"
-          >
-            PROCEDIMENTOS QUE REALIZA
-            <span
-              className={`transition-transform duration-500 ease-in-out lg:text-xl text-[14px] font-black ${open ? "rotate-180" : "rotate-0"}`}
-            >
-              {open ? "−" : "+"}
-            </span>
-          </button>
+ 
 
-          {/* Conteúdo absoluto que abre e fecha */}
-          <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? "max-h-[100%] opacity-100" : "max-h-0 opacity-100"}`}
+  {/* Card fixo no lugar */}
+<div className="bg-[#353a2c] w-full relative">
+  {(() => {
+    const [open, setOpen] = useState(false);
+    return (
+      <div>
+        {/* Botão fixo */}
+        <button
+          onClick={() => setOpen((prev) => !prev)}
+          className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+          type="button"
+        >
+          PROCEDIMENTOS QUE REALIZA
+          <span
+            className={`transition-transform duration-500 ease-in-out text-[14px] lg:text-[21px] font-black ${
+              open ? "rotate-180" : "rotate-0"
+            }`}
           >
-            <div className="px-6 py-4 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-text-[#e5e6e1] lg:text-[13px] text-[12px] text-[#e5e6e1]">
-              <span>- Avaliações e planejamentos</span>
+            {open ? "−" : "+"}
+          </span>
+        </button>
+
+        {/* Conteúdo absoluto que abre e fecha */}
+        <div
+          // 🚨 CLASSE ALTERADA: Adiciona transição de padding e ajusta a duração e opacidade
+          className={`transition-[max-height,opacity,padding] duration-500 ease-in-out bg-[#898c85] overflow-hidden ${
+            open
+              ? "max-h-[1000px] opacity-100 py-4"
+              : "max-h-0 opacity-0 py-0"
+          }`}
+        >
+          {/* O conteúdo interno original tinha py-4. Agora, o padding é controlado pelo div pai, então o padding interno pode ser removido/ajustado se necessário. */}
+          <div className="px-6 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
+            <span>- Avaliações e planejamentos</span>
 <span>- Profilaxia (limpeza)</span>
 <span>- Clareamento dental (caseiro e de consultório)</span>
 <span>- Restaurações (cáries, retrações gengivais, fraturas)</span>
@@ -427,13 +459,12 @@ export default function ClinicaPage() {
 <span>- Placa de bruxismo</span>
 <span>- Próteses dentárias</span>
 <span>- Reabilitações estéticas e funcionais</span>
-
-            </div>
           </div>
         </div>
-      );
-    })()}
-  </div>
+      </div>
+    );
+  })()}
+</div>
 </div>
 
           </div>
@@ -501,47 +532,52 @@ chancelada pela Harvard Medical School
       </ul>
     </div>
 
-          {/* Card de procedimentos */}
-              <div className="flex flex-col items-start lg:w-[440px] w-[270px] relative -mt-4 lg:-mt-0 lg:-right-13 lg:top-6 mb-4 lg:mb-0">
+    
   {/* Card fixo no lugar */}
-  <div className="bg-[#353a2c] w-full relative">
-    {(() => {
-      const [open, setOpen] = useState(false);
-      return (
-        <div>
-          {/* Botão fixo */}
-          <button
-            onClick={() => setOpen((prev) => !prev)}
-            className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
-            type="button"
+<div className="bg-[#353a2c] w-full relative">
+  {(() => {
+    const [open, setOpen] = useState(false);
+    return (
+      <div>
+        {/* Botão fixo */}
+        <button
+          onClick={() => setOpen((prev) => !prev)}
+          className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+          type="button"
+        >
+          PROCEDIMENTOS QUE REALIZA
+          <span
+            className={`transition-transform duration-500 ease-in-out text-[14px] lg:text-[21px] font-black ${
+              open ? "rotate-180" : "rotate-0"
+            }`}
           >
-            PROCEDIMENTOS QUE REALIZA
-            <span
-              className={`transition-transform duration-500 ease-in-out lg:text-xl text-[12px] font-black ${open ? "rotate-180" : "rotate-0"}`}
-            >
-              {open ? "−" : "+"}
-            </span>
-          </button>
+            {open ? "−" : "+"}
+          </span>
+        </button>
 
-          {/* Conteúdo absoluto que abre e fecha */}
-          <div
-            className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? " max-h-[100%] opacity-100" : "max-h-0 opacity-100"}`}
-          >
-            <div className="px-6 py-4 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
-            <span>- Avaliações e planejamentos</span>
+        {/* Conteúdo absoluto que abre e fecha */}
+        <div
+          // 🚨 CLASSE ALTERADA: Adiciona transição de padding e ajusta a duração e opacidade
+          className={`transition-[max-height,opacity,padding] duration-500 ease-in-out bg-[#898c85] overflow-hidden ${
+            open
+              ? "max-h-[1000px] opacity-100 py-4"
+              : "max-h-0 opacity-0 py-0"
+          }`}
+        >
+          {/* O conteúdo interno original tinha py-4. Agora, o padding é controlado pelo div pai, então o padding interno pode ser removido/ajustado se necessário. */}
+          <div className="px-6 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
+           <span>- Avaliações e planejamentos</span>
             <span>- Profilaxia (limpeza)</span>
             <span>- Próteses dentárias</span>
             <span>- Implantes</span>
             <span>- Cirurgia oral menor (siso, extrações em geral, bichectomia)</span>
             <span>- Cirurgia periodontal</span>
             <span>- Facetas e lentes de contato em cerâmica</span>
-
-            </div>
           </div>
         </div>
-      );
-    })()}
-  </div>
+      </div>
+    );
+  })()}
 </div>
   </div>
         </div>
