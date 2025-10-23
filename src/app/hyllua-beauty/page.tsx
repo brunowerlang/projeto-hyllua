@@ -112,31 +112,39 @@ export default function HylluaPage() {
 
 
             {/* Card Skincare */}
-            <div className="bg-transparent border-2 lg:mb-10 mb-0 border-white lg:rounded-xl rounded-[0.6rem] lg:px-14 px-2 py-4 lg:py-0 flex flex-col items-center justify-center lg:min-h-[200px] lg:h-[285px]  relative ">
+            <div className="bg-transparent border-2 lg:mb-10 mb-0 border-white lg:rounded-xl rounded-[0.6rem] lg:px-8 px-2 py-4 lg:py-0 flex flex-col items-center justify-center lg:min-h-[200px] lg:h-[285px]  relative ">
               <span className="bg-white text-[#e49390] font-semibold rounded-full  px-3 lg:px-6 lg:py-0.5 py-1 text-[16px] lg:text-[1.35rem] mb-4 absolute lg:-top-4 -top-3 titulo-scotch">Skincare</span>
-              <p className="text-white text-center lg:text-[18px] text-[0.98rem] font-light lg:leading-[1.5] leading-none relative lg:top-0 px-2 lg:px-0 top-1 py-4 lg:py-0 tracking-wide">Formulados para proteger,<br className="hidden lg:block" /> hidratar, revigorar e renovar<br className="hidden lg:block" /> cada tipo de pele.</p>
+              <p className="text-white text-center lg:text-[18px] text-[0.98rem] font-light lg:leading-[1.5] leading-none relative lg:top-0 px-2 lg:px-0 top-1 py-4 lg:py-0 tracking-wide">Produtos formulados para restaurar a vitalidade e o equilíbrio da pele.
+Cada produto combina tecnologia e sensorialidade para proporcionar hidratação profunda, luminosidade e suavidade ao toque.
+</p>
             </div>
 
             {/* Card Cuidados corporais */}
             <div className="bg-transparent border-2 lg:mb-10 mb-0 border-white lg:rounded-xl rounded-[0.6rem] lg:px-8  py-8 flex flex-col items-center justify-center lg:min-h-[200px ] lg:h-[285px]  relative">
               <span className="bg-white text-[#e49390] font-semibold rounded-full px-3 lg:px-6 lg:py-0.5 py-1 text-[16px] lg:text-[1.25rem] mb-4 absolute lg:-top-4 -top-3 titulo-scotch">Cuidados corporais</span>
-              <p className="text-white text-center lg:text-[18px] text-[0.95rem] font-light lg:leading-[1.5] leading-[1.05] relative lg:top-2 px-2 lg:px-0 top-2  tracking-wide py-4 lg:py-0">Os produtos tratam a pele com tecnologia dermocosmética, ingredientes eficazes e fragrâncias delicadas, promovendo hidratação profunda, firmeza, luminosidade e bem-estar.</p>
+              <p className="text-white text-center lg:text-[18px] text-[0.95rem] font-light lg:leading-[1.5] leading-[1.05] relative lg:top-2 px-2 lg:px-0 top-2  tracking-wide py-4 lg:py-0">Texturas envolventes e fragrâncias elegantes que transformam o cuidado diário em um gesto de bem-estar.
+Promovem nutrição intensa, firmeza e um toque acetinado à pele.
+
+</p>
             </div>
 
 
             {/* Card Maquiagens */}
-            <div className="bg-transparent border-2 lg:mb-18 mb-2 border-white rounded-xl px-2 lg:px-8 py-6 flex flex-col items-center justify-center lg:min-h-[270px] lg:h-[490px]  relative">
+            <div className="bg-transparent border-2 lg:mb-18 mb-2 border-white rounded-xl px-2 lg:px-8 py-6 flex flex-col items-center justify-center lg:min-h-[270px] lg:h-[285px]  relative">
               <span className="bg-white text-[#e49390] font-semibold rounded-full px-3 lg:px-6 lg:py-0.5 py-1 text-[16px] lg:text-[1.3rem] mb-4 absolute lg:-top-4 -top-4 titulo-scotch">Maquiagens</span>
-              <p className="text-white text-center lg:text-[18px] text-[0.95rem] font-light lg:leading-[1.5] leading-[1] relative lg:top-1 px-2 lg:px-0 top-1  tracking-wide py-4 lg:py-0">Linha de maquiagens da Hyllua Beauty foi criada para ir além da estética: ela une cuidado com a pele, tecnologia dermocosmética e performance profissional em cada fórmula. Pensada especialmente para mulheres que buscam praticidade no dia a dia sem abrir mão da saúde da pele, cada item entrega beleza imediata e tratamento contínuo.</p>
+              <p className="text-white text-center lg:text-[18px] text-[0.95rem] font-light lg:leading-[1.5] leading-[1] relative lg:top-1 px-2 lg:px-0 top-1  tracking-wide py-4 lg:py-0">Desenvolvidas para valorizar a beleza natural com sofisticação e conforto.
+Pigmentos finos e acabamento impecável revelam uma aparência radiante, leve e atemporal.
+</p>
             </div>
 
 
             {/* Card Eau de Parfum */}
-            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl  lg:px-8 py-6 flex flex-col items-center justify-center lg:min-h-[270px] lg:h-[490px] relative">
+            <div className="bg-transparent border-2 lg:mb-18 mb-4 border-white rounded-xl  lg:px-8 py-6 flex flex-col items-center justify-center lg:min-h-[270px] lg:h-[285px] relative">
 
 
               <span className="bg-white text-[#e49390] font-semibold rounded-full px-3 lg:px-7 lg:py-0.5 py-1 text-[16px] lg:text-[1.3rem] mb-4 absolute lg:-top-4 -top-4 titulo-scotch">Eau de Parfum</span>
-              <p className="text-white text-center lg:text-[18px] text-[0.92rem] font-light lg:leading-[1.5] leading-[1.1] relative lg:top-2 px-4 lg:px-0 top-2   tracking-wide py-4 lg:py-0">A linha de Eau de Parfum da Hyllua Beauty foi criada para envolver, marcar presença e eternizar momentos. Cada fragrância é uma composição autoral e sofisticada, pensada para traduzir em aroma tudo o que a marca representa: força, delicadeza, feminilidade e encantamento. Mais do que perfumes, são poções sensoriais que despertam memórias, refletem estados de espírito e revelam sua presença com elegância e personalidade.</p>
+              <p className="text-white text-center lg:text-[18px] text-[0.92rem] font-light lg:leading-[1.5] leading-[1.1] relative lg:top-2 px-4 lg:px-0 top-2   tracking-wide py-4 lg:py-0">Criações olfativas que traduzem personalidade e presença.
+Notas refinadas e harmoniosas que despertam elegância, encantamento e memórias inesquecíveis.</p>
             </div>
           </div>
         </div>
