@@ -25,7 +25,7 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
       {/* Imagem fixa no topo */}
       <div className="shrink-0  relative z-99">
         <img
-          src="/images/clinica/foto-hyllua-secao-2-clinica.webp"
+          src="/images/clinica/accordion-img.webp"
           alt="Procedimento"
           className="object-cover w-full rounded-t-[0.5rem] top-0 z-10"
         />

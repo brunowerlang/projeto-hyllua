@@ -17,12 +17,12 @@ export default function ClinicaPage() {
       titulo: "PROCEDIMENTOS FACIAIS",
      conteudo: [
   "- Bioestimulador de Colágeno Radiesse",
-  "- Protocol Control",
+  "- Protocoll Controll",
   "- Bioestimulador de Colágeno Sculptra",
   "- Lavieen",
   "- Botox",
   "- Lavieen + PDRN",
-  "- Injetáveis: Mandíbula, Malár, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomedificação",
+  "- Injetáveis: Mandíbula, Malár, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomodelação",
   "- Microagulhamento",
   "- Protocoll",
   "- Visalift",
@@ -36,11 +36,13 @@ export default function ClinicaPage() {
       
       titulo: "PROCEDIMENTOS CORPORAIS",
        conteudo: [
-    "- Brazilian ASS - Radiesse",
-    "- Brazilian ASS - Sculptra",
     "- PEIM - Secagem de Micro Vasos",
     "- Subcisão de Celulites",
-    "- Visalift"
+    "- Visalift (Ultrassom Micro e Macrofocado) facial e corporal",
+    "- Bioestimuladores corporais",
+    "- Preenchimentos com Ácido Hialurônico",
+    "- Lipo enzimática",
+    "- Brazilian Bumbum Up: associação de tratamentos com bioestimuladores + ácido hialurônico"
   ],
     },
     {
@@ -88,12 +90,12 @@ export default function ClinicaPage() {
           <div className="  relative z-10 flex flex-col lg:flex-row items-end justify-between mx-auto pt-0 lg:pt-0">
             {/* Texto */}
             <div className=" lg:ml-8 text-center lg:text-left flex-1 pb-12 relative lg:-top-10 lg:left-44 text-hero mx-auto">
-              <h1 className="text-[20px] titulo-scotch lg:text-[1.8rem] font-normal text-[#abb48d] mb-3 leading-none relative -left-0 lg:left-4 ">
+              <h1 className="text-[20px] titulo-scotch lg:text-[1.8rem] font-normal text-[#798062] mb-3 leading-none relative -left-0 lg:left-4 ">
                 Você não é <br /> feita em partes<br />
-                <span className="text-[#abb48d] font-bold text-[38px] lg:text-[4rem] titulo-scotch italic relative lg:-top-1.5 ">e o seu <br /> cuidado</span><br />
-                <span className="text-[#abb48d] lg:text-[2rem] text-[19.5px] font-normal titulo-scotch block mt-3 lg:inline lg:mt-0 relative mx-auto lg:-top-1 -top-2 -left-0 lg:left-1">também não <br /> deveria ser.</span>
+                <span className="text-[#798062] font-bold text-[38px] lg:text-[4rem] titulo-scotch italic relative lg:-top-1.5 ">e o seu <br /> cuidado</span><br />
+                <span className="text-[#798062] lg:text-[2rem] text-[19.5px] font-normal titulo-scotch block mt-3 lg:inline lg:mt-0 relative mx-auto lg:-top-1 -top-2 -left-0 lg:left-1">também não <br /> deveria ser.</span>
               </h1>
-              <p className="lg:mt-4 my-6 text-[#abb48d] text-[17px] lg:text-[1.1rem]  font-light px-25 lg:px-0 lg:w-[13rem]  leading-none lg:leading-6 relative -top-3 lg:-top-0 -left-0 lg:left-4 tracking-[0.01em]">
+              <p className="lg:mt-4 my-6 text-[#798062] text-[17px] lg:text-[1.1rem]  font-light px-25 lg:px-0 lg:w-[13rem]  leading-none lg:leading-6 relative -top-3 lg:-top-0 -left-0 lg:left-4 tracking-[0.01em]">
                 Por isso integramos<br className="block lg:hidden"/> <span className="font-semibold">saúde e estética</span> para<br className="block lg:hidden"/> cuidar de você por inteiro.
               </p>
             </div>
@@ -191,15 +193,16 @@ export default function ClinicaPage() {
             {/* Texto e dados */}
             <div className="relative lg:-left-4 -left-0 -top-0 lg:-top-0">
               <h2 className="font-bold lg:text-[1.75rem] text-[20px] text-[#353a2c] mb-0 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:lg:h-1.5 before:h-1 before:bg-[#353a2c] before:mb-3  before:absolute before:lg:-top-5 before:-top-2 before:left-0 titulo-scotch">Dra. Hyllua Husein</h2>
-              <span className="lg:text-[17px] text-[14px] text-[#353a2c] font-medium lg:mb-12 mb-3 block">CRBM 6817</span>
+              <span className="lg:text-[17px] text-[14px] text-[#353a2c] font-medium lg:mb-12 mb-3 block">CRBM 6187</span>
               <ul className="text-[#353a2c]  lg:space-y-4 space-y-3 list-none pl-0 font-normal lg:leading-[1.4rem] leading-[1rem]">
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.83rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Biomédica, com Especialização em Estética</li>
-                <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Há 9 anos atuando na estética +180 alunos em<br className="hidden lg:block" /> turmas VIP presencial, +3000 pacientes atendidos</li>
+                <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Há 9 anos atuando na estética: +250 alunos em<br className="hidden lg:block" /> turmas VIP presencial, +5000 pacientes atendidos</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Especializações internacionais em HOF:<br className="hidden lg:block" /> Formações realizadas na Suíça, Itália e Estados<br className="hidden lg:block" /> Unidos, com foco em anatomia aplicada,<br className="hidden lg:block" /> rejuvenescimento avançado e técnicas de<br className="hidden lg:block" /> refinamento estético</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Referência nacional em lábios e rinomodelação <br className="hidden lg:block" />com a técnica LAPIDARE</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Mentora e criadora do método WONDERFULL<br className="hidden lg:block" /> FACE</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />CEO da Clínica Hyllua Husein e da marca nacional<br className="hidden lg:block" />de dermocosméticos Hyllua Beauty</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Professora convidada no European Biomedical<br className="hidden lg:block" /> Research Institute of Salerno (EBRIS)</li>
+                <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Professora convidada no American Anatomy Institute</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Professora chancelada pela Harvard Medical<br className="hidden lg:block" />School</li>
               </ul>
             </div>
@@ -231,13 +234,14 @@ export default function ClinicaPage() {
             className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? " max-h-[100%] opacity-100" : "max-h-0 opacity-100"}`}
           >
             <div className="px-6 py-4 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
+              <span>- Injetáveis:  Mandíbula, Malar, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomodelação</span>
               <span>- Bioestimulador de Colágeno Radiesse</span>
               <span>- Protocoll Controll</span>
               <span>- Bioestimulador de Colágeno Sculptra</span>
               <span>- Preenchimento Labial</span>
               <span>- Botox</span>
               <span>- Rinomodelação</span>
-              <span>- Geral (ml): Mandíbula, Malár, Olheiras, Mento, Bigode Chinês</span>
+              
               <span>- Técnica LAPIDARE</span>
               <span>- Protocoll</span>
               <span>- Método WONDERFULL FACE</span>
@@ -310,6 +314,11 @@ export default function ClinicaPage() {
           <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
           Habilitada na Técnica LAPIDARE, de lábios e nariz, criada pela Dra. Hyllua Husein
         </li>
+
+          <li className="flex items-start gap-2">
+          <img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />
+          Habilitada no método WONDERFULL FACE, criado pela Dra. Hyllua Husein
+        </li>
       </ul>
     </div>
 
@@ -340,23 +349,18 @@ export default function ClinicaPage() {
             className={`transition-[max-height,opacity] duration-700 ease-in-out bg-[#898c85] overflow-hidden  ${open ? " max-h-[100%] opacity-100" : "max-h-0 opacity-100"}`}
           >
             <div className="px-6 py-4 grid lg:grid-cols-2 gap-x-6 lg:gap-y-4 gap-y-4 text-[#e5e6e1] lg:text-[13px] text-[12px]">
-                    <span>- Bioestimulador de Colágeno Radiesse</span>
-                    <span>- Bioestimulador de Colágeno Sculptra</span>
+                    <span>- Bioestimulador de Colágeno Radiesse (facial e corporal)</span>
+                    <span>- Bioestimulador de Colágeno Sculptra (facial e corporal)</span>
+                    <span>- Método Brazilian Bumbum Up: associação de tratamentos com bioestimuladores + ácido hialurônico</span>
+                    
+                    <span>- Injetáveis:  Mandíbula, Malar, Olheiras, Mento, Bigode Chinês, Preenchimento Labial e Rinomodelação</span>
+                    <span>- PEIM (Secagem de Micro Vasos)</span>
+                    <span>- Visalift (Ultrassom Micro e Macrofocado) facial e corporal</span>
+                    <span>- Laser Lavieen </span>
+                    <span>- Lipo enzimática</span>
                     <span>- Botox</span>
-                    <span>- Brazilian ASS - Radiesse</span>
-                    <span>- Brazilian ASS - Sculptra</span>
-                    <span>- Geral (ml)</span>
-                    <span>- Mandíbula, Malar, Olheiras, Mento, Bigode Chinês</span>
-                    <span>- Lavieen</span>
-                    <span>- Lavieen + PDRN</span>
-                    <span>- Microagulhamento</span>
-                    <span>- PEIM</span>
-                    <span>- Secagem de Micro Vasos</span>
-                    <span>- Preenchimento Labial</span>
-                    <span>- Rinomodelação</span>
                     <span>- Subsição de Celulites</span>
-                    <span>- Visalift corporal</span>
-                    <span>- Visalift facial</span>
+                    <span>- Microagulhamento</span>
             </div>
           </div>
         </div>
@@ -373,8 +377,8 @@ export default function ClinicaPage() {
           <div className="flex flex-col gap-8 order-2 lg:order-1 px-4 lg:px-0 items-center  ">
             {/* Texto e dados */}
             <div className="relative lg:-left-4 -left-0 -top-0 lg:top-4">
-              <h2 className="font-bold lg:text-[1.75rem] text-[20px] text-[#353a2c] mb-0 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:lg:h-1.5 before:h-1 before:bg-[#353a2c] before:mb-3  before:absolute before:lg:-top-5 before:-top-2 before:left-0 titulo-scotch">Dra. Felipe Vendramini</h2>
-              <span className="lg:text-[17px] text-[14px] text-[#353a2c] font-medium lg:mb-12 mb-3 block">CRBM 22723</span>
+              <h2 className="font-bold lg:text-[1.75rem] text-[20px] text-[#353a2c] mb-0 relative before:content-[''] before:block before:lg:w-40 before:w-20 before:lg:h-1.5 before:h-1 before:bg-[#353a2c] before:mb-3  before:absolute before:lg:-top-5 before:-top-2 before:left-0 titulo-scotch">Dr. Felipe Vendramini</h2>
+              <span className="lg:text-[17px] text-[14px] text-[#353a2c] font-medium lg:mb-12 mb-3 block">CRO 22723</span>
               <ul className="text-[#353a2c]  lg:space-y-4 space-y-3 list-none pl-0 font-normal lg:leading-[1.4rem] leading-[1rem]">
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.83rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Cirurgião-Dentista, com mais de 10 anos de experiência</li>
                 <li className="flex items-start gap-2 lg:text-[1.07rem] text-[0.85rem]"><img src="/images/clinica/icon-topicos.webp" alt="" className="w-4 h-2 mt-2" />Formado pela Faculdade Meridional - IMED (2014)</li>
@@ -467,7 +471,7 @@ export default function ClinicaPage() {
         Dra. Danielle Marcon
       </h2>
       <span className="lg:text-[17px] text-[14px] text-[#353a2c] font-medium lg:mb-12 mb-3 block">
-        CRBM 25514
+        CRO 25514
       </span>
       <ul className="text-[#353a2c]  lg:space-y-4 space-y-3 list-none pl-0 font-normal lg:leading-[1.4rem] leading-[1rem] lg:text-[1.07rem] text-[0.85rem]">
         <li className="flex items-start gap-2 ">
