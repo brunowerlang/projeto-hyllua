@@ -36,7 +36,7 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
           <div key={index} className="">
             <button
               onClick={() => toggleAccordion(index)}
-              className={` cursor-pointer w-full flex justify-between items-center lg:px-6 px-4 lg:py-3 py-2 bg-[#353a2c] text-[#e5e6e1]  border font-light tracking-[1px] uppercase lg:text-[13px] text-[12px] ${index === procedimentos.length - 1 ? 'rounded-b-[0.5rem]' : ''}`}
+              className={` cursor-pointer w-full flex justify-between items-center lg:px-6 px-4 lg:py-3 py-2 bg-[#353a2c] text-[#e5e6e1]   font-light tracking-[1px] uppercase lg:text-[13px] text-[12px] ${index === procedimentos.length - 1 ? 'rounded-b-[0.5rem]' : ''}`}
               type="button"
             >
               {item.titulo}
@@ -51,7 +51,7 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
     openIndex === index ? "max-h-[1000px] py-0" : "max-h-0 py-0"
   }`}
 >
-  <div className="px-0 py-4 grid lg:grid-cols-2 grid-cols-1 gap-x-6 lg:gap-y-4 gap-y-3 text-[#e5e6e1] border-2 lg:text-[13px] text-[12px]">
+  <div className="px-0 py-4 grid lg:grid-cols-2 grid-cols-1 gap-x-6 lg:gap-y-4 gap-y-3 text-[#e5e6e1] border lg:text-[13px] text-[12px]">
     {item.conteudo.map((linha, i) =>
       linha.includes("Exclusivas") ? (
         <p
