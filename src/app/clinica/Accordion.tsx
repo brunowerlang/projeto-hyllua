@@ -36,7 +36,7 @@ const AccordionAside: React.FC<AccordionAsideProps> = ({ procedimentos }) => {
           <div key={index} className="">
             <button
               onClick={() => toggleAccordion(index)}
-              className={`w-full flex justify-between items-center lg:px-6 px-4 lg:py-3 py-2 bg-[#353a2c] text-[#e5e6e1] border-t-1 border-[#e5e6e1] font-light tracking-[1px] uppercase lg:text-[13px] text-[12px] ${index === procedimentos.length - 1 ? 'rounded-b-[0.5rem]' : ''}`}
+              className={` cursor-pointer w-full flex justify-between items-center lg:px-6 px-4 lg:py-3 py-2 bg-[#353a2c] text-[#e5e6e1] border-t-1 border-[#e5e6e1] font-light tracking-[1px] uppercase lg:text-[13px] text-[12px] ${index === procedimentos.length - 1 ? 'rounded-b-[0.5rem]' : ''}`}
               type="button"
             >
               {item.titulo}

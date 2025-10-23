@@ -245,7 +245,7 @@ export default async function HomePage() {
                   </div>
                 </div>
                 <p className="text-[17px] lg:text-[1.03rem] lg:mb-17 mb-6 secundary-color lg:leading-tight leading-[1.3] lg:w-[19rem] w-[13rem] relative left-8 font-light -top-6 lg:left-14 lg:top-0">
-                  Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">Wonderfull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
+                  Nossos protocolos autorais <span className="font-semibold titulo-scotch italic">WonderFull Face</span> e a técnica <span className="font-semibold titulo-scotch italic">Lapidare</span>, nasceram da prática<br className="block lg:hidden" /> diária 
                   com pacientes reais e hoje são <span className="font-semibold titulo-scotch italic">referência entre profissionais</span> que buscam um cuidado mais completo, 
                   ético e <span className="font-semibold titulo-scotch italic">transformador.</span>
                 </p>

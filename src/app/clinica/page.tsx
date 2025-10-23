@@ -218,7 +218,7 @@ export default function ClinicaPage() {
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+            className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -333,7 +333,7 @@ export default function ClinicaPage() {
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+            className=" cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -401,7 +401,7 @@ export default function ClinicaPage() {
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+            className=" cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -512,7 +512,7 @@ chancelada pela Harvard Medical School
           {/* Botão fixo */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
+            className="cursor-pointer w-full flex justify-between items-center px-4 py-2 lg:py-2 border-b border-[#d2d2c7] text-[#e5e6e1] font-normal lg:text-[0.85rem] text-[12px] uppercase bg-[#353a2c] tracking-[1px]"
             type="button"
           >
             PROCEDIMENTOS QUE REALIZA
@@ -651,7 +651,7 @@ chancelada pela Harvard Medical School
               por inteiro.
             </p>
           </div> 
-          <button className="rounded-lg bg-[#abb48d] px-8 relative lg:-right-4 lg:py-3.5 py-2.5 text-sm font-medium uppercase tracking-wide text-[#353a2c] border-b-4 border-[#353a2c] transition-colors hover:bg-[#96a684] lg:text-[1.15rem] text-nowrap">
+          <button className="cursor-pointer rounded-lg bg-[#abb48d] px-8 relative lg:-right-4 lg:py-3.5 py-2.5 text-sm font-medium uppercase tracking-wide text-[#353a2c] border-b-4 border-[#353a2c] transition-colors hover:bg-[#96a684] lg:text-[1.15rem] text-nowrap">
             AGENDAR MEU PROCEDIMENTO
           </button>
         </div>
