@@ -621,7 +621,7 @@ chancelada pela Harvard Medical School
                 </div>
                 {/* Bottom Section */}
                 <div className="relative bg-[#abb48d] flex-1 lg:px-12 px-6 lg:rounded-b-[2.8rem] rounded-b-[1.25rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem] flex items-center justify-center mb-4">
-                   <div className="absolute -top-7 -right-0.5 lg:right-0 w-[30px] h-[30px]  ">
+                   <div className="absolute -top-7 -right-0.5 lg:-right-1 w-[30px] h-[30px]  ">
     <img src="/images/clinica/CANTO-VETOR.webp" alt="teste" className="w-full h-full object-contain" />
   </div>
                   <p className="text-white py-5 lg:px-3 lg:text-[20px] text-center lg:leading-6 leading-4 font-light tracking-[1.5px]">
@@ -652,7 +652,7 @@ chancelada pela Harvard Medical School
                 </div>
                 {/* Bottom Section */}
                 <div className="relative bg-[#abb48d] flex-1 px-12  lg:rounded-b-[2.8rem] lg:rounded-tl-[2.8rem]  rounded-tl-[1.25rem]  rounded-b-[1.25rem]  flex items-center justify-center mb-4">
- <div className="absolute -top-7 -right-0.5 lg:right-0 w-[30px] h-[30px]  ">
+ <div className="absolute -top-7 -right-0.5 lg:-right-1 w-[30px] h-[30px]  ">
     <img src="/images/clinica/CANTO-VETOR.webp" alt="teste" className="w-full h-full object-contain" />
   </div>
                   <p className="text-white py-5 px-3 lg:text-[20px] text-center lg:leading-6 leading-4 font-light tracking-[1.5px]">
