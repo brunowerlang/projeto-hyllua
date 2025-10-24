@@ -22,10 +22,10 @@ export default function ClinicaPage() {
   "- Lavieen",
   "- Botox",
   "- Lavieen + PDRN",
-  "- Injetáveis: Mandíbula, Malár, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomodelação",
+  "- Injetáveis: Mandíbula, Malar, Olheiras, Mento, Bigode Chinês, Preenchimento Labial, Rinomodelação",
   "- Microagulhamento",
   "- Protocoll",
-  "- Visalift",
+  "- Visalift (Ultrassom Micro e Macrofocado)",
   " Técnicas Exclusivas Dra. Hyllua Husein",
   "- Técnica LAPIDARE",
   "- Método WONDERFULL FACE"
@@ -38,7 +38,7 @@ export default function ClinicaPage() {
        conteudo: [
     "- PEIM - Secagem de Micro Vasos",
     "- Subcisão de Celulites",
-    "- Visalift (Ultrassom Micro e Macrofocado) facial e corporal",
+    "- Visalift (Ultrassom Micro e Macrofocado)",
     "- Bioestimuladores corporais",
     "- Preenchimentos com Ácido Hialurônico",
     "- Lipo enzimática",
@@ -249,9 +249,7 @@ export default function ClinicaPage() {
             <span>- Bioestimulador de Colágeno Radiesse</span>
             <span>- Protocoll Controll</span>
             <span>- Bioestimulador de Colágeno Sculptra</span>
-            <span>- Preenchimento Labial</span>
             <span>- Botox</span>
-            <span>- Rinomodelação</span>
             <span>- Técnica LAPIDARE</span>
             <span>- Protocoll</span>
             <span>- Método WONDERFULL FACE</span>
@@ -268,7 +266,7 @@ export default function ClinicaPage() {
           <div className="flex justify-center items-start order-1 lg:order-2">
             <div className=" overflow-hidden   flex items-center justify-center px-16 lg:px-0">
               <img
-                src="/images/clinica/hyllua-nova.png"
+                src="/images/clinica/dra-hyllua-att.webp"
                 alt="Dra. Hyllua Husein"
                 className="object-cover lg:w-full h-full relative lg:scale-90 lg:-right-3 lg:top-4"
               />
